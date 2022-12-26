@@ -1,0 +1,29 @@
+while False:
+    try:
+        data = driver.find_elements(By.CLASS_NAME, "selectable-text")
+        
+        with open("data" + str(cont) + ".txt", "w") as f:
+            for i in data:
+                print(i.text)
+                f.write(i.text + "\n")
+        cont = cont + 1
+        time.sleep(1)
+    except Exception as e:
+        print("error")
+        print(e)
+        time.sleep(1)
+
+
+
+for i in data:
+
+            if i.get_attribute("data-testid") is "star":
+                print("found star")
+            else:
+                print("not")
+
+            print(data.text)
+
+            if " Starred messages " in data.text:
+                print("se encontro: ")
+                print(data.find_element(By.CLASS_NAME, "selectable-text"))
