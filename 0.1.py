@@ -37,10 +37,10 @@ sheet = dataExcel.active
 
 with open("cont.txt", "r") as f:
     cont = int(f.read())
-#cont = 0
+# cont = 0
 with open("subcont.txt", "r") as f:
     subcont = int(f.read())
-#subcont = 0
+# subcont = 0
 print(f"found {cont} {subcont}")
 newLine = False
 
@@ -48,7 +48,7 @@ newLine = False
 def hasStar():
     star_el = driver.find_element(
         By.XPATH, '//*[@id="app"]/div/span[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/span')
-                   
+
     return star_el.get_attribute("data-testid") == "star-btn"
 
 
@@ -62,28 +62,62 @@ def clickNextButton():
             By.XPATH, '//*[@id="app"]/div/span[3]/div/div/div[2]/div/div[1]/div[2]/div/div[7]/div/span').click()
 
 
+keys = ['ShYSmkGi19ztn5G7oDBPLUbN ', 'gcLYS11Z6jrL7MQP65mZ2y7C ', 'ds4c2TkgKKNZwJ1qSJ4sCtAG ',
+        '5awd6A82Jthc1jA383R9z3VP ', 'zMPPPMiD2GCPVMDmfDdNDeLh ', 'CHjwZxPhVxRHbKPvWQhFCnFA ', 'eoSRfgSTAN75o6AQ1YUQ87h4 ']
+currentKey = 0
+
+
+def has0left(key):
+    headers = {
+        'accept': '*/*',
+        'X-API-Key': keys[currentKey],
+    }
+
+    response = requests.get(
+        'https://api.remove.bg/v1.0/account', headers=headers)
+    callsLeft = json.loads(response.text)[
+        "data"]["attributes"]["api"]["free_calls"]
+
+    # print(response.text, keys[currentKey])
+    # print(f"found {keys[currentKey]} with {callsLeft} left")
+
+    return callsLeft == 0
+
+
 def cleanIMG():
+
+    while has0left(currentKey):
+        if currentKey == len(keys) - 1:
+            currentKey = 0
+        else:
+            currentKey += 1
+
     try:
+        print("using key: " + keys[currentKey])
         response = requests.post(
             'https://api.remove.bg/v1.0/removebg',
-            files={'image_file': open("images/img" + str(cont) + "." +
-                                      str(subcont) + ".png", 'rb')},
+            files={'image_file': open(f"images/img{cont}.{subcont}.png", 'rb')},
             data={'size': 'auto'},
-            headers={'X-Api-Key': 'zMPPPMiD2GCPVMDmfDdNDeLh'},
+            headers={'X-Api-Key': keys[currentKey], 'bg_color': (None, 'white'),
+                     'type': (None, 'product'),
+                     'type_level': (None, '1')}
         )
 
         if response.status_code == requests.codes.ok:
-            with open("images/img" + str(cont) + "." +
-                      str(subcont) + ".png", 'wb') as out:
+            with open(f"images/img{cont}.{subcont}.png", 'wb') as out:
                 out.write(response.content)
         else:
             print("Error:", response.status_code, response.text)
+            time.sleep(3)
 
     except Exception as e:
         print("error cleaning img:")
         print(e)
 
-    try:
+
+
+    """ try:
+        # no need to place white bg with bg_color: 'white' in request
         img = Image.open("images/img" + str(cont) + "." +
                          str(subcont) + ".png").convert("RGBA")
         x, y = img.size
@@ -93,22 +127,23 @@ def cleanIMG():
                   str(subcont) + ".png", format="png")
     except Exception as e:
         print("error cleaning img:")
-        print(e)
+        print(e) """
 
 
 def saveInExcel(datos, ip):
     c = cont + 1
-    sheet.cell(row = c, column = 1).value = datos[0]
-    sheet.cell(row = c, column = 2).value = datos[1]
-    sheet.cell(row = c, column = 3).value = datos[2]
+    sheet.cell(row=c, column=1).value = datos[0]
+    sheet.cell(row=c, column=2).value = datos[1]
+    sheet.cell(row=c, column=3).value = datos[2]
 
     x = 4
     for i in ips:
-        sheet.cell(row = c, column = x).value = i
-        sheet.cell(row = c, column = x).hyperlink = (i)
+        sheet.cell(row=c, column=x).value = i
+        sheet.cell(row=c, column=x).hyperlink = (i)
         x += 1
-    
+
     dataExcel.save("valoresWsBot.xlsx")
+
 
 ips = []
 datos = []
@@ -127,7 +162,6 @@ while True:
 
         with open("subcont.txt", "w") as f:
             f.write('%d' % subcont)
-
 
         result = driver.execute_async_script("""
                         var uri = arguments[0];
@@ -156,17 +190,19 @@ while True:
             newLine = True
             subcont += 1
 
-        with open(str('images/img' + str(cont) + "." + str(subcont) + '.png'), 'wb') as f:
+        with open(f"images/img{cont}.{subcont}.png", 'wb') as f:
             f.write(base64.b64decode(result))
 
         cleanIMG()
 
-        # removes star 
-        driver.find_element(By.XPATH, '//*[@id="app"]/div/span[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/span').click()
+        # removes star
+        driver.find_element(
+            By.XPATH, '//*[@id="app"]/div/span[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/span').click()
 
         time.sleep(1)
         print("uploading")
-        scp.put(f"images/img{cont}.{subcont}.png", f"/root/wsbot/images/img{cont}.{subcont}.png")
+        scp.put(f"images/img{cont}.{subcont}.png",
+                f"/root/wsbot/images/img{cont}.{subcont}.png")
         ip = f"http://50.116.47.159/images/img{cont}.{subcont}.png"
         ips.append(ip)
 
@@ -185,7 +221,7 @@ while True:
     except Exception as e:
         print("error")
         print(e)
-        #traceback.print_exc()
+        # traceback.print_exc()
         time.sleep(1)
     finally:
         scp.close()

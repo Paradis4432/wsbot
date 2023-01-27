@@ -1,0 +1,12 @@
+https://www.erase.bg/upload
+
+click in url
+paste url of image in server
+click submit
+click X ad if exists
+wait for X button 
+click download original size
+mv image to folder 
+change name to img.cont.subcont
+click X button 
+
