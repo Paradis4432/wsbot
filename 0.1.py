@@ -14,6 +14,10 @@ from scp import SCPClient
 from dotenv import load_dotenv
 import os
 
+
+folder = "a"
+
+
 load_dotenv()
 
 ssh = SSHClient()
@@ -104,7 +108,7 @@ def cleanIMG():
         )
 
         if response.status_code == requests.codes.ok:
-            with open(f"images/img{cont}.{subcont}.png", 'wb') as out:
+            with open(f"./backup/{folder}/img{cont}.{subcont}.png", 'wb') as out:
                 out.write(response.content)
         else:
             print("Error:", response.status_code, response.text)
@@ -142,11 +146,16 @@ def saveInExcel(datos, ip):
         sheet.cell(row=c, column=x).hyperlink = (i)
         x += 1
 
-    dataExcel.save("valoresWsBot.xlsx")
+    dataExcel.save(f"./backup/{folder}.xlsx")
+
 
 
 ips = []
 datos = []
+i,o,e = ssh.exec_command(f"mkdir /root/wsbot/backup/{folder}")
+if e.read():
+    print(e.read())
+    time.sleep(5)
 
 while True:
     try:
@@ -202,8 +211,8 @@ while True:
         time.sleep(1)
         print("uploading")
         scp.put(f"images/img{cont}.{subcont}.png",
-                f"/root/wsbot/images/img{cont}.{subcont}.png")
-        ip = f"http://50.116.47.159/images/img{cont}.{subcont}.png"
+                f"/root/wsbot/backup/{folder}/img{cont}.{subcont}.png")
+        ip = f"http://50.116.47.159/backup/{folder}/img{cont}.{subcont}.png"
         ips.append(ip)
 
         clickNextButton()
