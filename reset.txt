@@ -1,3 +1,4 @@
+rset folder name
 reset count subcount
 add 1 to count in case of continue
 move imgs in server 

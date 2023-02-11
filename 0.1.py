@@ -119,7 +119,7 @@ def cleanIMG():
 
         if response.status_code == requests.codes.ok:
             with open(f"./backup/{folder}/img{cont}.{subcont}.png", 'wb') as out:
-                out.write(response.content)
+                out.write(response.content)  
         else:
             print("Error:", response.status_code, response.text)
             time.sleep(3)
