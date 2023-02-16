@@ -1,0 +1,297 @@
+2023-02-16 00:56:00 DEBUG getting negocios
+2023-02-16 00:56:00 DEBUG got data as dict:
+2023-02-16 00:56:00 DEBUG {'negs': [{'name': 'cholo', 'types': ['mochila', 'remera']}, {'name': 'marian', 'types': ['gorra', 'cinturon']}]}
+2023-02-16 00:56:00 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 00:56:02 INFO 127.0.0.1 - - [16/Feb/2023 00:56:02] "GET / HTTP/1.1" 200 -
+2023-02-16 00:56:09 ERROR Exception on /negocios [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Lucas\Escritorio\e\wsbot\web\main.py", line 34, in negocios
+    logging.debug("rendering negocios with negs: " + n)
+TypeError: can only concatenate str (not "list") to str
+2023-02-16 00:56:09 INFO 127.0.0.1 - - [16/Feb/2023 00:56:09] "[35m[1mGET /negocios HTTP/1.1[0m" 500 -
+2023-02-16 00:56:40 DEBUG getting negocios
+2023-02-16 00:56:40 DEBUG got data as dict:
+2023-02-16 00:56:40 DEBUG {'negs': [{'name': 'cholo', 'types': ['mochila', 'remera']}, {'name': 'marian', 'types': ['gorra', 'cinturon']}]}
+2023-02-16 00:56:40 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 00:56:42 INFO 127.0.0.1 - - [16/Feb/2023 00:56:42] "GET / HTTP/1.1" 200 -
+2023-02-16 00:56:44 INFO 127.0.0.1 - - [16/Feb/2023 00:56:44] "GET / HTTP/1.1" 200 -
+2023-02-16 00:56:46 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 00:56:46 INFO 127.0.0.1 - - [16/Feb/2023 00:56:46] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 00:56:54 DEBUG rendering tempNeg for: cholo with types: [['mochila', 'remera'], ['gorra', 'cinturon']]
+2023-02-16 00:56:54 INFO 127.0.0.1 - - [16/Feb/2023 00:56:54] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:03:49 DEBUG getting negocios
+2023-02-16 01:03:49 DEBUG got data as dict:
+2023-02-16 01:03:49 DEBUG {'negs': {'cholo': {'types': ['mochila', 'remera']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:03:49 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:03:51 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 01:03:51 INFO 127.0.0.1 - - [16/Feb/2023 01:03:51] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 01:03:51 DEBUG rendering tempNeg for: cholo with types: ['mochila', 'remera']
+2023-02-16 01:03:51 INFO 127.0.0.1 - - [16/Feb/2023 01:03:51] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:04:01 ERROR Exception on /excel/cholo [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+2023-02-16 01:04:01 INFO 127.0.0.1 - - [16/Feb/2023 01:04:01] "[35m[1mGET /excel/cholo HTTP/1.1[0m" 500 -
+2023-02-16 01:04:04 INFO 127.0.0.1 - - [16/Feb/2023 01:04:04] "[33mGET /fotos/cholo/mochila HTTP/1.1[0m" 404 -
+2023-02-16 01:04:12 INFO 127.0.0.1 - - [16/Feb/2023 01:04:12] "[33mGET /fotos/cholo/remera HTTP/1.1[0m" 404 -
+2023-02-16 01:04:57 INFO 127.0.0.1 - - [16/Feb/2023 01:04:57] "GET / HTTP/1.1" 200 -
+2023-02-16 01:05:00 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 01:05:00 INFO 127.0.0.1 - - [16/Feb/2023 01:05:00] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 01:05:11 DEBUG rendering tempNeg for: cholo with types: ['mochila', 'remera']
+2023-02-16 01:05:11 INFO 127.0.0.1 - - [16/Feb/2023 01:05:11] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:05:46 DEBUG rendering tempNeg for: cholo with types: ['mochila', 'remera']
+2023-02-16 01:05:46 INFO 127.0.0.1 - - [16/Feb/2023 01:05:46] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:05:47 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 01:05:47 INFO 127.0.0.1 - - [16/Feb/2023 01:05:47] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 01:05:48 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 01:05:48 INFO 127.0.0.1 - - [16/Feb/2023 01:05:48] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 01:05:48 DEBUG rendering tempNeg for: cholo with types: ['mochila', 'remera']
+2023-02-16 01:05:48 INFO 127.0.0.1 - - [16/Feb/2023 01:05:48] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:05:54 DEBUG getting negocios
+2023-02-16 01:05:54 DEBUG got data as dict:
+2023-02-16 01:05:54 DEBUG {'negs': {'cholo': {'types': ['mochila', 'remera']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:05:54 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:05:56 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-02-16 01:05:56 INFO 127.0.0.1 - - [16/Feb/2023 01:05:56] "GET /negocios HTTP/1.1" 200 -
+2023-02-16 01:05:56 DEBUG rendering tempNeg for: cholo with types: ['mochila', 'remera']
+2023-02-16 01:05:56 INFO 127.0.0.1 - - [16/Feb/2023 01:05:56] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:13:08 DEBUG getting negocios
+2023-02-16 01:13:08 DEBUG got data as dict:
+2023-02-16 01:13:08 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:13:08 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:13:11 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:13:11 INFO 127.0.0.1 - - [16/Feb/2023 01:13:11] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:13:12 ERROR Exception on /fotos/cholo/mochilas [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lucas\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: renderImages() got an unexpected keyword argument 'type'
+2023-02-16 01:13:12 INFO 127.0.0.1 - - [16/Feb/2023 01:13:12] "[35m[1mGET /fotos/cholo/mochilas HTTP/1.1[0m" 500 -
+2023-02-16 01:13:26 DEBUG getting negocios
+2023-02-16 01:13:26 DEBUG got data as dict:
+2023-02-16 01:13:26 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:13:26 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:13:28 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:13:28 INFO 127.0.0.1 - - [16/Feb/2023 01:13:28] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:13:28 INFO 127.0.0.1 - - [16/Feb/2023 01:13:28] "[33mGET /fotos/cholo/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:13:56 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:13:56 INFO 127.0.0.1 - - [16/Feb/2023 01:13:56] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:13:56 INFO 127.0.0.1 - - [16/Feb/2023 01:13:56] "[33mGET /fotos/cholo/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:13:58 DEBUG getting negocios
+2023-02-16 01:13:58 DEBUG got data as dict:
+2023-02-16 01:13:58 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:13:58 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:13:59 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:13:59 INFO 127.0.0.1 - - [16/Feb/2023 01:13:59] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:14:00 INFO 127.0.0.1 - - [16/Feb/2023 01:14:00] "[33mGET /fotos/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:14:01 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:14:01 INFO 127.0.0.1 - - [16/Feb/2023 01:14:01] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:14:02 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:14:02 INFO 127.0.0.1 - - [16/Feb/2023 01:14:02] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:14:03 INFO 127.0.0.1 - - [16/Feb/2023 01:14:03] "[33mGET /fotos/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:14:16 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:14:16 INFO 127.0.0.1 - - [16/Feb/2023 01:14:16] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:14:16 INFO 127.0.0.1 - - [16/Feb/2023 01:14:16] "[33mGET /fotos/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:14:19 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:14:19 INFO 127.0.0.1 - - [16/Feb/2023 01:14:19] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:14:21 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:14:21 INFO 127.0.0.1 - - [16/Feb/2023 01:14:21] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:14:21 INFO 127.0.0.1 - - [16/Feb/2023 01:14:21] "[33mGET /fotos/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:14:30 DEBUG getting negocios
+2023-02-16 01:14:30 DEBUG got data as dict:
+2023-02-16 01:14:30 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:14:30 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:14:32 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:14:32 INFO 127.0.0.1 - - [16/Feb/2023 01:14:32] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:14:33 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:14:33 INFO 127.0.0.1 - - [16/Feb/2023 01:14:33] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:14:33 INFO 127.0.0.1 - - [16/Feb/2023 01:14:33] "[33mGET /fotos/negocios/cholo/mochilas HTTP/1.1[0m" 404 -
+2023-02-16 01:15:03 DEBUG getting negocios
+2023-02-16 01:15:03 DEBUG got data as dict:
+2023-02-16 01:15:03 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:15:03 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:15:05 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:15:05 INFO 127.0.0.1 - - [16/Feb/2023 01:15:05] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:15:06 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:15:06 INFO 127.0.0.1 - - [16/Feb/2023 01:15:06] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:15:07 INFO 127.0.0.1 - - [16/Feb/2023 01:15:07] "[33mGET /fotos/negocios/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:15:31 INFO 127.0.0.1 - - [16/Feb/2023 01:15:31] "[33mGET /negocios/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:15:43 INFO 127.0.0.1 - - [16/Feb/2023 01:15:43] "[33mGET /negocios/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:20:08 DEBUG getting negocios
+2023-02-16 01:20:08 DEBUG got data as dict:
+2023-02-16 01:20:08 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:20:08 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:20:11 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:20:11 INFO 127.0.0.1 - - [16/Feb/2023 01:20:11] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:20:11 INFO 127.0.0.1 - - [16/Feb/2023 01:20:11] "[33mGET /fotos/negocios/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:20:44 DEBUG getting negocios
+2023-02-16 01:20:44 DEBUG got data as dict:
+2023-02-16 01:20:44 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:20:44 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:20:45 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:20:45 INFO 127.0.0.1 - - [16/Feb/2023 01:20:45] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:20:45 INFO 127.0.0.1 - - [16/Feb/2023 01:20:45] "[33mGET /fotos/cholo/negocios/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:22:39 DEBUG getting negocios
+2023-02-16 01:22:39 DEBUG got data as dict:
+2023-02-16 01:22:39 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:22:39 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:22:39 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:22:39 INFO 127.0.0.1 - - [16/Feb/2023 01:22:39] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:22:40 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:22:40 INFO 127.0.0.1 - - [16/Feb/2023 01:22:40] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:22:40 INFO 127.0.0.1 - - [16/Feb/2023 01:22:40] "[33mGET /fotos/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:23:09 DEBUG getting negocios
+2023-02-16 01:23:09 DEBUG got data as dict:
+2023-02-16 01:23:09 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:23:09 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:23:11 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:23:11 INFO 127.0.0.1 - - [16/Feb/2023 01:23:11] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:23:11 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:23:11 INFO 127.0.0.1 - - [16/Feb/2023 01:23:11] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:23:11 INFO 127.0.0.1 - - [16/Feb/2023 01:23:11] "[33mGET /fotos/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:25:34 DEBUG getting negocios
+2023-02-16 01:25:34 DEBUG got data as dict:
+2023-02-16 01:25:34 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:25:34 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:25:36 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:25:36 INFO 127.0.0.1 - - [16/Feb/2023 01:25:36] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:25:37 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:25:37 INFO 127.0.0.1 - - [16/Feb/2023 01:25:37] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:25:37 INFO 127.0.0.1 - - [16/Feb/2023 01:25:37] "[33mGET /fotos/cholo/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:26:09 DEBUG getting negocios
+2023-02-16 01:26:09 DEBUG got data as dict:
+2023-02-16 01:26:09 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:26:09 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:26:11 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:26:11 INFO 127.0.0.1 - - [16/Feb/2023 01:26:11] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:26:11 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:26:11 INFO 127.0.0.1 - - [16/Feb/2023 01:26:11] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:26:12 INFO 127.0.0.1 - - [16/Feb/2023 01:26:12] "[33mGET /fotos/cholo/fotos/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:27:04 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:27:04 INFO 127.0.0.1 - - [16/Feb/2023 01:27:04] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:27:06 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:27:06 INFO 127.0.0.1 - - [16/Feb/2023 01:27:06] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:27:06 INFO 127.0.0.1 - - [16/Feb/2023 01:27:06] "[33mGET /fotos/cholo/fotos/cholo/mochilas/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:27:10 DEBUG getting negocios
+2023-02-16 01:27:10 DEBUG got data as dict:
+2023-02-16 01:27:10 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:27:10 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:27:13 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:27:13 INFO 127.0.0.1 - - [16/Feb/2023 01:27:13] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:27:13 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:27:13 INFO 127.0.0.1 - - [16/Feb/2023 01:27:13] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:27:14 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:27:14 INFO 127.0.0.1 - - [16/Feb/2023 01:27:14] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:27:15 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:27:15 INFO 127.0.0.1 - - [16/Feb/2023 01:27:15] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:27:15 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:27:15 INFO 127.0.0.1 - - [16/Feb/2023 01:27:15] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:27:16 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:27:16 INFO 127.0.0.1 - - [16/Feb/2023 01:27:16] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:27:16 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:27:16 INFO 127.0.0.1 - - [16/Feb/2023 01:27:16] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:27:57 DEBUG getting negocios
+2023-02-16 01:27:57 DEBUG got data as dict:
+2023-02-16 01:27:57 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:27:57 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:27:58 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:27:58 INFO 127.0.0.1 - - [16/Feb/2023 01:27:58] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:27:59 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:27:59 INFO 127.0.0.1 - - [16/Feb/2023 01:27:59] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:27:59 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:27:59 INFO 127.0.0.1 - - [16/Feb/2023 01:27:59] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:28:48 DEBUG getting negocios
+2023-02-16 01:28:48 DEBUG got data as dict:
+2023-02-16 01:28:48 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:28:48 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:28:51 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:28:51 INFO 127.0.0.1 - - [16/Feb/2023 01:28:51] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:28:52 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:28:52 INFO 127.0.0.1 - - [16/Feb/2023 01:28:52] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:28:52 INFO 127.0.0.1 - - [16/Feb/2023 01:28:52] "[33mGET /fotos/img19.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:29:11 DEBUG getting negocios
+2023-02-16 01:29:11 DEBUG got data as dict:
+2023-02-16 01:29:11 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:29:11 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:29:13 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:29:13 INFO 127.0.0.1 - - [16/Feb/2023 01:29:13] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:29:13 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:29:13 INFO 127.0.0.1 - - [16/Feb/2023 01:29:13] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:29:40 DEBUG getting negocios
+2023-02-16 01:29:40 DEBUG got data as dict:
+2023-02-16 01:29:40 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:29:40 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:29:42 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:29:42 INFO 127.0.0.1 - - [16/Feb/2023 01:29:42] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:29:42 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:29:42 INFO 127.0.0.1 - - [16/Feb/2023 01:29:42] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:29:42 INFO 127.0.0.1 - - [16/Feb/2023 01:29:42] "[33mGET /fotos/cholo/mochilas/img20.1.png HTTP/1.1[0m" 404 -
+2023-02-16 01:30:45 DEBUG getting negocios
+2023-02-16 01:30:45 DEBUG got data as dict:
+2023-02-16 01:30:45 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:30:45 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:30:49 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:30:49 INFO 127.0.0.1 - - [16/Feb/2023 01:30:49] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:30:49 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:30:49 INFO 127.0.0.1 - - [16/Feb/2023 01:30:49] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:30:49 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:30:49 INFO 127.0.0.1 - - [16/Feb/2023 01:30:49] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:31:46 DEBUG getting negocios
+2023-02-16 01:31:46 DEBUG got data as dict:
+2023-02-16 01:31:46 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:31:46 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:31:50 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:31:50 INFO 127.0.0.1 - - [16/Feb/2023 01:31:50] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:31:50 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:31:50 INFO 127.0.0.1 - - [16/Feb/2023 01:31:50] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:31:50 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:31:50 INFO 127.0.0.1 - - [16/Feb/2023 01:31:50] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:32:05 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:32:05 INFO 127.0.0.1 - - [16/Feb/2023 01:32:05] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:32:06 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:32:06 INFO 127.0.0.1 - - [16/Feb/2023 01:32:06] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:32:06 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:32:06 INFO 127.0.0.1 - - [16/Feb/2023 01:32:06] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:32:08 DEBUG getting negocios
+2023-02-16 01:32:08 DEBUG got data as dict:
+2023-02-16 01:32:08 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:32:08 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:32:10 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:32:10 INFO 127.0.0.1 - - [16/Feb/2023 01:32:10] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:32:10 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:32:10 INFO 127.0.0.1 - - [16/Feb/2023 01:32:10] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:32:31 DEBUG getting negocios
+2023-02-16 01:32:31 DEBUG got data as dict:
+2023-02-16 01:32:31 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:32:31 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-16 01:32:33 DEBUG rendering tempNeg for: cholo with types: ['mochilas', 'cinturones']
+2023-02-16 01:32:33 INFO 127.0.0.1 - - [16/Feb/2023 01:32:33] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-16 01:32:33 DEBUG rendering images for negocio: cholo in type: mochilas
+2023-02-16 01:32:33 INFO 127.0.0.1 - - [16/Feb/2023 01:32:33] "GET /fotos/cholo/mochilas HTTP/1.1" 200 -
+2023-02-16 01:32:34 DEBUG rendering images for negocio: cholo in type: img19.1.png
+2023-02-16 01:32:34 INFO 127.0.0.1 - - [16/Feb/2023 01:32:34] "GET /fotos/cholo/img19.1.png HTTP/1.1" 200 -
+2023-02-16 01:33:07 DEBUG getting negocios
+2023-02-16 01:33:07 DEBUG got data as dict:
+2023-02-16 01:33:07 DEBUG {'negs': {'cholo': {'types': ['mochilas', 'cinturones']}, 'marian': {'types': ['gorra', 'cinturon']}}}
+2023-02-16 01:33:07 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)

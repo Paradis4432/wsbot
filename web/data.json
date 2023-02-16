@@ -1,0 +1,16 @@
+{
+    "negs": {
+        "cholo": {
+            "types": [
+                "mochilas",
+                "cinturones"
+            ]
+        },
+        "marian": {
+            "types": [
+                "gorra",
+                "cinturon"
+            ]
+        }
+    }
+}

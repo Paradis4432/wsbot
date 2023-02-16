@@ -1,0 +1,8 @@
+<h2>negocio {{ neg }}</h2>
+
+<button><a href="/excel/{{ neg }}">excel</a></button>
+<br>
+<h2>fotos:</h2>
+{% for t in types %}
+    <button><a href="/fotos/{{ neg }}/{{ t }}">{{ t }}</a></button>
+{% endfor %}
