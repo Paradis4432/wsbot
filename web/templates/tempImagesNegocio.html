@@ -1,4 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
 
+<body>
 
-<img src="./img19.1.jpg" alt="a" width="200" height="200">
+    {% for sr in srcs %}
+    <!-- added ../../ to fix bug with jinja adding "images/cholo/" -->
+    <img src="../../static/images/{{neg}}/{{t}}/{{sr}}" alt="img" height="100px" width="100px">
+    {% endfor %}
+
+    <meta id="data" neg="{{neg}}" srcs="{{srcs}}" type="{{t}}">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <div id="imgs">
+    </div>
+
+    <script>
+        function scrape() {
+            // used to fix bug, useless now 
+            var data1 = $("#data").attr("srcs")
+            data1 = data1.replace("[", "").replace("]", "").replaceAll("'", "").replaceAll(/\s+/g, '').split(",")
+
+            for (let i = 0; i < data1.length; i++) {
+                data1[i] = "../../static/images/" + $("#data").attr("neg") + "/" + $("#data").attr("type") + "/" + data1[i]
+
+                $("#imgs").append($("<img>", { src: data1[i], alt: "img", height: "100px", width: "100px" }))
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
