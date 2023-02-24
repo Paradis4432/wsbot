@@ -1,8 +1,11 @@
 from flask import Flask
 from flask import render_template
+from flask import request
+
 import logging
 import json
 import os
+import glob
 
 app = Flask(__name__)
 app.debug = True
@@ -18,8 +21,10 @@ def main():
 
 @app.route("/negocios")
 def negocios():
+    with open("data.json", "r") as f:
+        data = json.load(f)
     n = [name for name in data["negs"]]
-    logging.debug("rendering negocios with negs: " + str(n))
+    logging.debug(f"rendering negocios with negs: {n}")
 
     return render_template("negocios.html", neg=n)
 
@@ -30,18 +35,20 @@ def renderNegocio(negocio=None):
     with open("data.json", "r") as f:
         data = json.load(f)
     t = data["negs"][negocio]["types"]
-    logging.debug("rendering tempNeg for: " +
-                  negocio + " with types: " + str(t))
+    logging.debug(f"rendering tempNeg for: {negocio} with types {t}")
 
     return render_template("tempNeg.html", neg=negocio, types=t)
 
 
 @app.route("/images/<negocio>/<t>")
 def renderImages(negocio=None, t=None):
-    logging.debug("rendering images for negocio: " +
-                  negocio + " in type: " + t)
+    logging.debug(f"rendering images for negocio: {negocio} in type: {t}")
 
-    imgsSrcs = [p for p in os.listdir("static/images/"+negocio+"/"+t+"//")]
+    # mgsSrcs = [p for p in os.listdir("static/images/"+negocio+"/"+t+"//")]
+    # imgsSrcs = glob.glob("static/cholo.cint.*.*.png")
+    # comprehensive list as [i for i in glob glob.. "{t}.i.*.png"] to get list of lists to render them by group
+    imgsSrcs = glob.glob(f"static/{negocio}.{t}.*.*.png")
+
     logging.debug("rendering images: " + str(imgsSrcs))
 
     return render_template("tempImagesNegocio.html", neg=negocio, t=t, srcs=imgsSrcs)
@@ -54,13 +61,14 @@ def getExcel(negocio=None):
 
 @app.route("/nuevoTipo/<neg>/<name>", methods=['POST'])
 def newType(neg=None, name=None):
-    logging.debug("creating new type: " + name)
+    logging.debug(f"creating new type: {name}")
 
     try:
         with open("data.json", "r") as f:
             data = json.load(f)
 
         data["negs"][neg]["types"].append(name)
+        data["negs"][neg]["images"][name] = {}
 
         with open("data.json", "w") as f:
             json.dump(data, f)
@@ -73,29 +81,56 @@ def newType(neg=None, name=None):
     return "agregado"
 
 
-@app.rout("/newImageGroup/<neg>", methods=["POST"])
+@app.route("/newImageGroup/<neg>", methods=["POST"])
 def newGroup(neg=None):
-    logging.debug("adding new group for neg: " + neg)
+    logging.debug(f"adding new group for neg: {neg}")
+
+    with open("data.json", "r") as f:
+        data = json.load(f)
+
     # type:
     t = request.form["type"]
-    print(t)
 
     # group
-    # all groups in json neg type + 1
+    # all groups in json neg type + 1 (len starts at 1)
+    group = len(data["negs"][neg]["images"][t])
+    logging.debug(f"saving images with neg {neg} type {t} group {group}")
 
     # images
+    images = []
     for i in range(1, 4):
         # TODO fix forced 3 images
-        file = request.files['image{}'.format(i)]
-        # file.save
-        # filename = 0 1 2
+        file = request.files.get(f"image{i}")
+        if file:
+            filename = f"{neg}.{t}.{group}.{i}.png"
+            file.save(os.path.join("static", filename))
+            images.append(filename)
+            logging.debug(f"saved image id {i}")
 
-    # medidas<
-    m0 = request.form["medida0"]
-    m1 = request.form["medida1"]
-    m2 = request.form["medida2"]
+            # TODO pending remove bg image 
 
+        else:
+            logging.debug(f"got no images on upload")
+            return "error"
+
+    # file saved, add name in json
+    data["negs"][neg]["images"].setdefault(t, {})[group] = {
+        "images": images,
+        "medidas": {
+            "a": request.form.get("medida0"),
+            "b": request.form.get("medida1"),
+            "c": request.form.get("medida2")
+        }
+    }
+    logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
+
+    with open("data.json", "w") as f:
+        json.dump(data, f)
+
+    logging.debug("json saved")
     # TODO save data in excel send status to front process images once saved
+    return render_template("nuevoGrupoAgregado.html", neg=neg)
+
 
 '''
 

@@ -12,7 +12,7 @@
 
     {% for sr in srcs %}
     <!-- added ../../ to fix bug with jinja adding "images/cholo/" -->
-    <img src="../../static/images/{{neg}}/{{t}}/{{sr}}" alt="img" height="100px" width="100px">
+    <img src="../../{{sr}}" alt="img" height="100px" width="100px">
     {% endfor %}
 
     <meta id="data" neg="{{neg}}" srcs="{{srcs}}" type="{{t}}">
