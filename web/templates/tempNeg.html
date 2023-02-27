@@ -22,12 +22,14 @@
 
 <br>
 <br>
+<p>los tipos no pueden tener espacios, por ejemplo "mochilas grandes" deberia ser "mochilas_grandes"</p>
 <input type="text" placeholder="nombre del Tipo" id="nombre">
 <button onclick="nuevoTipo()">agregar</button>
 
 <br>
 <br>
 <!-- nuevo grupo de imagenes -->
+<!-- TODO repalce with button so it doesnt reload -->
 <form action="/newImageGroup/{{neg}}" method="post" enctype="multipart/form-data" id="newGroup">
 
     <p>nuevo grupo de imagenes</p>
@@ -45,11 +47,15 @@
     </fieldset>
     <!-- input 3 images -->
     <!-- camera for each? -->
+    <!-- add true false input for original -->
     <input type="file" name="image1">
+    <input type="checkbox" name="image1KO">
     <br>
     <input type="file" name="image2">
+    <input type="checkbox" name="image2KO">
     <br>
     <input type="file" name="image3">
+    <input type="checkbox" name="image3KO">
     <br>
 
     <!-- input 3 medidas -->
