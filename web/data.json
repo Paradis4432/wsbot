@@ -1,1 +1,246 @@
-{"negs": {"cholo": {"types": ["mochilas", "cinturones", "test", "test1", "test2", "test3", "test4", "b", "c"], "images": {"cinturones": {}, "mochilas": {"0": {"images": ["cholo.mochilas.0.1", "cholo.mochilas.0.2", "cholo.mochilas.0.3"], "medidas": {"a": "12", "b": "13", "c": "14"}}, "1": {"images": ["cholo.mochilas.1.1", "cholo.mochilas.1.2", "cholo.mochilas.1.3"], "medidas": {"a": "12", "b": "13", "c": "14"}}}, "test": {"0": {"images": ["cholo.test.0.1", "cholo.test.0.2", "cholo.test.0.3"], "medidas": {"a": "15", "b": "16", "c": "17"}}}, "test1": {"0": {"images": ["cholo.test1.0.1", "cholo.test1.0.2", "cholo.test1.0.3"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "1": {"images": ["cholo.test1.1.1", "cholo.test1.1.2", "cholo.test1.1.3"], "medidas": {"a": "17", "b": "1819", "c": "91"}}, "2": {"images": ["cholo.test1.2.1", "cholo.test1.2.2", "cholo.test1.2.3"], "medidas": {"a": "17", "b": "1819", "c": "91"}}}, "test2": {"0": {"images": ["cholo.test2.0.1.png", "cholo.test2.0.2.png", "cholo.test2.0.3.png"], "medidas": {"a": "15", "b": "161", "c": "17"}}, "1": {"images": ["cholo.test2.1.1.png", "cholo.test2.1.2.png", "cholo.test2.1.3.png"], "medidas": {"a": "18", "b": "19", "c": "20"}}}, "test3": {"0": {"images": ["cholo.test3.0.1.png", "cholo.test3.0.2.png", "cholo.test3.0.3.png"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "1": {"images": ["cholo.test3.1.1.png", "cholo.test3.1.2.png", "cholo.test3.1.3.png"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "2": {"images": ["cholo.test3.2.1.png", "cholo.test3.2.2.png", "cholo.test3.2.3.png"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "3": {"images": ["cholo.test3.3.1.png", "cholo.test3.3.2.png", "cholo.test3.3.3.png"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "4": {"images": ["KO.cholo.test3.4.1.png", "cholo.test3.4.2.png", "KO.cholo.test3.4.3.png"], "medidas": {"a": "15", "b": "16", "c": "17"}}, "5": {"images": ["KO.cholo.test3.5.1.png", "cholo.test3.5.2.png", "KO.cholo.test3.5.3.png"], "medidas": {"a": "1", "b": "1", "c": "1"}}}, "test4": {"0": {"images": ["KO.cholo.test4.0.1.png", "cholo.test4.0.2.png", "KO.cholo.test4.0.3.png"], "medidas": {"a": "1", "b": "1", "c": "1"}}}, "b": {"0": {"images": ["cholo.b.0.1.png", "cholo.b.0.2.png", "cholo.b.0.3.png"], "medidas": {"a": "18", "b": "1819", "c": "17"}}, "1": {"images": ["KO.cholo.b.1.1.png", "cholo.b.1.2.png", "KO.cholo.b.1.3.png"], "medidas": {"a": "12", "b": "12", "c": "12"}}}, "c": {}}}}, "pending": [], "processing": ["cholo.test3.0.2.png", "cholo.test3.0.3.png", "cholo.test3.1.1.png", "cholo.test3.1.2.png", "cholo.test3.1.3.png", "cholo.test3.2.1.png", "cholo.test3.2.2.png", "cholo.test3.2.3.png", "cholo.test3.3.1.png", "cholo.test3.3.2.png", "cholo.test3.3.3.png", "cholo.test3.4.2.png", "cholo.test3.5.2.png", "cholo.test4.0.2.png", "cholo.b.0.1.png", "cholo.b.0.2.png", "cholo.b.0.3.png", "cholo.b.1.2.png"], "stopNext": false, "currentStatus": "OK"}
+{
+    "negs": {
+        "cholo": {
+            "types": [
+                "mochilas",
+                "cinturones",
+                "test",
+                "test1",
+                "test2",
+                "test3",
+                "test4",
+                "b",
+                "c"
+            ],
+            "images": {
+                "cinturones": {},
+                "mochilas": {
+                    "0": {
+                        "images": [
+                            "cholo.mochilas.0.1",
+                            "cholo.mochilas.0.2",
+                            "cholo.mochilas.0.3"
+                        ],
+                        "medidas": {
+                            "a": "12",
+                            "b": "13",
+                            "c": "14"
+                        },
+                        "codigo": "AB01"
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.mochilas.1.1",
+                            "cholo.mochilas.1.2",
+                            "cholo.mochilas.1.3"
+                        ],
+                        "medidas": {
+                            "a": "12",
+                            "b": "13",
+                            "c": "14"
+                        }
+                    }
+                },
+                "test": {
+                    "0": {
+                        "images": [
+                            "cholo.test.0.1",
+                            "cholo.test.0.2",
+                            "cholo.test.0.3"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    }
+                },
+                "test1": {
+                    "0": {
+                        "images": [
+                            "cholo.test1.0.1",
+                            "cholo.test1.0.2",
+                            "cholo.test1.0.3"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.test1.1.1",
+                            "cholo.test1.1.2",
+                            "cholo.test1.1.3"
+                        ],
+                        "medidas": {
+                            "a": "17",
+                            "b": "1819",
+                            "c": "91"
+                        }
+                    },
+                    "2": {
+                        "images": [
+                            "cholo.test1.2.1",
+                            "cholo.test1.2.2",
+                            "cholo.test1.2.3"
+                        ],
+                        "medidas": {
+                            "a": "17",
+                            "b": "1819",
+                            "c": "91"
+                        }
+                    }
+                },
+                "test2": {
+                    "0": {
+                        "images": [
+                            "cholo.test2.0.1.png",
+                            "cholo.test2.0.2.png",
+                            "cholo.test2.0.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "161",
+                            "c": "17"
+                        }
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.test2.1.1.png",
+                            "cholo.test2.1.2.png",
+                            "cholo.test2.1.3.png"
+                        ],
+                        "medidas": {
+                            "a": "18",
+                            "b": "19",
+                            "c": "20"
+                        }
+                    }
+                },
+                "test3": {
+                    "0": {
+                        "images": [
+                            "cholo.test3.0.1.png",
+                            "cholo.test3.0.2.png",
+                            "cholo.test3.0.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.test3.1.1.png",
+                            "cholo.test3.1.2.png",
+                            "cholo.test3.1.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "2": {
+                        "images": [
+                            "cholo.test3.2.1.png",
+                            "cholo.test3.2.2.png",
+                            "cholo.test3.2.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "3": {
+                        "images": [
+                            "cholo.test3.3.1.png",
+                            "cholo.test3.3.2.png",
+                            "cholo.test3.3.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "4": {
+                        "images": [
+                            "KO.cholo.test3.4.1.png",
+                            "cholo.test3.4.2.png",
+                            "KO.cholo.test3.4.3.png"
+                        ],
+                        "medidas": {
+                            "a": "15",
+                            "b": "16",
+                            "c": "17"
+                        }
+                    },
+                    "5": {
+                        "images": [
+                            "KO.cholo.test3.5.1.png",
+                            "cholo.test3.5.2.png",
+                            "KO.cholo.test3.5.3.png"
+                        ],
+                        "medidas": {
+                            "a": "1",
+                            "b": "1",
+                            "c": "1"
+                        }
+                    }
+                },
+                "test4": {
+                    "0": {
+                        "images": [
+                            "KO.cholo.test4.0.1.png",
+                            "cholo.test4.0.2.png",
+                            "KO.cholo.test4.0.3.png"
+                        ],
+                        "medidas": {
+                            "a": "1",
+                            "b": "1",
+                            "c": "1"
+                        }
+                    }
+                },
+                "b": {
+                    "0": {
+                        "images": [
+                            "cholo.b.0.1.png",
+                            "cholo.b.0.2.png",
+                            "cholo.b.0.3.png"
+                        ],
+                        "medidas": {
+                            "a": "18",
+                            "b": "1819",
+                            "c": "17"
+                        }
+                    },
+                    "1": {
+                        "images": [
+                            "KO.cholo.b.1.1.png",
+                            "cholo.b.1.2.png",
+                            "KO.cholo.b.1.3.png"
+                        ],
+                        "medidas": {
+                            "a": "12",
+                            "b": "12",
+                            "c": "12"
+                        }
+                    }
+                },
+                "c": {}
+            }
+        }
+    },
+    "pending": [],
+    "processing": [
+        
+    ],
+    "stopNext": false,
+    "currentStatus": "OK"
+}

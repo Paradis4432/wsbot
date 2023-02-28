@@ -82,6 +82,12 @@ def addWhiteBackground(path):
 
 def main():
     # if stopNext: log and stop 
+    
+    with open("data.json", "r") as f:
+        data = json.load(f)
+        if data["stopNext"]:
+            logging.debug("found stop next to be true, stopping.")
+            return
 
     conts = 0
     while has0left():
@@ -128,6 +134,8 @@ def main():
                     
                 continueLoop = False
                 break
+            
+
 
         with open("data.json", "r") as f:
             data = json.load(f)

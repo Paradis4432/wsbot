@@ -1,0 +1,13 @@
+2023-02-27 17:41:12 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-27 17:41:23 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-02-27 17:41:28 INFO 127.0.0.1 - - [27/Feb/2023 17:41:28] "GET / HTTP/1.1" 200 -
+2023-02-27 17:41:28 INFO 127.0.0.1 - - [27/Feb/2023 17:41:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-02-27 17:41:34 DEBUG rendering negocios with negs: ['cholo']
+2023-02-27 17:41:34 INFO 127.0.0.1 - - [27/Feb/2023 17:41:34] "GET /negocios HTTP/1.1" 200 -
+2023-02-27 17:41:35 DEBUG rendering negocios
+2023-02-27 17:41:35 DEBUG rendering tempNeg for: cholo with types ['mochilas', 'cinturones', 'test', 'test1', 'test2', 'test3', 'test4', 'b', 'c']
+2023-02-27 17:41:35 INFO 127.0.0.1 - - [27/Feb/2023 17:41:35] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-02-27 17:42:14 INFO  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.0.15:80 (Press CTRL+C to quit)
