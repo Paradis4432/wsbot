@@ -22,7 +22,6 @@ def has0left():
     # logging.debug(response.text, keys[currentKey])
     logging.debug(f"found {keys[currentKey]} with {callsLeft} left")
 
-    return True
     return callsLeft == 0
 
 
@@ -68,7 +67,7 @@ def processFiles(pendingFiles):
         return
 
 
-def startProcessing():
+async def startProcessing():
     global currentKey
     # if stopNext: log and stop
     data = loadData()
@@ -77,7 +76,6 @@ def startProcessing():
         return
 
     conts = 0
-    const = len(keys) + 2
     while has0left():
         currentKey = (currentKey + 1) % len(keys)
         conts += 1

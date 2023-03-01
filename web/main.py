@@ -6,6 +6,7 @@ import logging
 import json
 import os
 import glob
+import asyncio
 
 from imageEditManager import *
 
@@ -159,11 +160,18 @@ def newGroup(neg=None):
 
 
 @app.route("/processPending")
-def processImages():
-    startProcessing()
+async def processImages():
+    asyncio.create_task(startProcessing())
     return "empezando"
 
+@app.route("/reset")
+def reset():
+    data = loadData()
+    data["stopNext"] = False
+    data["currentStatus"] = "OK"
+    saveData(data)
 
+    return "reseteando"
 '''
 
 TODO
