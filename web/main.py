@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import send_file
 
 import logging
 import json
@@ -45,19 +46,21 @@ def renderNegocio(negocio=None):
     return render_template("tempNeg.html", neg=negocio, types=t)
 
 
-@app.route("/images/<negocio>/<t>")
-def renderImages(negocio=None, t=None):
-    logging.debug(f"rendering images for negocio: {negocio} in type: {t}")
+@app.route("/images/<neg>/<t>")
+def renderImages(neg=None, t=None):
+    logging.debug(f"rendering images for negocio: {neg} in type: {t}")
 
     # mgsSrcs = [p for p in os.listdir("static/images/"+negocio+"/"+t+"//")]
     # imgsSrcs = glob.glob("static/cholo.cint.*.*.png")
     # comprehensive list as [i for i in glob glob.. "{t}.i.*.png"] to get list of lists to render them by group
-    imgsSrcs = glob.glob(
-        f"static/KO.{negocio}.{t}.*.*.png") + glob.glob(f"static/{negocio}.{t}.*.*.png")
+    #imgsSrcs = glob.glob(f"static/KO.{negocio}.{t}.*.*.png") + glob.glob(f"static/{negocio}.{t}.*.*.png")
+    # negs.neg.images.t
+    data = loadData()
+    imgsSrcs = data["negs"][neg]["images"][t]
 
     logging.debug("rendering images: " + str(imgsSrcs))
 
-    return render_template("tempImagesNegocio.html", neg=negocio, t=t, srcs=imgsSrcs)
+    return render_template("tempImagesNegocio.html", neg=neg, t=t, srcs=imgsSrcs)
 
 
 @app.route("/excel/<negocio>")
@@ -172,6 +175,12 @@ def reset():
     saveData(data)
 
     return "reseteando"
+
+@app.route("/download/<img>")
+def download(img=None):
+    logging.debug(f"downloading image {img}")
+    return send_file(os.path.join("static", img), mimetype='image/jpeg', as_attachment=True)
+
 '''
 
 TODO

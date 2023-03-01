@@ -7,16 +7,17 @@ import json
 import os
 import glob
 
-print("test")
-a = True
-while a:
-    print("test1")
-    for i in range(10):
-        print("test2")
-        if i == 5:
-            print("test333")
-            a = False
-            break
-        i += 1
+from tools import *
 
-print("4")
+data = loadData()
+neg = "cholo"
+t = "mochilas"
+val = data["negs"][neg]["images"][t]
+print(val)
+for i in val:
+    print(i)
+    # group data["negs"][neg]["images"][t][i]
+    print(data["negs"][neg]["images"][t][i]["images"])
+
+val1 = [val[i]["images"] for i in val]
+print(val1)
