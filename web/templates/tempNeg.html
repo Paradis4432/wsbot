@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <meta id="data" neg="{{neg}}">
 
-<h2>negocio {{ neg }}</h2>
+    <h2>negocio {{ neg }}</h2>
+    <button><a href="/">home</a></button>
 
-<button><a href="/excel/{{ neg }}">excel</a></button>
-<br>
-<h2>fotos:</h2>
+    <button><a href="/excel/{{ neg }}">excel</a></button>
+    <br>
+    <h2>fotos:</h2>
 
 
-{% for t in types %}
-<button><a href="/images/{{ neg }}/{{ t }}">{{ t }}</a></button>
-{% endfor %}
+    {% for t in types %}
+    <button><a href="/images/{{ neg }}/{{ t }}">{{ t }}</a></button>
+    {% endfor %}
 
-<br>
-<br>
-<p>los tipos no pueden tener espacios, por ejemplo "mochilas grandes" deberia ser "mochilas_grandes"</p>
-<input type="text" placeholder="nombre del Tipo" id="nombre">
-<button onclick="nuevoTipo()">agregar</button>
+    <br>
+    <br>
+    <p>los tipos no pueden tener espacios, por ejemplo "mochilas grandes" deberia ser "mochilas_grandes"</p>
+    <input type="text" placeholder="nombre del Tipo" id="nombre">
+    <button onclick="nuevoTipo()">agregar</button>
 
-<br>
-<br>
-<!-- nuevo grupo de imagenes -->
-<!-- TODO repalce with button so it doesnt reload -->
-<form action="/newImageGroup/{{neg}}" method="post" enctype="multipart/form-data" id="newGroup">
+    <br>
+    <br>
+    <!-- nuevo grupo de imagenes -->
+    <!-- TODO repalce with button so it doesnt reload -->
+    <form action="/newImageGroup/{{neg}}" method="post" enctype="multipart/form-data" id="newGroup">
 
-    <p>nuevo grupo de imagenes</p>
-    <!-- sel type -->
-    <fieldset>
-        <legend>tipo:</legend>
-        <div>
-            {% for t in types %}
+        <p>nuevo grupo de imagenes</p>
+        <!-- sel type -->
+        <fieldset>
+            <legend>tipo:</legend>
+            <div>
+                {% for t in types %}
 
-            <input type="radio" id="{{t}}" name="type" value="{{t}}">
-            <label for="{{t}}">{{t}}</label>
-            <br> 
-            {% endfor %}
+                <input type="radio" id="{{t}}" name="type" value="{{t}}">
+                <label for="{{t}}">{{t}}</label>
+                <br>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <!-- input 3 images -->
+        <!-- camera for each? -->
+        <!-- add true false input for original -->
+        <input type="file" name="image1">
+        <input type="checkbox" name="image1KO">
+        <br>
+        <input type="file" name="image2">
+        <input type="checkbox" name="image2KO">
+        <br>
+        <input type="file" name="image3">
+        <input type="checkbox" name="image3KO">
+        <br>
+
+        <!-- input 3 medidas -->
+        <input type="text" placeholder="medida0" id="medida0" name="medida0"><br>
+        <input type="text" placeholder="medida1" id="medida1" name="medida1"><br>
+        <input type="text" placeholder="medida2" id="medida2" name="medida2"><br>
+        <!-- upload -->
+        <input type="submit" value="subir imagenes" id="submitForm">
         </div>
-    </fieldset>
-    <!-- input 3 images -->
-    <!-- camera for each? -->
-    <!-- add true false input for original -->
-    <input type="file" name="image1">
-    <input type="checkbox" name="image1KO">
-    <br>
-    <input type="file" name="image2">
-    <input type="checkbox" name="image2KO">
-    <br>
-    <input type="file" name="image3">
-    <input type="checkbox" name="image3KO">
-    <br>
-
-    <!-- input 3 medidas -->
-    <input type="text" placeholder="medida0" id="medida0" name="medida0"><br>
-    <input type="text" placeholder="medida1" id="medida1" name="medida1"><br>
-    <input type="text" placeholder="medida2" id="medida2" name="medida2"><br>
-    <!-- upload -->
-    <input type="submit" value="subir imagenes" id="submitForm">
-</div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-<script>
-    function nuevoTipo() {
-        var neg = $("#data").attr("neg")
+        <script>
+            function nuevoTipo() {
+                var neg = $("#data").attr("neg")
 
-        // fix nombre nombre to nombre_nombre
-        let n = $("#nombre").val()
-        console.log(n)
-        $.post("/nuevoTipo/" + neg + "/" + n, function (data) { alert(data) })
-        // TODO agregar boton automaticamente 
-    }
-</script>
+                // fix nombre nombre to nombre_nombre
+                let n = $("#nombre").val()
+                console.log(n)
+                $.post("/nuevoTipo/" + neg + "/" + n, function (data) { alert(data) })
+                // TODO agregar boton automaticamente 
+            }
+        </script>
+    </form>
 </body>
+
 </html>

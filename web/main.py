@@ -7,6 +7,8 @@ import json
 import os
 import glob
 
+from imageEditManager import *
+
 app = Flask(__name__)
 app.debug = True
 
@@ -17,13 +19,15 @@ logging.basicConfig(level=logging.DEBUG,
 
 @app.route("/")
 def main():
-    return render_template("main.html")
+    data = loadData()
+
+    return render_template("main.html", data=[len(data["pending"]), len(data["processing"]), data["currentStatus"], data["stopNext"]])
 
 
 @app.route("/negocios")
 def negocios():
-    with open("data.json", "r") as f:
-        data = json.load(f)
+    data = loadData()
+
     n = [name for name in data["negs"]]
     logging.debug(f"rendering negocios with negs: {n}")
 
@@ -33,8 +37,7 @@ def negocios():
 @app.route("/negocios/<negocio>")
 def renderNegocio(negocio=None):
     logging.debug("rendering negocios")
-    with open("data.json", "r") as f:
-        data = json.load(f)
+    data = loadData()
     t = data["negs"][negocio]["types"]
     logging.debug(f"rendering tempNeg for: {negocio} with types {t}")
 
@@ -66,14 +69,12 @@ def newType(neg=None, name=None):
     logging.debug(f"creating new type: {name}")
 
     try:
-        with open("data.json", "r") as f:
-            data = json.load(f)
+        data = loadData()
 
         data["negs"][neg]["types"].append(name)
         data["negs"][neg]["images"][name] = {}
 
-        with open("data.json", "w") as f:
-            json.dump(data, f)
+        saveData(data)
     except Exception as e:
         logging.error("error adding new type: " + name)
         return "error"
@@ -89,8 +90,7 @@ def newType(neg=None, name=None):
 def newGroup(neg=None):
     logging.debug(f"adding new group for neg: {neg}")
 
-    with open("data.json", "r") as f:
-        data = json.load(f)
+    data = loadData()
 
     # type:
     t = request.form["type"]
@@ -151,12 +151,17 @@ def newGroup(neg=None):
     }
     logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
 
-    with open("data.json", "w") as f:
-        json.dump(data, f)
+    saveData(data)
 
     logging.debug("json saved")
     # TODO save data in excel send status to front process images once saved
     return render_template("nuevoGrupoAgregado.html", neg=neg)
+
+
+@app.route("/processPending")
+def processImages():
+    startProcessing()
+    return "empezando"
 
 
 '''

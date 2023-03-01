@@ -1,15 +1,13 @@
 import json
+import requests
+import logging
 
+from tools import *
 
 # general values
-logging.basicConfig(level=logging.DEBUG,
-                    format="%(asctime)s %(levelname)s %(message)s", datefmt="%Y-%m-%d %H:%M:%S", filename="imageEdit.log")
 keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG',
         '5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
 currentKey = 0
-
-# set of tools to edit image
-
 
 def has0left():
     global currentKey
@@ -24,17 +22,8 @@ def has0left():
     # logging.debug(response.text, keys[currentKey])
     logging.debug(f"found {keys[currentKey]} with {callsLeft} left")
 
-    return callsLeft == 0
-
-
-def getAllCallsLeft():
-    # TODO
-    return 0
-
-
-def anyCallLeft():
-    # TODO
     return True
+    return callsLeft == 0
 
 
 def removeBG(path):
@@ -59,96 +48,74 @@ def removeBG(path):
             logging.debug(f"Error: {response.status_code} {response.text}")
             return "error1"
     except Exception as e:
-        logging.debug("error cleaning img:")
-        logging.debug(e)
+        logging.debug(f"error cleaning img: {e}")
         return "error2"
     return "success"
 
 
-def addWhiteBackground(path):
-    try:
-        img = Image.open(path).convert("RGBA")
-        x, y = img.size
-        card = Image.new("RGBA", (x, y), (255, 255, 255))
-        card.paste(img, (0, 0, x, y), img)
-        card.save(path, format="png")
+def processFiles(pendingFiles):
+    for pending in pendingFiles:
+        # status = removeBG(pending)
+        status = "success"
 
-        return "success"
-    except Exception as e:
-        logging.debug("error pasting white bg")
-        logging.debug(e)
-        return "error"
+        if status == "success":
+            logging.debug(f"successfully processed file {pending}")
+            continue
+
+        logging.debug(f"stopping imageEdit")
+        saveValue("stopNext", True)
+        saveValue("currentStatus", "ERROR")
+        return
 
 
-def main():
-    # if stopNext: log and stop 
-    
-    with open("data.json", "r") as f:
-        data = json.load(f)
-        if data["stopNext"]:
-            logging.debug("found stop next to be true, stopping.")
-            return
+def startProcessing():
+    global currentKey
+    # if stopNext: log and stop
+    data = loadData()
+    if data["stopNext"]:
+        logging.debug("found stop next to be true, stopping.")
+        return
 
     conts = 0
+    const = len(keys) + 2
     while has0left():
         currentKey = (currentKey + 1) % len(keys)
         conts += 1
-        if conts == len(keys) + 1:
-            logging.debug("no calls left in keys")
-            # stop next
-            return
+        if conts < len(keys) + 1:
+            continue
+        logging.debug("no calls left in keys")
+        saveValue("stopNext", True)
+        saveValue("currentStatus", "NoCallsLeftInKeys")
+        continueLoop = False
+        return
 
     logging.debug(f"using key {keys[currentKey]}")
 
-    # status = removeBG(data["pending"][0])
-    # status != success : stop next
-    # else remove data pending 0
+    data = loadData()
 
-    logging.debug("starting loop")
-    continueLoop = True
-    while continueLoop:
-        with open("data.json", "r") as f:
-            data = json.load(f)
+    if len(data["pending"]) == 0:
+        logging.debug("no pending found, returning")
+        return
 
-        if len(data["pending"]) == 0:
-            logging.debug("no pending found, waiting")
-            # wait
+    pendingFiles = data["pending"]
+    data["processing"] = pendingFiles
+    data["pending"] = []
 
-        pending_files = data["pending"]
-        data["processing"] = pending_files
-        data["pending"] = []
+    saveData(data)
 
-        with open("data.json", "w") as f:
-            json.dump(data, f)
+    logging.debug(f"processing {len(pendingFiles)} {pendingFiles} files")
+    status = processFiles(pendingFiles)
 
-        for pending in pending_files:
-            status = removeBG(pending)
-            if status != "success":
-                logging.debug(f"stopping imageEdit")
-                with open("data.json", "r") as f:
-                    data = json.load(f)
-                    data["stopNext"] = True
-                    data["currentStatus"] = "ERROR"
-                with open("data.json", "w") as f:
-                    json.dump(data, f)
-                    
-                continueLoop = False
-                break
-            
+    data = loadData()
+    if data["stopNext"]:
+        logging.debug("found stop next to be true, stopping.")
+        return
 
-
-        with open("data.json", "r") as f:
-            data = json.load(f)
-            processed = data["processing"]
-            data["processing"] = []
-            data["processed"].extend(processed)
-        with open("data.json", "w") as f:
-            json.dump(data, f)
-
-        # log
-
-    return 0
-
+    with open("data.json", "r") as f:
+        data = json.load(f)
+        processed = data["processing"]
+        data["processing"] = []
+        data["processed"].extend(processed)
+    saveData(data)
 
 # add arrows to img
-

@@ -11,6 +11,14 @@
 <body>
 
     <button><a href="negocios">negocios</a></button>
+
+    <button onclick='fetch("/processPending"); alert("llamando")'>procesar imagenes pendientes</button>
+
+    <p>imagenes pendientes: {{ data[0] }}</p> 
+    <p>imagenes siendo procesadas: {{ data[1] }}</p>
+    <p>current status: {{ data[2] }}</p>
+    <p>stop next: {{ data[3] }}</p>
+
 </body>
 
 </html>

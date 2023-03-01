@@ -10,7 +10,8 @@
                 "test3",
                 "test4",
                 "b",
-                "c"
+                "c",
+                "d"
             ],
             "images": {
                 "cinturones": {},
@@ -233,14 +234,76 @@
                         }
                     }
                 },
-                "c": {}
+                "c": {},
+                "d": {
+                    "0": {
+                        "images": [
+                            "KO.cholo.d.0.1.png",
+                            "cholo.d.0.2.png",
+                            "cholo.d.0.3.png"
+                        ],
+                        "medidas": {
+                            "a": "12",
+                            "b": "12",
+                            "c": "13"
+                        }
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.d.1.1.png",
+                            "cholo.d.1.2.png",
+                            "cholo.d.1.3.png"
+                        ],
+                        "medidas": {
+                            "a": "12",
+                            "b": "14",
+                            "c": "15"
+                        }
+                    },
+                    "2": {
+                        "images": [
+                            "cholo.d.2.1.png",
+                            "cholo.d.2.2.png",
+                            "cholo.d.2.3.png"
+                        ],
+                        "medidas": {
+                            "a": "1",
+                            "b": "1",
+                            "c": "1"
+                        }
+                    },
+                    "3": {
+                        "images": [
+                            "cholo.d.3.1.png",
+                            "cholo.d.3.2.png",
+                            "cholo.d.3.3.png"
+                        ],
+                        "medidas": {
+                            "a": "1",
+                            "b": "1",
+                            "c": "1"
+                        }
+                    }
+                }
             }
         }
     },
-    "pending": [],
-    "processing": [
-        
+    "pending": [
+        "cholo.d.3.1.png",
+        "cholo.d.3.2.png",
+        "cholo.d.3.3.png"
     ],
-    "stopNext": false,
-    "currentStatus": "OK"
+    "processing": [],
+    "processed": [
+        "cholo.d.0.2.png",
+        "cholo.d.0.3.png",
+        "cholo.d.1.1.png",
+        "cholo.d.1.2.png",
+        "cholo.d.1.3.png",
+        "cholo.d.2.1.png",
+        "cholo.d.2.2.png",
+        "cholo.d.2.3.png"
+    ],
+    "stopNext": true,
+    "currentStatus": "NoCallsLeftInKeys"
 }

@@ -9,7 +9,9 @@
 </head>
 
 <body>
-
+    <button><a href="/">home</a></button>
+    <button><a href="/negocios/{{neg}}">atras</a></button>
+    <br>
     {% for sr in srcs %}
     <!-- added ../../ to fix bug with jinja adding "images/cholo/" -->
     <img src="../../{{sr}}" alt="img" height="100px" width="100px">
