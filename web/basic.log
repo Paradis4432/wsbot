@@ -28,3 +28,84 @@
 2023-03-01 01:44:34 INFO 127.0.0.1 - - [01/Mar/2023 01:44:34] "GET /static/cholo.d.1.2.png HTTP/1.1" 200 -
 2023-03-01 01:44:34 INFO 127.0.0.1 - - [01/Mar/2023 01:44:34] "GET /static/cholo.d.1.3.png HTTP/1.1" 200 -
 2023-03-01 01:44:34 INFO 127.0.0.1 - - [01/Mar/2023 01:44:34] "GET /static/cholo.d.2.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 DEBUG rendering images for negocio: cholo in type: d
+2023-03-01 01:45:22 DEBUG rendering images: {'0': {'images': ['KO.cholo.d.0.1.png', 'cholo.d.0.2.png', 'cholo.d.0.3.png'], 'medidas': {'a': '12', 'b': '12', 'c': '13'}}, '1': {'images': ['cholo.d.1.1.png', 'cholo.d.1.2.png', 'cholo.d.1.3.png'], 'medidas': {'a': '12', 'b': '14', 'c': '15'}}, '2': {'images': ['cholo.d.2.1.png', 'cholo.d.2.2.png', 'cholo.d.2.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}, '3': {'images': ['cholo.d.3.1.png', 'cholo.d.3.2.png', 'cholo.d.3.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}, '4': {'images': ['cholo.d.4.1.png', 'cholo.d.4.2.png', 'cholo.d.4.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}}
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /images/cholo/d HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/KO.cholo.d.0.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.4.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.3.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.2.3.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.3.2.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.2.2.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.4.2.png HTTP/1.1" 200 -
+2023-03-01 01:45:22 INFO 127.0.0.1 - - [01/Mar/2023 01:45:22] "GET /static/cholo.d.4.3.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.3.3.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.0.2.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.0.3.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.1.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.1.2.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.1.3.png HTTP/1.1" 200 -
+2023-03-01 01:45:23 INFO 127.0.0.1 - - [01/Mar/2023 01:45:23] "GET /static/cholo.d.2.1.png HTTP/1.1" 200 -
+2023-03-01 01:45:25 DEBUG downloading image KO.cholo.d.0.1.png
+2023-03-01 01:45:25 INFO 127.0.0.1 - - [01/Mar/2023 01:45:25] "[36mGET /download/KO.cholo.d.0.1.png HTTP/1.1[0m" 304 -
+2023-03-01 01:45:27 DEBUG downloading image KO.cholo.d.0.1.png
+2023-03-01 01:45:27 INFO 127.0.0.1 - - [01/Mar/2023 01:45:27] "[36mGET /download/KO.cholo.d.0.1.png HTTP/1.1[0m" 304 -
+2023-03-01 01:45:28 DEBUG downloading image KO.cholo.d.0.1.png
+2023-03-01 01:45:28 INFO 127.0.0.1 - - [01/Mar/2023 01:45:28] "[36mGET /download/KO.cholo.d.0.1.png HTTP/1.1[0m" 304 -
+2023-03-01 01:47:16 DEBUG rendering images for negocio: cholo in type: d
+2023-03-01 01:47:16 DEBUG rendering images: {'0': {'images': ['KO.cholo.d.0.1.png', 'cholo.d.0.2.png', 'cholo.d.0.3.png'], 'medidas': {'a': '12', 'b': '12', 'c': '13'}}, '1': {'images': ['cholo.d.1.1.png', 'cholo.d.1.2.png', 'cholo.d.1.3.png'], 'medidas': {'a': '12', 'b': '14', 'c': '15'}}, '2': {'images': ['cholo.d.2.1.png', 'cholo.d.2.2.png', 'cholo.d.2.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}, '3': {'images': ['cholo.d.3.1.png', 'cholo.d.3.2.png', 'cholo.d.3.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}, '4': {'images': ['cholo.d.4.1.png', 'cholo.d.4.2.png', 'cholo.d.4.3.png'], 'medidas': {'a': '1', 'b': '1', 'c': '1'}}}
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /images/cholo/d HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/KO.cholo.d.0.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.3.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.4.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.2.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.2.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.3.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.3.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.4.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.4.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.0.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.0.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.1.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:16 INFO 127.0.0.1 - - [01/Mar/2023 01:47:16] "GET /static/cholo.d.1.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:17 INFO 127.0.0.1 - - [01/Mar/2023 01:47:17] "GET /static/cholo.d.1.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:17 INFO 127.0.0.1 - - [01/Mar/2023 01:47:17] "GET /static/cholo.d.2.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:17 DEBUG downloading image KO.cholo.d.0.1.png
+2023-03-01 01:47:17 INFO 127.0.0.1 - - [01/Mar/2023 01:47:17] "GET /download/KO.cholo.d.0.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:19 DEBUG downloading image cholo.d.0.2.png
+2023-03-01 01:47:19 INFO 127.0.0.1 - - [01/Mar/2023 01:47:19] "GET /download/cholo.d.0.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:20 DEBUG downloading image cholo.d.0.3.png
+2023-03-01 01:47:20 INFO 127.0.0.1 - - [01/Mar/2023 01:47:20] "GET /download/cholo.d.0.3.png HTTP/1.1" 200 -
+2023-03-01 01:47:22 DEBUG downloading image cholo.d.4.1.png
+2023-03-01 01:47:22 DEBUG downloading image cholo.d.4.2.png
+2023-03-01 01:47:22 INFO 127.0.0.1 - - [01/Mar/2023 01:47:22] "GET /download/cholo.d.4.1.png HTTP/1.1" 200 -
+2023-03-01 01:47:22 DEBUG downloading image cholo.d.4.3.png
+2023-03-01 01:47:22 INFO 127.0.0.1 - - [01/Mar/2023 01:47:22] "GET /download/cholo.d.4.2.png HTTP/1.1" 200 -
+2023-03-01 01:47:22 INFO 127.0.0.1 - - [01/Mar/2023 01:47:22] "GET /download/cholo.d.4.3.png HTTP/1.1" 200 -
+2023-03-01 01:52:56 INFO 127.0.0.1 - - [01/Mar/2023 01:52:56] "[33mGET /basic.log HTTP/1.1[0m" 404 -
+2023-03-01 01:53:07 INFO 127.0.0.1 - - [01/Mar/2023 01:53:07] "[33mGET /data.json HTTP/1.1[0m" 404 -
+2023-03-01 02:08:52 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2023-03-01 02:08:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:08:52 WARNING  * Debugger is active!
+2023-03-01 02:08:52 INFO  * Debugger PIN: 123-843-478
+2023-03-01 02:09:49 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2023-03-01 02:09:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:09:50 WARNING  * Debugger is active!
+2023-03-01 02:09:50 INFO  * Debugger PIN: 123-843-478
+2023-03-01 02:14:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2023-03-01 02:14:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:14:29 WARNING  * Debugger is active!
+2023-03-01 02:14:29 INFO  * Debugger PIN: 123-843-478
+2023-03-01 02:14:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:14:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:14:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:14:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:14:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:14:47 WARNING  * Debugger is active!
+2023-03-01 02:14:47 INFO  * Debugger PIN: 123-843-478
+2023-03-01 02:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-01 02:15:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:15:11 INFO  * Restarting with watchdog (windowsapi)
+2023-03-01 02:15:11 WARNING  * Debugger is active!
+2023-03-01 02:15:11 INFO  * Debugger PIN: 123-843-478

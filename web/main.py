@@ -13,6 +13,7 @@ from imageEditManager import *
 
 app = Flask(__name__)
 app.debug = True
+app.run(host='0.0.0.0', port=80)
 
 
 logging.basicConfig(level=logging.DEBUG,
@@ -20,7 +21,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 
 @app.route("/")
-def main():
+def index():
     data = loadData()
 
     return render_template("main.html", data=[len(data["pending"]), len(data["processing"]), data["currentStatus"], data["stopNext"]])
