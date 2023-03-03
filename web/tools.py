@@ -35,18 +35,7 @@ def addWhiteBackground(path):
         return "error"
 
 
-def getAllCallsLeft():
-    calls = 0
-    for i in keys:
-        r = requests.get('https://api.remove.bg/v1.0/account', headers={
-            'accept': '*/*',
-            'X-API-Key': i,
-        })
-        callsLeft = json.loads(r.text)[
-            "data"]["attributes"]["api"]["free_calls"]
-        calls += callsLeft
-    logging.debug(f"found a total of {calls} calls left")
-    return calls
+
 
 
 def getAnyCallLeftInKeys():

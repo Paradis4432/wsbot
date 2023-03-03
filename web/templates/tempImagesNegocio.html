@@ -27,11 +27,11 @@
         {% for src in srcs %}
         <div class="row">
             <div class="col">
-                <button id="{{src}}" imgsNames="{{srcs[src]['images']}}" onclick="download(this)">descargar
+                <button id="{{src}}" imgsNames="{{srcs[src]['images']}}" onclick="download(this)">des grupo
                     {{src}}</button>
             </div>
             <div class="col">
-                <p>codigo</p>
+                <p>codigo: {{srcs[src]["uniqueID"]}}</p>
             </div>
         </div>
         <div class="row">
@@ -67,11 +67,3 @@
 </body>
 
 </html>
-
-<!-- 
-
-    {% for sr in srcs %}
-    <img src="../../{{sr}}" alt="img" height="100px" width="100px">
-    {% endfor %}
-
- -->

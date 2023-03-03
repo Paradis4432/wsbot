@@ -13,7 +13,6 @@ from imageEditManager import *
 
 app = Flask(__name__)
 app.debug = True
-app.run(host='0.0.0.0', port=80)
 
 
 logging.basicConfig(level=logging.DEBUG,
@@ -25,6 +24,11 @@ def index():
     data = loadData()
 
     return render_template("main.html", data=[len(data["pending"]), len(data["processing"]), data["currentStatus"], data["stopNext"]])
+
+
+@app.route("/getKeys")
+def getKeysFromExternalFile():
+    return getKeys()
 
 
 @app.route("/negocios")
@@ -51,11 +55,6 @@ def renderNegocio(negocio=None):
 def renderImages(neg=None, t=None):
     logging.debug(f"rendering images for negocio: {neg} in type: {t}")
 
-    # mgsSrcs = [p for p in os.listdir("static/images/"+negocio+"/"+t+"//")]
-    # imgsSrcs = glob.glob("static/cholo.cint.*.*.png")
-    # comprehensive list as [i for i in glob glob.. "{t}.i.*.png"] to get list of lists to render them by group
-    #imgsSrcs = glob.glob(f"static/KO.{negocio}.{t}.*.*.png") + glob.glob(f"static/{negocio}.{t}.*.*.png")
-    # negs.neg.images.t
     data = loadData()
     imgsSrcs = data["negs"][neg]["images"][t]
 
@@ -91,69 +90,67 @@ def newType(neg=None, name=None):
 # TODO: idea: add tags for each group of images
 
 
+def getUniqueId():
+    data = loadData()
+    last_id = int(data["lastID"], 16)
+    new_id = last_id + 7
+    data["lastID"] = hex(new_id)[2:].upper()
+    saveData(data)
+    return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
+
+
 @app.route("/newImageGroup/<neg>", methods=["POST"])
 def newGroup(neg=None):
     logging.debug(f"adding new group for neg: {neg}")
+    uniqueID = getUniqueId()
 
     data = loadData()
 
-    # type:
     t = request.form["type"]
 
     # a = request.form.get("image1KO") DELETE
-    # print([request.form.get(f"image{i}KO") for i in range(1, 4)]) DELETE
-    # return render_template("nuevoGrupoAgregado.html", neg=neg) DELETE
-
     # group
     # all groups in json neg type + 1 (len starts at 1)
     group = len(data["negs"][neg]["images"][t])
     logging.debug(f"saving images with neg {neg} type {t} group {group}")
 
-    # images
     images = []
     # TODO remove some tabs with a function taking i as arg maybe
     for i in range(1, 4):
         # TODO fix forced 3 images
         file = request.files.get(f"image{i}")
-        if file:
-            # if keep original true in view dont add to data.pending .json else add
-            # if keep original true in view add "KO" at start of file name
-            if request.form.get(f"image{i}KO") == "on":
-                filename = f"KO.{neg}.{t}.{group}.{i}.png"
-                logging.debug(f"found image id {i} to have KO")
-            else:
-                filename = f"{neg}.{t}.{group}.{i}.png"
-
-                # if any call left remove bg of filename
-                # if anyCallLeft():
-                #     logging.debug(f"attempting to remove bg of filename: {filename}")
-                #     removeBG(filename)
-                # else:
-                # logging.debug(f"added {filename} to pending due to no more calls left")
-                data["pending"].append(filename)
-
-            file.save(os.path.join("static", filename))
-            images.append(filename)
-            logging.debug(f"saved image id {i}")
-
-            # TODO pending remove bg image
-            # py script takes all images in data.pending and processes them
-            # under data.info save details:
-            # images uploaded, imaged processed, pending to remove bg
-
-        else:
+        if not file:
             logging.debug(f"got no images on upload")
             return "error"
+        # if keep original true in view dont add to data.pending .json else add
+        # if keep original true in view add "KO" at start of file name
+        if request.form.get(f"image{i}KO") == "on":
+            filename = f"KO.{neg}.{t}.{group}.{i}.png"
+            logging.debug(f"found image id {i} to have KO")
+
+        else:
+            filename = f"{neg}.{t}.{group}.{i}.png"
+            logging.debug(f"added {filename} to pending")
+            data["pending"].append(filename)
+
+        file.save(os.path.join("static", filename))
+        images.append(filename)
+        logging.debug(f"saved image id {i}")
 
     # file saved, add name in json
     data["negs"][neg]["images"].setdefault(t, {})[group] = {
         "images": images,
-        "medidas": {
-            "a": request.form.get("medida0"),
-            "b": request.form.get("medida1"),
-            "c": request.form.get("medida2")
-        }
+        "medida0": request.form.get("medida0") or "not found",
+        "medida1": request.form.get("medida1") or "not found",
+        "medida2": request.form.get("medida2") or "not found",
+        "costo": request.form.get("costo") or "not found",
+        "venta_menor": request.form.get("venta_menor") or "not found",
+        "venta_mayor": request.form.get("venta_mayor") or "not found",
+        "stock": request.form.get("stock") or "not found",
+        "descripcion": request.form.get("descripcion") or "not found",
+        "uniqueID": uniqueID
     }
+
     logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
 
     saveData(data)
@@ -165,11 +162,14 @@ def newGroup(neg=None):
 
 @app.route("/processPending")
 async def processImages():
+    logging.debug("starting processing images")
     asyncio.create_task(startProcessing())
     return "empezando"
 
+
 @app.route("/reset")
 def reset():
+    logging.debug("reseting")
     data = loadData()
     data["stopNext"] = False
     data["currentStatus"] = "OK"
@@ -177,42 +177,14 @@ def reset():
 
     return "reseteando"
 
+
 @app.route("/download/<img>")
 def download(img=None):
     logging.debug(f"downloading image {img}")
     return send_file(os.path.join("static", img), mimetype='image/jpeg', as_attachment=True)
 
+
 '''
-
-TODO
-button -> start image processing
-set stats in main.html:
-    pending
-    processing
-    stopNext
-    currentStatus
-
-
-TODO
-test in mobile
-
-<!DOCTYPE html>
-<html>
-  <body>
-    <label for="cameraFileInput">
-      <input
-        id="cameraFileInput"
-        type="file"
-        accept="image/*"
-        capture="environment"
-      />
-    </label>
-
-    <img id="pictureFromCamera" />
-  </body>
-</html> 
-
-
 test for static folder
 There are several ways you can reduce the size of the "static" folder containing images, while maintaining fast access to them. Here are a few suggestions:
 

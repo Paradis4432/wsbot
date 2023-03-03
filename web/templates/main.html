@@ -12,14 +12,47 @@
 
     <button><a href="negocios">negocios</a></button>
 
-    <button onclick='fetch("/processPending").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>procesar imagenes pendientes</button>
-    <button onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>reset</button>
+    <button
+        onclick='fetch("/processPending").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>procesar
+        imagenes pendientes</button>
+    <button
+        onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>reset</button>
 
-    <p>imagenes pendientes: {{ data[0] }}</p> 
+    <p>imagenes pendientes: {{ data[0] }}</p>
     <p>imagenes siendo procesadas: {{ data[1] }}</p>
     <p>current status: {{ data[2] }}</p>
     <p>stop next: {{ data[3] }}</p>
+    <p>pedidos disponibles: </p>
+    <p id="avaliable">0</p>
 
+    <script>
+        async function getAllCallsLeftAsync(keys) {
+            let calls = 0;
+            for (let i = 0; i < keys.length; i++) {
+                const response = await fetch('https://api.remove.bg/v1.0/account', {
+                    headers: {
+                        'accept': '*/*',
+                        'X-API-Key': keys[i]
+                    }
+                });
+                const data = await response.json();
+                const callsLeft = data.data.attributes.api.free_calls;
+                calls += callsLeft;
+                document.getElementById('avaliable').textContent = calls.toString();
+
+            }
+        }
+
+
+
+        async function getKeys() {
+            const response = await fetch("/getKeys");
+            const keys = await response.json();
+            getAllCallsLeftAsync(keys);
+        }
+        getKeys();
+
+    </script>
 </body>
 
 </html>
