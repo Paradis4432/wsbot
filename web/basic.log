@@ -1915,3 +1915,139 @@
 2023-03-03 01:18:03 INFO 127.0.0.1 - - [03/Mar/2023 01:18:03] "GET /static/cholo.asdasd.31.1.png HTTP/1.1" 200 -
 2023-03-03 01:18:03 INFO 127.0.0.1 - - [03/Mar/2023 01:18:03] "GET /static/cholo.asdasd.31.2.png HTTP/1.1" 200 -
 2023-03-03 01:18:03 INFO 127.0.0.1 - - [03/Mar/2023 01:18:03] "GET /static/cholo.asdasd.31.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:14 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-06 11:26:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:26:14 WARNING  * Debugger is active!
+2023-03-06 11:26:14 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:26:27 INFO 127.0.0.1 - - [06/Mar/2023 11:26:27] "GET / HTTP/1.1" 200 -
+2023-03-06 11:26:27 INFO 127.0.0.1 - - [06/Mar/2023 11:26:27] "GET /getKeys HTTP/1.1" 200 -
+2023-03-06 11:26:27 INFO 127.0.0.1 - - [06/Mar/2023 11:26:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-06 11:26:29 DEBUG rendering negocios with negs: ['cholo']
+2023-03-06 11:26:29 INFO 127.0.0.1 - - [06/Mar/2023 11:26:29] "GET /negocios HTTP/1.1" 200 -
+2023-03-06 11:26:30 DEBUG rendering negocios
+2023-03-06 11:26:30 DEBUG rendering tempNeg for: cholo with types ['mochilas', 'cinturones', 'test', 'test1', 'test2', 'test3', 'test4', 'b', 'c', 'd', 'asdasd']
+2023-03-06 11:26:30 INFO 127.0.0.1 - - [06/Mar/2023 11:26:30] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-06 11:26:34 DEBUG rendering images for negocio: cholo in type: asdasd
+2023-03-06 11:26:34 DEBUG rendering images: {'0': {'images': ['cholo.asdasd.0.1.png', 'cholo.asdasd.0.2.png', 'cholo.asdasd.0.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '1'}, '1': {'images': ['cholo.asdasd.1.1.png', 'cholo.asdasd.1.2.png', 'cholo.asdasd.1.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '1'}, '2': {'images': ['cholo.asdasd.2.1.png', 'cholo.asdasd.2.2.png', 'cholo.asdasd.2.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '1'}, '3': {'images': ['cholo.asdasd.3.1.png', 'cholo.asdasd.3.2.png', 'cholo.asdasd.3.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '1'}, '4': {'images': ['cholo.asdasd.4.1.png', 'cholo.asdasd.4.2.png', 'cholo.asdasd.4.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '1'}, '5': {'images': ['cholo.asdasd.5.1.png', 'cholo.asdasd.5.2.png', 'cholo.asdasd.5.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '6': {'images': ['cholo.asdasd.6.1.png', 'cholo.asdasd.6.2.png', 'cholo.asdasd.6.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '7': {'images': ['cholo.asdasd.7.1.png', 'cholo.asdasd.7.2.png', 'cholo.asdasd.7.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '8': {'images': ['cholo.asdasd.8.1.png', 'cholo.asdasd.8.2.png', 'cholo.asdasd.8.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 4}, '9': {'images': ['cholo.asdasd.9.1.png', 'cholo.asdasd.9.2.png', 'cholo.asdasd.9.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 4}, '10': {'images': ['cholo.asdasd.10.1.png', 'cholo.asdasd.10.2.png', 'cholo.asdasd.10.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '11': {'images': ['cholo.asdasd.11.1.png', 'cholo.asdasd.11.2.png', 'cholo.asdasd.11.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '12': {'images': ['cholo.asdasd.12.1.png', 'cholo.asdasd.12.2.png', 'cholo.asdasd.12.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 1}, '13': {'images': ['cholo.asdasd.13.1.png', 'cholo.asdasd.13.2.png', 'cholo.asdasd.13.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 2}, '14': {'images': ['cholo.asdasd.14.1.png', 'cholo.asdasd.14.2.png', 'cholo.asdasd.14.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 9}, '15': {'images': ['cholo.asdasd.15.1.png', 'cholo.asdasd.15.2.png', 'cholo.asdasd.15.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 16}, '16': {'images': ['cholo.asdasd.16.1.png', 'cholo.asdasd.16.2.png', 'cholo.asdasd.16.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 23}, '17': {'images': ['cholo.asdasd.17.1.png', 'cholo.asdasd.17.2.png', 'cholo.asdasd.17.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 30}, '18': {'images': ['cholo.asdasd.18.1.png', 'cholo.asdasd.18.2.png', 'cholo.asdasd.18.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 37}, '19': {'images': ['cholo.asdasd.19.1.png', 'cholo.asdasd.19.2.png', 'cholo.asdasd.19.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 44}, '20': {'images': ['cholo.asdasd.20.1.png', 'cholo.asdasd.20.2.png', 'cholo.asdasd.20.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 51}, '21': {'images': ['cholo.asdasd.21.1.png', 'cholo.asdasd.21.2.png', 'cholo.asdasd.21.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 58}, '22': {'images': ['cholo.asdasd.22.1.png', 'cholo.asdasd.22.2.png', 'cholo.asdasd.22.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 79}, '23': {'images': ['cholo.asdasd.23.1.png', 'cholo.asdasd.23.2.png', 'cholo.asdasd.23.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 134}, '24': {'images': ['cholo.asdasd.24.1.png', 'cholo.asdasd.24.2.png', 'cholo.asdasd.24.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': 147}, '25': {'images': ['cholo.asdasd.25.1.png', 'cholo.asdasd.25.2.png', 'cholo.asdasd.25.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '64'}, '26': {'images': ['cholo.asdasd.26.1.png', 'cholo.asdasd.26.2.png', 'cholo.asdasd.26.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '6B'}, '27': {'images': ['cholo.asdasd.27.1.png', 'cholo.asdasd.27.2.png', 'cholo.asdasd.27.3.png'], 'medida0': '12', 'medida1': '', 'medida2': '13', 'costo': '14', 'venta_menor': '', 'venta_mayor': '15', 'stock': '165', 'descripcion': '', 'uniqueID': '72'}, '28': {'images': ['cholo.asdasd.28.1.png', 'cholo.asdasd.28.2.png', 'cholo.asdasd.28.3.png'], 'medida0': '12', 'medida1': None, 'medida2': '13', 'costo': '14', 'venta_menor': None, 'venta_mayor': '15', 'stock': '165', 'descripcion': None, 'uniqueID': '79'}, '29': {'images': ['cholo.asdasd.29.1.png', 'cholo.asdasd.29.2.png', 'cholo.asdasd.29.3.png'], 'medida0': '12', 'medida1': None, 'medida2': '13', 'costo': '14', 'venta_menor': None, 'venta_mayor': '15', 'stock': '165', 'descripcion': None, 'uniqueID': '80'}, '30': {'images': ['cholo.asdasd.30.1.png', 'cholo.asdasd.30.2.png', 'cholo.asdasd.30.3.png'], 'medida0': '12', 'medida1': None, 'medida2': '13', 'costo': '14', 'venta_menor': None, 'venta_mayor': '15', 'stock': '165', 'descripcion': None, 'uniqueID': '87'}, '31': {'images': ['cholo.asdasd.31.1.png', 'cholo.asdasd.31.2.png', 'cholo.asdasd.31.3.png'], 'medida0': '12', 'medida1': 'not found', 'medida2': '13', 'costo': '14', 'venta_menor': 'not found', 'venta_mayor': '15', 'stock': '165', 'descripcion': 'not found', 'uniqueID': '8E'}}
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /images/cholo/asdasd HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.2.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.6.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.6.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.6.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.5.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:34 INFO 127.0.0.1 - - [06/Mar/2023 11:26:34] "GET /static/cholo.asdasd.4.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.3.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.2.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.5.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.3.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.3.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.4.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.4.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.5.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.2.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.0.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.0.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.0.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.1.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.1.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.1.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.7.1.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.7.2.png HTTP/1.1" 200 -
+2023-03-06 11:26:35 INFO 127.0.0.1 - - [06/Mar/2023 11:26:35] "GET /static/cholo.asdasd.7.3.png HTTP/1.1" 200 -
+2023-03-06 11:26:39 DEBUG creating new type: 123123
+2023-03-06 11:26:39 DEBUG new type added
+2023-03-06 11:26:39 INFO 127.0.0.1 - - [06/Mar/2023 11:26:39] "POST /nuevoTipo/cholo/123123 HTTP/1.1" 200 -
+2023-03-06 11:26:40 DEBUG rendering negocios
+2023-03-06 11:26:40 DEBUG rendering tempNeg for: cholo with types ['mochilas', 'cinturones', 'test', 'test1', 'test2', 'test3', 'test4', 'b', 'c', 'd', 'asdasd', '123123']
+2023-03-06 11:26:40 INFO 127.0.0.1 - - [06/Mar/2023 11:26:40] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-06 11:26:59 DEBUG adding new group for neg: cholo
+2023-03-06 11:26:59 DEBUG saving images with neg cholo type 123123 group 0
+2023-03-06 11:26:59 DEBUG added cholo.123123.0.1.png to pending
+2023-03-06 11:26:59 DEBUG saved image id 1
+2023-03-06 11:26:59 DEBUG added cholo.123123.0.2.png to pending
+2023-03-06 11:26:59 DEBUG saved image id 2
+2023-03-06 11:26:59 DEBUG added cholo.123123.0.3.png to pending
+2023-03-06 11:26:59 DEBUG saved image id 3
+2023-03-06 11:26:59 DEBUG saved image name in json as cholo.123123.0.3
+2023-03-06 11:26:59 DEBUG json saved
+2023-03-06 11:26:59 INFO 127.0.0.1 - - [06/Mar/2023 11:26:59] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-06 11:27:03 DEBUG rendering images for negocio: cholo in type: 123123
+2023-03-06 11:27:03 DEBUG rendering images: {'0': {'images': ['cholo.123123.0.1.png', 'cholo.123123.0.2.png', 'cholo.123123.0.3.png'], 'medida0': '12', 'medida1': '12', 'medida2': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': 'asd', 'uniqueID': '95'}}
+2023-03-06 11:27:03 INFO 127.0.0.1 - - [06/Mar/2023 11:27:03] "GET /images/cholo/123123 HTTP/1.1" 200 -
+2023-03-06 11:27:03 INFO 127.0.0.1 - - [06/Mar/2023 11:27:03] "GET /static/cholo.123123.0.1.png HTTP/1.1" 200 -
+2023-03-06 11:27:03 INFO 127.0.0.1 - - [06/Mar/2023 11:27:03] "GET /static/cholo.123123.0.2.png HTTP/1.1" 200 -
+2023-03-06 11:27:04 INFO 127.0.0.1 - - [06/Mar/2023 11:27:04] "GET /static/cholo.123123.0.3.png HTTP/1.1" 200 -
+2023-03-06 11:31:13 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\asyncio\\__init__.py', reloading
+2023-03-06 11:31:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:31:14 WARNING  * Debugger is active!
+2023-03-06 11:31:14 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\main.py', reloading
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:31:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:31:23 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:31:23 WARNING  * Debugger is active!
+2023-03-06 11:31:23 INFO  * Debugger PIN: 127-245-743
+2023-03-06 11:44:59 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-06 11:45:12 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-06 11:45:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:45:12 WARNING  * Debugger is active!
+2023-03-06 11:45:12 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:45:29 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-06 11:45:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:45:29 WARNING  * Debugger is active!
+2023-03-06 11:45:29 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:45:33 INFO 127.0.0.1 - - [06/Mar/2023 11:45:33] "GET / HTTP/1.1" 200 -
+2023-03-06 11:45:33 INFO 127.0.0.1 - - [06/Mar/2023 11:45:33] "GET /getKeys HTTP/1.1" 200 -
+2023-03-06 11:45:35 DEBUG rendering negocios with negs: ['cholo']
+2023-03-06 11:45:35 INFO 127.0.0.1 - - [06/Mar/2023 11:45:35] "GET /negocios HTTP/1.1" 200 -
+2023-03-06 11:49:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:28 WARNING  * Debugger is active!
+2023-03-06 11:49:28 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:49:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:30 WARNING  * Debugger is active!
+2023-03-06 11:49:30 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:49:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:33 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:33 WARNING  * Debugger is active!
+2023-03-06 11:49:33 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:49:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:35 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:35 WARNING  * Debugger is active!
+2023-03-06 11:49:35 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:49:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:37 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:38 WARNING  * Debugger is active!
+2023-03-06 11:49:38 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:49:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-06 11:49:40 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:49:40 WARNING  * Debugger is active!
+2023-03-06 11:49:40 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:56:40 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\json\\__init__.py', reloading
+2023-03-06 11:56:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:56:41 WARNING  * Debugger is active!
+2023-03-06 11:56:41 INFO  * Debugger PIN: 123-843-478
+2023-03-06 11:56:42 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\datastructures.py', reloading
+2023-03-06 11:56:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 11:56:43 WARNING  * Debugger is active!
+2023-03-06 11:56:43 INFO  * Debugger PIN: 123-843-478

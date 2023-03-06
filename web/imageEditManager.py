@@ -2,7 +2,7 @@ import json
 import requests
 import logging
 
-from tools import *
+from .tools import *
 
 # general values
 keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG',
