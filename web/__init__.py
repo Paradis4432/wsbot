@@ -9,7 +9,6 @@ import os
 import glob
 import asyncio
 
-
 app = Flask(__name__)
 
 logging.basicConfig(level=logging.DEBUG,
@@ -118,8 +117,8 @@ def newGroup(neg=None):
         # TODO fix forced 3 images
         file = request.files.get(f"image{i}")
         if not file:
-            logging.debug(f"got no images on upload")
-            return "error"
+            logging.debug(f"got no images on upload of file {i}")
+            continue
         # if keep original true in view dont add to data.pending .json else add
         # if keep original true in view add "KO" at start of file name
         if request.form.get(f"image{i}KO") == "on":
