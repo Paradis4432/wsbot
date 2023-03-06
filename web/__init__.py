@@ -1,3 +1,4 @@
+from .imageEditManager import *
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -13,7 +14,6 @@ app = Flask(__name__)
 
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s", datefmt="%Y-%m-%d %H:%M:%S", filename="basic.log")
-from .imageEditManager import *
 
 # TODO: arrows for images, excel loading
 # TODO: idea: add tags for each group of images
@@ -23,7 +23,8 @@ from .imageEditManager import *
 def index():
     data = loadData()
 
-    return render_template("main.html", data=[len(data["pending"]), len(data["processing"]), data["currentStatus"], data["stopNext"]])
+    return render_template("main.html", data=[len(data["pendingRmBg"]), len(data["processingRmBg"]),
+                                              len(data["pendingAddArr"]), len(data["processingAddArr"]), data["currentStatus"], data["stopNext"]])
 
 
 @app.route("/getKeys")
@@ -88,7 +89,6 @@ def newType(neg=None, name=None):
     return "agregado"
 
 
-
 def getUniqueId():
     data = loadData()
     last_id = int(data["lastID"], 16)
@@ -123,14 +123,26 @@ def newGroup(neg=None):
             continue
         # if keep original true in view dont add to data.pending .json else add
         # if keep original true in view add "KO" at start of file name
+        filename = ""
         if request.form.get(f"image{i}KO") == "on":
-            filename = f"KO.{neg}.{t}.{group}.{i}.png"
-            logging.debug(f"found image id {i} to have KO")
+            filename += "KO."
+        if request.form.get(f"image{i}ARR") == "on":
+            filename += "ARR."
+        filename += f"{neg}.{t}.{group}.{i}.png"
 
+        # if image{i}ARR add to data.pendingAddArr else dont add arrows
+
+        if request.form.get(f"image{i}KO") == "on":
+            logging.debug(f"found image id {i} to have KO")
         else:
-            filename = f"{neg}.{t}.{group}.{i}.png"
-            logging.debug(f"added {filename} to pending")
-            data["pending"].append(filename)
+            data["pendingRmBg"].append(filename)
+            logging.debug(f"added {filename} to pendingRmBg")
+            
+        if request.form.get(f"image{i}ARR") == "on":
+            logging.debug(f"adding image {i} to pending arrows")
+            data["pendingAddArr"].append(filename)
+        else:
+            logging.debug(f"{filename} found to not have ARR")
 
         file.save(os.path.join("static", filename))
         images.append(filename)

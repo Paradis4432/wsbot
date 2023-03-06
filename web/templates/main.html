@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: grey;">
 
     <button><a href="negocios">negocios</a></button>
 
@@ -18,10 +18,12 @@
     <button
         onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>reset</button>
 
-    <p>imagenes pendientes: {{ data[0] }}</p>
-    <p>imagenes siendo procesadas: {{ data[1] }}</p>
-    <p>current status: {{ data[2] }}</p>
-    <p>stop next: {{ data[3] }}</p>
+    <p>imagenes pendientes a eliminar fondo: {{ data[0] }}</p>
+    <p>eliminando fondo de: {{ data[1] }} imagenes</p>
+    <p>imagenes pendientes a agregar flechas: {{ data[2] }}</p>
+    <p>agregando flechas a: {{ data[3] }} imagenes</p>
+    <p>current status: {{ data[4] }}</p>
+    <p>stop next: {{ data[5] }}</p>
     <p>pedidos disponibles: </p>
     <p id="avaliable">0</p>
 

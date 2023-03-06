@@ -62,7 +62,7 @@ def removeBG(path):
 def processFiles(pendingFiles):
     for pending in pendingFiles:
         status = removeBG(pending)
-        #status = "success"
+        # status = "success"
 
         if status == "success":
             logging.debug(f"successfully processed file {pending}")
@@ -70,7 +70,23 @@ def processFiles(pendingFiles):
 
         logging.debug(f"stopping imageEdit")
         saveValue("stopNext", True)
-        saveValue("currentStatus", "ERROR")
+        saveValue("currentStatus", "ERROR RMBG")
+        return
+
+
+def addArrows(pendingFiles):
+    for pending in pendingFiles:
+
+        status = "success"
+        # add arrows
+
+        if status == "success":
+            logging.debug(f"successfully added arrows to {pending}")
+            continue
+
+        logging.debug(f"stopping imageEdit")
+        saveValue("stopNext", True)
+        saveValue("currentStatus", "ERROR ARROWS")
         return
 
 
@@ -98,32 +114,58 @@ async def startProcessing():
 
     data = loadData()
 
-    if len(data["pending"]) == 0:
-        logging.debug("no pending found, returning")
-        return
+    if len(data["pendingRmBg"]) > 0:
+        logging.debug(f"found {data['pendingRmBg']} pendingRmBg")
 
-    pendingFiles = data["pending"]
-    data["processing"] = pendingFiles
-    data["pending"] = []
+        pendingFiles = data["pendingRmBg"]
+        data["processingRmBg"] = pendingFiles
+        data["pendingRmBg"] = []
 
-    saveData(data)
+        saveData(data)
 
-    logging.debug(f"processing {len(pendingFiles)} {pendingFiles} files")
-    status = processFiles(pendingFiles)
+        logging.debug(
+            f"processingRmBg {len(pendingFiles)} {pendingFiles} files")
+        processFiles(pendingFiles)
 
+        data = loadData()
+        if data["stopNext"]:
+            logging.debug("found stop next to be true in rmbg, stopping.")
+            return
+
+        with open("data.json", "r") as f:
+            data = json.load(f)
+            processed = data["processingRmBg"]
+            data["processingRmBg"] = []
+            data["processedRmBg"].extend(processed)
+        saveData(data)
+
+    # ARROWS
     data = loadData()
-    if data["stopNext"]:
-        logging.debug("found stop next to be true, stopping.")
-        return
 
-    with open("data.json", "r") as f:
-        data = json.load(f)
-        processed = data["processing"]
-        data["processing"] = []
-        data["processed"].extend(processed)
-    saveData(data)
+    if len(data["pendingAddArr"]) > 0:
+        logging.debug(f"found {data['pendingAddArr']} pendingAddArr")
 
-# add arrows to img
+        pendingFiles = data["pendingAddArr"]
+        data["processingAddArr"] = pendingFiles
+        data["pendingAddArr"] = []
+
+        saveData(data)
+
+        logging.debug(
+            f"processingAddArr {len(pendingFiles)} {pendingFiles} files")
+        addArrows(pendingFiles)
+
+        data = loadData()
+        if data["stopNext"]:
+            logging.debug("found stop next to be true in arrows, stopping.")
+            return
+
+        with open("data.json", "r") as f:
+            data = json.load(f)
+            processed = data["processingAddArr"]
+            data["processingAddArr"] = []
+            data["processedAddArr"].extend(processed)
+        saveData(data)
 
 
 def getAllCallsLeft():
