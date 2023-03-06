@@ -61,8 +61,8 @@ def removeBG(path):
 
 def processFiles(pendingFiles):
     for pending in pendingFiles:
-        # status = removeBG(pending)
-        status = "success"
+        status = removeBG(pending)
+        #status = "success"
 
         if status == "success":
             logging.debug(f"successfully processed file {pending}")

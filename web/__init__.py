@@ -16,6 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
 from .imageEditManager import *
 
 # TODO: arrows for images, excel loading
+# TODO: idea: add tags for each group of images
 
 
 @app.route("/")
@@ -86,13 +87,12 @@ def newType(neg=None, name=None):
 
     return "agregado"
 
-# TODO: idea: add tags for each group of images
 
 
 def getUniqueId():
     data = loadData()
     last_id = int(data["lastID"], 16)
-    new_id = last_id + 7
+    new_id = last_id + 1
     data["lastID"] = hex(new_id)[2:].upper()
     saveData(data)
     return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
