@@ -1,16 +1,332 @@
 {
     "negs": {
         "cholo": {
-            "types": [
-            ],
+            "types": [],
             "images": {}
         },
         "marian": {
-            "types": [],
-            "images": {}
+            "types": [
+                "Gorras_rotas",
+                "Gorras_street",
+                "Nick_Adidas_etc",
+                "Gorras_Animales",
+                "Gorros_lana_rocky"
+            ],
+            "images": {
+                "Gorras_rotas": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_rotas.0.1.png",
+                            "ARR.marian.Gorras_rotas.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Hdhhdh",
+                        "uniqueID": "3"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorras_rotas.1.1.png",
+                            "ARR.marian.Gorras_rotas.1.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "A"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Gorras_rotas.2.1.png",
+                            "ARR.marian.Gorras_rotas.2.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "C"
+                    }
+                },
+                "Gorras_street": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_street.0.1.png",
+                            "ARR.marian.Gorras_street.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de los Yankees negra ",
+                        "uniqueID": "4"
+                    }
+                },
+                "Nick_Adidas_etc": {
+                    "0": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.0.1.png",
+                            "ARR.marian.Nick_Adidas_etc.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de jordan roja ",
+                        "uniqueID": "5"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.1.1.png",
+                            "ARR.marian.Nick_Adidas_etc.1.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Jordan negra ",
+                        "uniqueID": "6"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.2.1.png",
+                            "ARR.marian.Nick_Adidas_etc.2.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de Adidas ",
+                        "uniqueID": "7"
+                    },
+                    "3": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.3.1.png",
+                            "marian.Nick_Adidas_etc.3.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorra Adidas blanca ",
+                        "uniqueID": "8"
+                    },
+                    "4": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.4.1.png",
+                            "ARR.marian.Nick_Adidas_etc.4.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorra Adidas azul ",
+                        "uniqueID": "9"
+                    }
+                },
+                "Gorras_Animales": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_Animales.0.1.png",
+                            "ARR.marian.Gorras_Animales.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra animal pantera ",
+                        "uniqueID": "D"
+                    }
+                },
+                "Gorros_lana_rocky": {
+                    "0": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.0.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "E"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.1.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "F"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.2.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "10"
+                    },
+                    "3": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.3.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "11"
+                    },
+                    "4": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.4.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "12"
+                    },
+                    "5": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.5.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "13"
+                    },
+                    "6": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.6.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "14"
+                    },
+                    "7": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.7.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "15"
+                    },
+                    "8": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.8.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "16"
+                    },
+                    "9": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.9.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "9",
+                        "descripcion": "Gorro de lana tipo Rocky  foto conjunto ",
+                        "uniqueID": "17"
+                    }
+                }
+            }
         }
     },
-    "pendingAddArr": [],
+    "pendingAddArr": [
+        "ARR.marian.Gorras_rotas.0.2.png",
+        "ARR.marian.Gorras_street.0.2.png",
+        "ARR.marian.Nick_Adidas_etc.0.2.png",
+        "ARR.marian.Nick_Adidas_etc.1.2.png",
+        "ARR.marian.Nick_Adidas_etc.2.2.png",
+        "ARR.marian.Nick_Adidas_etc.4.2.png",
+        "ARR.marian.Gorras_rotas.1.2.png",
+        "ARR.marian.Gorras_rotas.2.2.png",
+        "ARR.marian.Gorras_Animales.0.2.png"
+    ],
     "pendingRmBg": [],
     "processingAddArr": [],
     "processingRmBg": [],
@@ -18,5 +334,5 @@
     "processedAddArr": [],
     "stopNext": false,
     "currentStatus": "OK",
-    "lastID": "0"
+    "lastID": "17"
 }

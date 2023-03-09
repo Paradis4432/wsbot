@@ -22,6 +22,9 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: cambiar cargado de imagenes boton -> grupo info etc
 # TODO: add button on new type
 
+# TODO: rezize image to 1200x800 pixels
+
+
 # idea: add tags for each group of images no
 @app.route("/")
 def index():

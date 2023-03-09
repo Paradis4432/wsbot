@@ -1,0 +1,897 @@
+2023-03-09 00:37:08 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:37:08 DEBUG rendering negocios
+2023-03-09 00:37:08 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:39:08 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:39:12 DEBUG rendering negocios
+2023-03-09 00:39:12 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas']
+2023-03-09 00:39:15 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:39:16 DEBUG rendering negocios
+2023-03-09 00:39:16 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:40:26 DEBUG adding new group for neg: cholo
+2023-03-09 00:40:26 DEBUG saving images with neg cholo type test group 0
+2023-03-09 00:40:26 DEBUG added cholo.test.0.1.png to pendingRmBg
+2023-03-09 00:40:26 DEBUG cholo.test.0.1.png found to not have ARR
+2023-03-09 00:40:26 DEBUG saved image id 1
+2023-03-09 00:40:26 DEBUG added cholo.test.0.2.png to pendingRmBg
+2023-03-09 00:40:26 DEBUG cholo.test.0.2.png found to not have ARR
+2023-03-09 00:40:26 DEBUG saved image id 2
+2023-03-09 00:40:26 DEBUG added cholo.test.0.3.png to pendingRmBg
+2023-03-09 00:40:26 DEBUG cholo.test.0.3.png found to not have ARR
+2023-03-09 00:40:26 DEBUG saved image id 3
+2023-03-09 00:40:26 DEBUG saved image name in json as cholo.test.0.3
+2023-03-09 00:40:26 DEBUG json saved
+2023-03-09 00:40:29 DEBUG rendering negocios
+2023-03-09 00:40:29 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:51:46 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:51:47 DEBUG rendering negocios
+2023-03-09 00:51:47 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:54:36 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:54:36 DEBUG rendering negocios
+2023-03-09 00:54:36 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:54:37 DEBUG rendering images for negocio: cholo in type: test
+2023-03-09 00:54:37 DEBUG rendering images: {'0': {'images': ['cholo.test.0.1.png', 'cholo.test.0.2.png', 'cholo.test.0.3.png'], 'alto': '12', 'largo': '12', 'ancho': '12', 'costo': '12', 'venta_menor': '12', 'venta_mayor': '12', 'stock': '12', 'descripcion': '12', 'uniqueID': '1'}}
+2023-03-09 00:54:55 DEBUG adding new group for neg: cholo
+2023-03-09 00:54:55 DEBUG saving images with neg cholo type test group 1
+2023-03-09 00:54:55 DEBUG found image id 1 to have KO
+2023-03-09 00:54:55 DEBUG KO.cholo.test.1.1.png found to not have ARR
+2023-03-09 00:54:55 DEBUG saved image id 1
+2023-03-09 00:54:55 DEBUG found image id 2 to have KO
+2023-03-09 00:54:55 DEBUG KO.cholo.test.1.2.png found to not have ARR
+2023-03-09 00:54:55 DEBUG saved image id 2
+2023-03-09 00:54:55 DEBUG found image id 3 to have KO
+2023-03-09 00:54:55 DEBUG KO.cholo.test.1.3.png found to not have ARR
+2023-03-09 00:54:55 DEBUG saved image id 3
+2023-03-09 00:54:55 DEBUG saved image name in json as cholo.test.1.3
+2023-03-09 00:54:55 DEBUG json saved
+2023-03-09 00:54:59 DEBUG rendering negocios
+2023-03-09 00:54:59 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-09 00:55:33 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:55:37 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 00:55:38 DEBUG rendering negocios
+2023-03-09 00:55:38 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas']
+2023-03-09 00:55:40 DEBUG rendering images for negocio: marian in type: Gorras_rotas
+2023-03-09 00:55:40 DEBUG rendering images: {}
+2023-03-09 01:23:47 DEBUG adding new group for neg: marian
+2023-03-09 01:23:48 DEBUG saving images with neg marian type Gorras_rotas group 0
+2023-03-09 01:23:48 DEBUG added marian.Gorras_rotas.0.1.png to pendingRmBg
+2023-03-09 01:23:48 DEBUG marian.Gorras_rotas.0.1.png found to not have ARR
+2023-03-09 01:23:48 DEBUG saved image id 1
+2023-03-09 01:23:48 DEBUG added ARR.marian.Gorras_rotas.0.2.png to pendingRmBg
+2023-03-09 01:23:48 DEBUG adding image 2 to pending arrows
+2023-03-09 01:23:48 DEBUG saved image id 2
+2023-03-09 01:23:48 DEBUG added ARR.marian.Gorras_rotas.0.3.png to pendingRmBg
+2023-03-09 01:23:48 DEBUG adding image 3 to pending arrows
+2023-03-09 01:23:48 DEBUG saved image id 3
+2023-03-09 01:23:48 DEBUG saved image name in json as marian.Gorras_rotas.0.3
+2023-03-09 01:23:48 DEBUG json saved
+2023-03-09 01:23:59 DEBUG rendering negocios
+2023-03-09 01:23:59 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas']
+2023-03-09 01:25:43 DEBUG creating new type: Gorras_street
+2023-03-09 01:25:43 DEBUG new type added
+2023-03-09 01:25:45 DEBUG rendering negocios
+2023-03-09 01:25:45 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street']
+2023-03-09 01:27:43 DEBUG adding new group for neg: marian
+2023-03-09 01:27:43 DEBUG saving images with neg marian type Gorras_street group 0
+2023-03-09 01:27:43 DEBUG added marian.Gorras_street.0.1.png to pendingRmBg
+2023-03-09 01:27:43 DEBUG marian.Gorras_street.0.1.png found to not have ARR
+2023-03-09 01:27:43 DEBUG saved image id 1
+2023-03-09 01:27:43 DEBUG added ARR.marian.Gorras_street.0.2.png to pendingRmBg
+2023-03-09 01:27:43 DEBUG adding image 2 to pending arrows
+2023-03-09 01:27:43 DEBUG saved image id 2
+2023-03-09 01:27:43 DEBUG added ARR.marian.Gorras_street.0.3.png to pendingRmBg
+2023-03-09 01:27:43 DEBUG adding image 3 to pending arrows
+2023-03-09 01:27:43 DEBUG saved image id 3
+2023-03-09 01:27:43 DEBUG saved image name in json as marian.Gorras_street.0.3
+2023-03-09 01:27:43 DEBUG json saved
+2023-03-09 01:27:56 DEBUG rendering negocios
+2023-03-09 01:27:56 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street']
+2023-03-09 01:31:22 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 01:31:23 DEBUG rendering negocios
+2023-03-09 01:31:23 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street']
+2023-03-09 01:31:24 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 01:31:24 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'ARR.marian.Gorras_street.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 01:31:32 DEBUG rendering images for negocio: marian in type: Gorras_rotas
+2023-03-09 01:31:32 DEBUG rendering images: {'0': {'images': ['marian.Gorras_rotas.0.1.png', 'ARR.marian.Gorras_rotas.0.2.png', 'ARR.marian.Gorras_rotas.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Hdhhdh', 'uniqueID': '3'}}
+2023-03-09 01:31:36 DEBUG downloading image ARR.marian.Gorras_rotas.0.2.png
+2023-03-09 01:31:36 DEBUG downloading image ARR.marian.Gorras_rotas.0.3.png
+2023-03-09 01:31:36 DEBUG downloading image marian.Gorras_rotas.0.1.png
+2023-03-09 01:32:06 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 01:32:06 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'ARR.marian.Gorras_street.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 01:32:25 DEBUG downloading image marian.Gorras_street.0.1.png
+2023-03-09 01:32:25 DEBUG downloading image ARR.marian.Gorras_street.0.2.png
+2023-03-09 01:32:25 DEBUG downloading image ARR.marian.Gorras_street.0.3.png
+2023-03-09 01:36:30 ERROR Exception on /processPending [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1887, in ensure_sync
+    return self.async_to_sync(func)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1908, in async_to_sync
+    raise RuntimeError(
+RuntimeError: Install Flask with the 'async' extra in order to use async views.
+2023-03-09 02:12:41 DEBUG creating new type: Nick_Adidas_etc
+2023-03-09 02:12:41 DEBUG new type added
+2023-03-09 02:12:45 DEBUG rendering negocios
+2023-03-09 02:12:45 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:14:39 DEBUG adding new group for neg: marian
+2023-03-09 02:14:39 DEBUG saving images with neg marian type Nick_Adidas_etc group 0
+2023-03-09 02:14:39 DEBUG added marian.Nick_Adidas_etc.0.1.png to pendingRmBg
+2023-03-09 02:14:39 DEBUG marian.Nick_Adidas_etc.0.1.png found to not have ARR
+2023-03-09 02:14:39 DEBUG saved image id 1
+2023-03-09 02:14:39 DEBUG added ARR.marian.Nick_Adidas_etc.0.2.png to pendingRmBg
+2023-03-09 02:14:39 DEBUG adding image 2 to pending arrows
+2023-03-09 02:14:39 DEBUG saved image id 2
+2023-03-09 02:14:39 DEBUG added ARR.marian.Nick_Adidas_etc.0.3.png to pendingRmBg
+2023-03-09 02:14:39 DEBUG adding image 3 to pending arrows
+2023-03-09 02:14:39 DEBUG saved image id 3
+2023-03-09 02:14:39 DEBUG saved image name in json as marian.Nick_Adidas_etc.0.3
+2023-03-09 02:14:39 DEBUG json saved
+2023-03-09 02:14:43 DEBUG rendering negocios
+2023-03-09 02:14:43 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:16:11 DEBUG adding new group for neg: marian
+2023-03-09 02:16:11 DEBUG saving images with neg marian type Nick_Adidas_etc group 1
+2023-03-09 02:16:11 DEBUG added marian.Nick_Adidas_etc.1.1.png to pendingRmBg
+2023-03-09 02:16:11 DEBUG marian.Nick_Adidas_etc.1.1.png found to not have ARR
+2023-03-09 02:16:11 DEBUG saved image id 1
+2023-03-09 02:16:11 DEBUG added ARR.marian.Nick_Adidas_etc.1.2.png to pendingRmBg
+2023-03-09 02:16:11 DEBUG adding image 2 to pending arrows
+2023-03-09 02:16:11 DEBUG saved image id 2
+2023-03-09 02:16:11 DEBUG added ARR.marian.Nick_Adidas_etc.1.3.png to pendingRmBg
+2023-03-09 02:16:11 DEBUG adding image 3 to pending arrows
+2023-03-09 02:16:11 DEBUG saved image id 3
+2023-03-09 02:16:11 DEBUG saved image name in json as marian.Nick_Adidas_etc.1.3
+2023-03-09 02:16:11 DEBUG json saved
+2023-03-09 02:16:14 DEBUG rendering negocios
+2023-03-09 02:16:14 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:17:36 DEBUG adding new group for neg: marian
+2023-03-09 02:17:36 DEBUG saving images with neg marian type Nick_Adidas_etc group 2
+2023-03-09 02:17:36 DEBUG added marian.Nick_Adidas_etc.2.1.png to pendingRmBg
+2023-03-09 02:17:36 DEBUG marian.Nick_Adidas_etc.2.1.png found to not have ARR
+2023-03-09 02:17:36 DEBUG saved image id 1
+2023-03-09 02:17:36 DEBUG added ARR.marian.Nick_Adidas_etc.2.2.png to pendingRmBg
+2023-03-09 02:17:36 DEBUG adding image 2 to pending arrows
+2023-03-09 02:17:36 DEBUG saved image id 2
+2023-03-09 02:17:36 DEBUG added ARR.marian.Nick_Adidas_etc.2.3.png to pendingRmBg
+2023-03-09 02:17:36 DEBUG adding image 3 to pending arrows
+2023-03-09 02:17:36 DEBUG saved image id 3
+2023-03-09 02:17:36 DEBUG saved image name in json as marian.Nick_Adidas_etc.2.3
+2023-03-09 02:17:36 DEBUG json saved
+2023-03-09 02:17:38 DEBUG rendering negocios
+2023-03-09 02:17:38 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:18:34 DEBUG adding new group for neg: marian
+2023-03-09 02:18:34 DEBUG saving images with neg marian type Nick_Adidas_etc group 3
+2023-03-09 02:18:34 DEBUG added marian.Nick_Adidas_etc.3.1.png to pendingRmBg
+2023-03-09 02:18:34 DEBUG marian.Nick_Adidas_etc.3.1.png found to not have ARR
+2023-03-09 02:18:34 DEBUG saved image id 1
+2023-03-09 02:18:34 DEBUG added marian.Nick_Adidas_etc.3.2.png to pendingRmBg
+2023-03-09 02:18:34 DEBUG marian.Nick_Adidas_etc.3.2.png found to not have ARR
+2023-03-09 02:18:34 DEBUG saved image id 2
+2023-03-09 02:18:34 DEBUG got no images on upload of file 3
+2023-03-09 02:18:34 DEBUG saved image name in json as marian.Nick_Adidas_etc.3.3
+2023-03-09 02:18:34 DEBUG json saved
+2023-03-09 02:18:37 DEBUG rendering negocios
+2023-03-09 02:18:37 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:19:30 DEBUG adding new group for neg: marian
+2023-03-09 02:19:30 DEBUG saving images with neg marian type Nick_Adidas_etc group 4
+2023-03-09 02:19:30 DEBUG added marian.Nick_Adidas_etc.4.1.png to pendingRmBg
+2023-03-09 02:19:30 DEBUG marian.Nick_Adidas_etc.4.1.png found to not have ARR
+2023-03-09 02:19:30 DEBUG saved image id 1
+2023-03-09 02:19:30 DEBUG added ARR.marian.Nick_Adidas_etc.4.2.png to pendingRmBg
+2023-03-09 02:19:30 DEBUG adding image 2 to pending arrows
+2023-03-09 02:19:30 DEBUG saved image id 2
+2023-03-09 02:19:30 DEBUG added ARR.marian.Nick_Adidas_etc.4.3.png to pendingRmBg
+2023-03-09 02:19:30 DEBUG adding image 3 to pending arrows
+2023-03-09 02:19:31 DEBUG saved image id 3
+2023-03-09 02:19:31 DEBUG saved image name in json as marian.Nick_Adidas_etc.4.3
+2023-03-09 02:19:31 DEBUG json saved
+2023-03-09 02:19:36 DEBUG rendering negocios
+2023-03-09 02:19:36 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:21:24 DEBUG adding new group for neg: marian
+2023-03-09 02:21:24 DEBUG saving images with neg marian type Gorras_rotas group 1
+2023-03-09 02:21:24 DEBUG added marian.Gorras_rotas.1.1.png to pendingRmBg
+2023-03-09 02:21:24 DEBUG marian.Gorras_rotas.1.1.png found to not have ARR
+2023-03-09 02:21:24 DEBUG saved image id 1
+2023-03-09 02:21:24 DEBUG added ARR.marian.Gorras_rotas.1.2.png to pendingRmBg
+2023-03-09 02:21:24 DEBUG adding image 2 to pending arrows
+2023-03-09 02:21:24 DEBUG saved image id 2
+2023-03-09 02:21:24 DEBUG added ARR.marian.Gorras_rotas.1.3.png to pendingRmBg
+2023-03-09 02:21:24 DEBUG adding image 3 to pending arrows
+2023-03-09 02:21:24 DEBUG saved image id 3
+2023-03-09 02:21:24 DEBUG saved image name in json as marian.Gorras_rotas.1.3
+2023-03-09 02:21:24 DEBUG json saved
+2023-03-09 02:21:26 DEBUG rendering negocios
+2023-03-09 02:21:26 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:22:07 DEBUG adding new group for neg: marian
+2023-03-09 02:22:17 DEBUG adding new group for neg: marian
+2023-03-09 02:22:18 DEBUG saving images with neg marian type Gorras_rotas group 2
+2023-03-09 02:22:18 DEBUG added marian.Gorras_rotas.2.1.png to pendingRmBg
+2023-03-09 02:22:18 DEBUG marian.Gorras_rotas.2.1.png found to not have ARR
+2023-03-09 02:22:18 DEBUG saved image id 1
+2023-03-09 02:22:18 DEBUG added ARR.marian.Gorras_rotas.2.2.png to pendingRmBg
+2023-03-09 02:22:18 DEBUG adding image 2 to pending arrows
+2023-03-09 02:22:18 DEBUG saved image id 2
+2023-03-09 02:22:18 DEBUG added ARR.marian.Gorras_rotas.2.3.png to pendingRmBg
+2023-03-09 02:22:18 DEBUG adding image 3 to pending arrows
+2023-03-09 02:22:18 DEBUG saved image id 3
+2023-03-09 02:22:18 DEBUG saved image name in json as marian.Gorras_rotas.2.3
+2023-03-09 02:22:18 DEBUG json saved
+2023-03-09 02:22:20 DEBUG rendering negocios
+2023-03-09 02:22:20 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc']
+2023-03-09 02:22:49 DEBUG creating new type: Gorras_Animales
+2023-03-09 02:22:49 DEBUG new type added
+2023-03-09 02:22:51 DEBUG rendering negocios
+2023-03-09 02:22:51 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales']
+2023-03-09 02:24:16 DEBUG adding new group for neg: marian
+2023-03-09 02:24:16 DEBUG saving images with neg marian type Gorras_Animales group 0
+2023-03-09 02:24:16 DEBUG added marian.Gorras_Animales.0.1.png to pendingRmBg
+2023-03-09 02:24:16 DEBUG marian.Gorras_Animales.0.1.png found to not have ARR
+2023-03-09 02:24:16 DEBUG saved image id 1
+2023-03-09 02:24:16 DEBUG added ARR.marian.Gorras_Animales.0.2.png to pendingRmBg
+2023-03-09 02:24:16 DEBUG adding image 2 to pending arrows
+2023-03-09 02:24:16 DEBUG saved image id 2
+2023-03-09 02:24:16 DEBUG added ARR.marian.Gorras_Animales.0.3.png to pendingRmBg
+2023-03-09 02:24:16 DEBUG adding image 3 to pending arrows
+2023-03-09 02:24:16 DEBUG saved image id 3
+2023-03-09 02:24:16 DEBUG saved image name in json as marian.Gorras_Animales.0.3
+2023-03-09 02:24:16 DEBUG json saved
+2023-03-09 02:24:19 DEBUG rendering negocios
+2023-03-09 02:24:19 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales']
+2023-03-09 02:24:53 DEBUG creating new type: Gorros_lana_rocky
+2023-03-09 02:24:53 DEBUG new type added
+2023-03-09 02:24:56 DEBUG rendering negocios
+2023-03-09 02:24:56 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:25:52 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 02:25:54 DEBUG rendering negocios
+2023-03-09 02:25:54 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:26:23 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 02:26:23 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'ARR.marian.Gorras_street.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 02:26:25 DEBUG rendering images for negocio: marian in type: Gorras_Animales
+2023-03-09 02:26:25 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'ARR.marian.Gorras_Animales.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra animal pantera ', 'uniqueID': 'D'}}
+2023-03-09 02:26:46 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 02:26:46 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'ARR.marian.Nick_Adidas_etc.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'ARR.marian.Nick_Adidas_etc.1.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'ARR.marian.Nick_Adidas_etc.2.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'ARR.marian.Nick_Adidas_etc.4.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 02:27:55 DEBUG adding new group for neg: marian
+2023-03-09 02:27:55 DEBUG saving images with neg marian type Gorros_lana_rocky group 0
+2023-03-09 02:27:55 DEBUG added marian.Gorros_lana_rocky.0.1.png to pendingRmBg
+2023-03-09 02:27:55 DEBUG marian.Gorros_lana_rocky.0.1.png found to not have ARR
+2023-03-09 02:27:55 DEBUG saved image id 1
+2023-03-09 02:27:55 DEBUG added marian.Gorros_lana_rocky.0.2.png to pendingRmBg
+2023-03-09 02:27:55 DEBUG marian.Gorros_lana_rocky.0.2.png found to not have ARR
+2023-03-09 02:27:55 DEBUG saved image id 2
+2023-03-09 02:27:55 DEBUG added marian.Gorros_lana_rocky.0.3.png to pendingRmBg
+2023-03-09 02:27:55 DEBUG marian.Gorros_lana_rocky.0.3.png found to not have ARR
+2023-03-09 02:27:55 DEBUG saved image id 3
+2023-03-09 02:27:55 DEBUG saved image name in json as marian.Gorros_lana_rocky.0.3
+2023-03-09 02:27:55 DEBUG json saved
+2023-03-09 02:27:58 DEBUG rendering negocios
+2023-03-09 02:27:58 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:28:52 DEBUG adding new group for neg: marian
+2023-03-09 02:28:52 DEBUG saving images with neg marian type Gorros_lana_rocky group 1
+2023-03-09 02:28:52 DEBUG added marian.Gorros_lana_rocky.1.1.png to pendingRmBg
+2023-03-09 02:28:52 DEBUG marian.Gorros_lana_rocky.1.1.png found to not have ARR
+2023-03-09 02:28:52 DEBUG saved image id 1
+2023-03-09 02:28:52 DEBUG added marian.Gorros_lana_rocky.1.2.png to pendingRmBg
+2023-03-09 02:28:52 DEBUG marian.Gorros_lana_rocky.1.2.png found to not have ARR
+2023-03-09 02:28:52 DEBUG saved image id 2
+2023-03-09 02:28:52 DEBUG added marian.Gorros_lana_rocky.1.3.png to pendingRmBg
+2023-03-09 02:28:52 DEBUG marian.Gorros_lana_rocky.1.3.png found to not have ARR
+2023-03-09 02:28:52 DEBUG saved image id 3
+2023-03-09 02:28:52 DEBUG saved image name in json as marian.Gorros_lana_rocky.1.3
+2023-03-09 02:28:52 DEBUG json saved
+2023-03-09 02:28:54 DEBUG rendering negocios
+2023-03-09 02:28:54 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:29:39 DEBUG adding new group for neg: marian
+2023-03-09 02:29:39 DEBUG saving images with neg marian type Gorros_lana_rocky group 2
+2023-03-09 02:29:39 DEBUG added marian.Gorros_lana_rocky.2.1.png to pendingRmBg
+2023-03-09 02:29:39 DEBUG marian.Gorros_lana_rocky.2.1.png found to not have ARR
+2023-03-09 02:29:39 DEBUG saved image id 1
+2023-03-09 02:29:39 DEBUG added marian.Gorros_lana_rocky.2.2.png to pendingRmBg
+2023-03-09 02:29:39 DEBUG marian.Gorros_lana_rocky.2.2.png found to not have ARR
+2023-03-09 02:29:39 DEBUG saved image id 2
+2023-03-09 02:29:39 DEBUG added marian.Gorros_lana_rocky.2.3.png to pendingRmBg
+2023-03-09 02:29:39 DEBUG marian.Gorros_lana_rocky.2.3.png found to not have ARR
+2023-03-09 02:29:39 DEBUG saved image id 3
+2023-03-09 02:29:39 DEBUG saved image name in json as marian.Gorros_lana_rocky.2.3
+2023-03-09 02:29:39 DEBUG json saved
+2023-03-09 02:30:46 DEBUG rendering negocios
+2023-03-09 02:30:46 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:30:46 DEBUG rendering negocios
+2023-03-09 02:30:46 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:30:50 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 02:30:50 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}}
+2023-03-09 02:31:17 DEBUG rendering negocios
+2023-03-09 02:31:17 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:31:50 DEBUG adding new group for neg: marian
+2023-03-09 02:31:50 DEBUG saving images with neg marian type Gorros_lana_rocky group 3
+2023-03-09 02:31:50 DEBUG added marian.Gorros_lana_rocky.3.1.png to pendingRmBg
+2023-03-09 02:31:50 DEBUG marian.Gorros_lana_rocky.3.1.png found to not have ARR
+2023-03-09 02:31:50 DEBUG saved image id 1
+2023-03-09 02:31:50 DEBUG added marian.Gorros_lana_rocky.3.2.png to pendingRmBg
+2023-03-09 02:31:50 DEBUG marian.Gorros_lana_rocky.3.2.png found to not have ARR
+2023-03-09 02:31:50 DEBUG saved image id 2
+2023-03-09 02:31:50 DEBUG got no images on upload of file 3
+2023-03-09 02:31:50 DEBUG saved image name in json as marian.Gorros_lana_rocky.3.3
+2023-03-09 02:31:50 DEBUG json saved
+2023-03-09 02:31:52 DEBUG rendering negocios
+2023-03-09 02:31:52 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:32:48 DEBUG adding new group for neg: marian
+2023-03-09 02:32:49 DEBUG saving images with neg marian type Gorros_lana_rocky group 4
+2023-03-09 02:32:49 DEBUG added marian.Gorros_lana_rocky.4.1.png to pendingRmBg
+2023-03-09 02:32:49 DEBUG marian.Gorros_lana_rocky.4.1.png found to not have ARR
+2023-03-09 02:32:49 DEBUG saved image id 1
+2023-03-09 02:32:49 DEBUG added marian.Gorros_lana_rocky.4.2.png to pendingRmBg
+2023-03-09 02:32:49 DEBUG marian.Gorros_lana_rocky.4.2.png found to not have ARR
+2023-03-09 02:32:49 DEBUG saved image id 2
+2023-03-09 02:32:49 DEBUG added marian.Gorros_lana_rocky.4.3.png to pendingRmBg
+2023-03-09 02:32:49 DEBUG marian.Gorros_lana_rocky.4.3.png found to not have ARR
+2023-03-09 02:32:49 DEBUG saved image id 3
+2023-03-09 02:32:49 DEBUG saved image name in json as marian.Gorros_lana_rocky.4.3
+2023-03-09 02:32:49 DEBUG json saved
+2023-03-09 02:32:51 DEBUG rendering negocios
+2023-03-09 02:32:51 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:33:28 DEBUG adding new group for neg: marian
+2023-03-09 02:33:28 DEBUG saving images with neg marian type Gorros_lana_rocky group 5
+2023-03-09 02:33:28 DEBUG added marian.Gorros_lana_rocky.5.1.png to pendingRmBg
+2023-03-09 02:33:28 DEBUG marian.Gorros_lana_rocky.5.1.png found to not have ARR
+2023-03-09 02:33:28 DEBUG saved image id 1
+2023-03-09 02:33:28 DEBUG added marian.Gorros_lana_rocky.5.2.png to pendingRmBg
+2023-03-09 02:33:28 DEBUG marian.Gorros_lana_rocky.5.2.png found to not have ARR
+2023-03-09 02:33:28 DEBUG saved image id 2
+2023-03-09 02:33:28 DEBUG added marian.Gorros_lana_rocky.5.3.png to pendingRmBg
+2023-03-09 02:33:28 DEBUG marian.Gorros_lana_rocky.5.3.png found to not have ARR
+2023-03-09 02:33:28 DEBUG saved image id 3
+2023-03-09 02:33:28 DEBUG saved image name in json as marian.Gorros_lana_rocky.5.3
+2023-03-09 02:33:28 DEBUG json saved
+2023-03-09 02:33:30 DEBUG rendering negocios
+2023-03-09 02:33:30 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:34:19 DEBUG adding new group for neg: marian
+2023-03-09 02:34:19 DEBUG saving images with neg marian type Gorros_lana_rocky group 6
+2023-03-09 02:34:19 DEBUG added marian.Gorros_lana_rocky.6.1.png to pendingRmBg
+2023-03-09 02:34:19 DEBUG marian.Gorros_lana_rocky.6.1.png found to not have ARR
+2023-03-09 02:34:19 DEBUG saved image id 1
+2023-03-09 02:34:19 DEBUG added marian.Gorros_lana_rocky.6.2.png to pendingRmBg
+2023-03-09 02:34:19 DEBUG marian.Gorros_lana_rocky.6.2.png found to not have ARR
+2023-03-09 02:34:19 DEBUG saved image id 2
+2023-03-09 02:34:19 DEBUG added marian.Gorros_lana_rocky.6.3.png to pendingRmBg
+2023-03-09 02:34:19 DEBUG marian.Gorros_lana_rocky.6.3.png found to not have ARR
+2023-03-09 02:34:19 DEBUG saved image id 3
+2023-03-09 02:34:19 DEBUG saved image name in json as marian.Gorros_lana_rocky.6.3
+2023-03-09 02:34:19 DEBUG json saved
+2023-03-09 02:34:21 DEBUG rendering negocios
+2023-03-09 02:34:21 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:34:51 DEBUG adding new group for neg: marian
+2023-03-09 02:34:51 DEBUG saving images with neg marian type Gorros_lana_rocky group 7
+2023-03-09 02:34:51 DEBUG added marian.Gorros_lana_rocky.7.1.png to pendingRmBg
+2023-03-09 02:34:51 DEBUG marian.Gorros_lana_rocky.7.1.png found to not have ARR
+2023-03-09 02:34:51 DEBUG saved image id 1
+2023-03-09 02:34:51 DEBUG added marian.Gorros_lana_rocky.7.2.png to pendingRmBg
+2023-03-09 02:34:51 DEBUG marian.Gorros_lana_rocky.7.2.png found to not have ARR
+2023-03-09 02:34:51 DEBUG saved image id 2
+2023-03-09 02:34:51 DEBUG added marian.Gorros_lana_rocky.7.3.png to pendingRmBg
+2023-03-09 02:34:51 DEBUG marian.Gorros_lana_rocky.7.3.png found to not have ARR
+2023-03-09 02:34:51 DEBUG saved image id 3
+2023-03-09 02:34:51 DEBUG saved image name in json as marian.Gorros_lana_rocky.7.3
+2023-03-09 02:34:51 DEBUG json saved
+2023-03-09 02:34:54 DEBUG rendering negocios
+2023-03-09 02:34:54 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:35:31 DEBUG adding new group for neg: marian
+2023-03-09 02:35:31 DEBUG saving images with neg marian type Gorros_lana_rocky group 8
+2023-03-09 02:35:31 DEBUG added marian.Gorros_lana_rocky.8.1.png to pendingRmBg
+2023-03-09 02:35:31 DEBUG marian.Gorros_lana_rocky.8.1.png found to not have ARR
+2023-03-09 02:35:31 DEBUG saved image id 1
+2023-03-09 02:35:31 DEBUG added marian.Gorros_lana_rocky.8.2.png to pendingRmBg
+2023-03-09 02:35:31 DEBUG marian.Gorros_lana_rocky.8.2.png found to not have ARR
+2023-03-09 02:35:31 DEBUG saved image id 2
+2023-03-09 02:35:31 DEBUG added marian.Gorros_lana_rocky.8.3.png to pendingRmBg
+2023-03-09 02:35:31 DEBUG marian.Gorros_lana_rocky.8.3.png found to not have ARR
+2023-03-09 02:35:31 DEBUG saved image id 3
+2023-03-09 02:35:31 DEBUG saved image name in json as marian.Gorros_lana_rocky.8.3
+2023-03-09 02:35:31 DEBUG json saved
+2023-03-09 02:35:33 DEBUG rendering negocios
+2023-03-09 02:35:33 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 02:36:32 DEBUG adding new group for neg: marian
+2023-03-09 02:36:32 DEBUG saving images with neg marian type Gorros_lana_rocky group 9
+2023-03-09 02:36:32 DEBUG added marian.Gorros_lana_rocky.9.1.png to pendingRmBg
+2023-03-09 02:36:32 DEBUG marian.Gorros_lana_rocky.9.1.png found to not have ARR
+2023-03-09 02:36:32 DEBUG saved image id 1
+2023-03-09 02:36:32 DEBUG added marian.Gorros_lana_rocky.9.2.png to pendingRmBg
+2023-03-09 02:36:32 DEBUG marian.Gorros_lana_rocky.9.2.png found to not have ARR
+2023-03-09 02:36:32 DEBUG saved image id 2
+2023-03-09 02:36:32 DEBUG added marian.Gorros_lana_rocky.9.3.png to pendingRmBg
+2023-03-09 02:36:32 DEBUG marian.Gorros_lana_rocky.9.3.png found to not have ARR
+2023-03-09 02:36:32 DEBUG saved image id 3
+2023-03-09 02:36:32 DEBUG saved image name in json as marian.Gorros_lana_rocky.9.3
+2023-03-09 02:36:32 DEBUG json saved
+2023-03-09 03:02:16 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 03:02:17 DEBUG rendering negocios
+2023-03-09 03:02:17 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 03:02:18 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 03:02:18 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 03:25:59 DEBUG rendering negocios
+2023-03-09 03:25:59 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 03:26:04 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 03:26:04 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'ARR.marian.Gorras_street.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 03:26:06 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 03:26:06 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'ARR.marian.Nick_Adidas_etc.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'ARR.marian.Nick_Adidas_etc.1.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'ARR.marian.Nick_Adidas_etc.2.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'ARR.marian.Nick_Adidas_etc.4.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 03:26:12 DEBUG rendering images for negocio: marian in type: Gorras_Animales
+2023-03-09 03:26:12 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'ARR.marian.Gorras_Animales.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra animal pantera ', 'uniqueID': 'D'}}
+2023-03-09 03:26:16 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 03:26:16 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 15:12:38 DEBUG rendering negocios
+2023-03-09 15:12:38 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 15:45:19 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 15:45:20 DEBUG rendering negocios
+2023-03-09 15:45:20 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 15:45:21 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 15:45:21 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 15:45:33 DEBUG downloading image marian.Gorros_lana_rocky.9.3.png
+2023-03-09 15:45:33 DEBUG downloading image marian.Gorros_lana_rocky.9.1.png
+2023-03-09 15:45:33 DEBUG downloading image marian.Gorros_lana_rocky.9.2.png
+2023-03-09 15:46:01 DEBUG rendering negocios
+2023-03-09 15:46:01 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 15:46:02 DEBUG rendering negocios
+2023-03-09 15:46:02 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 15:46:03 DEBUG rendering negocios
+2023-03-09 15:46:03 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 15:46:04 DEBUG rendering images for negocio: marian in type: Gorras_Animales
+2023-03-09 15:46:04 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'ARR.marian.Gorras_Animales.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra animal pantera ', 'uniqueID': 'D'}}
+2023-03-09 15:46:08 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 15:46:08 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'ARR.marian.Nick_Adidas_etc.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'ARR.marian.Nick_Adidas_etc.1.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'ARR.marian.Nick_Adidas_etc.2.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'ARR.marian.Nick_Adidas_etc.4.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 15:46:15 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 15:46:15 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'ARR.marian.Gorras_street.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 15:46:17 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 15:46:17 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 15:47:37 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 15:47:37 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 15:48:24 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 15:48:24 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.0.2.png', 'marian.Gorros_lana_rocky.0.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.1.2.png', 'marian.Gorros_lana_rocky.1.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.2.2.png', 'marian.Gorros_lana_rocky.2.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.3.2.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.4.2.png', 'marian.Gorros_lana_rocky.4.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.5.2.png', 'marian.Gorros_lana_rocky.5.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.6.2.png', 'marian.Gorros_lana_rocky.6.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.7.2.png', 'marian.Gorros_lana_rocky.7.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.8.2.png', 'marian.Gorros_lana_rocky.8.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png', 'marian.Gorros_lana_rocky.9.2.png', 'marian.Gorros_lana_rocky.9.3.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 15:48:31 DEBUG rendering images for negocio: marian in type: Gorras_Animales
+2023-03-09 15:48:31 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'ARR.marian.Gorras_Animales.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra animal pantera ', 'uniqueID': 'D'}}
+2023-03-09 15:48:33 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 15:48:33 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'ARR.marian.Nick_Adidas_etc.0.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'ARR.marian.Nick_Adidas_etc.1.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'ARR.marian.Nick_Adidas_etc.2.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'ARR.marian.Nick_Adidas_etc.4.3.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 13:41:03 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-09 13:41:05 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 13:41:05 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /images/marian/Nick_Adidas_etc HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.0.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.3.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.4.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/ARR.marian.Nick_Adidas_etc.4.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/ARR.marian.Nick_Adidas_etc.0.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.1.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/ARR.marian.Nick_Adidas_etc.1.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.2.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/ARR.marian.Nick_Adidas_etc.2.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:05 INFO 127.0.0.1 - - [09/Mar/2023 13:41:05] "GET /static/marian.Nick_Adidas_etc.3.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:07 DEBUG rendering negocios
+2023-03-09 13:41:07 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 13:41:07 INFO 127.0.0.1 - - [09/Mar/2023 13:41:07] "GET /negocios/marian HTTP/1.1" 200 -
+2023-03-09 13:41:08 DEBUG rendering images for negocio: marian in type: Gorras_rotas
+2023-03-09 13:41:08 DEBUG rendering images: {'0': {'images': ['marian.Gorras_rotas.0.1.png', 'ARR.marian.Gorras_rotas.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Hdhhdh', 'uniqueID': '3'}, '1': {'images': ['marian.Gorras_rotas.1.1.png', 'ARR.marian.Gorras_rotas.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': 'A'}, '2': {'images': ['marian.Gorras_rotas.2.1.png', 'ARR.marian.Gorras_rotas.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': 'C'}}
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /images/marian/Gorras_rotas HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/marian.Gorras_rotas.0.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/ARR.marian.Gorras_rotas.0.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/marian.Gorras_rotas.1.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/ARR.marian.Gorras_rotas.1.2.png HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/marian.Gorras_rotas.2.1.png HTTP/1.1" 200 -
+2023-03-09 13:41:08 INFO 127.0.0.1 - - [09/Mar/2023 13:41:08] "GET /static/ARR.marian.Gorras_rotas.2.2.png HTTP/1.1" 200 -
+2023-03-09 13:43:57 DEBUG rendering negocios
+2023-03-09 13:43:57 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 13:43:57 INFO 127.0.0.1 - - [09/Mar/2023 13:43:57] "GET /negocios/marian HTTP/1.1" 200 -
+2023-03-09 13:43:57 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 13:43:57 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 13:43:57 INFO 127.0.0.1 - - [09/Mar/2023 13:43:57] "GET /images/marian/Gorros_lana_rocky HTTP/1.1" 200 -
+2023-03-09 13:43:57 INFO 127.0.0.1 - - [09/Mar/2023 13:43:57] "GET /static/marian.Gorros_lana_rocky.0.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.2.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.1.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.3.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.4.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.5.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.6.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.7.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.8.1.png HTTP/1.1" 200 -
+2023-03-09 13:43:58 INFO 127.0.0.1 - - [09/Mar/2023 13:43:58] "GET /static/marian.Gorros_lana_rocky.9.1.png HTTP/1.1" 200 -
+2023-03-09 13:44:19 INFO 127.0.0.1 - - [09/Mar/2023 13:44:19] "GET / HTTP/1.1" 200 -
+2023-03-09 13:44:19 INFO 127.0.0.1 - - [09/Mar/2023 13:44:19] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 13:45:44 DEBUG Using proactor: IocpProactor
+2023-03-09 13:45:44 DEBUG starting processing images
+2023-03-09 13:45:44 DEBUG not processing keys
+2023-03-09 13:45:44 INFO 127.0.0.1 - - [09/Mar/2023 13:45:44] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 13:46:01 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-09 13:46:04 DEBUG Using proactor: IocpProactor
+2023-03-09 13:46:04 DEBUG starting processing images
+2023-03-09 13:46:04 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:05 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-09 13:46:05 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 38 left
+2023-03-09 13:46:05 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-09 13:46:05 DEBUG found 30 pendingRmBg
+2023-03-09 13:46:05 DEBUG processingRmBg 30 ['marian.Gorras_rotas.0.1.png', 'ARR.marian.Gorras_rotas.0.2.png', 'marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png', 'marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'marian.Gorras_rotas.1.1.png', 'ARR.marian.Gorras_rotas.1.2.png', 'marian.Gorras_rotas.2.1.png', 'ARR.marian.Gorras_rotas.2.2.png', 'marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.9.1.png'] files
+2023-03-09 13:46:05 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_rotas.0.1.png
+2023-03-09 13:46:05 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:07 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 122081
+2023-03-09 13:46:07 DEBUG image ./static/marian.Gorras_rotas.0.1.png successfully removed bg
+2023-03-09 13:46:07 DEBUG and saved
+2023-03-09 13:46:07 DEBUG successfully processed file marian.Gorras_rotas.0.1.png
+2023-03-09 13:46:07 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_rotas.0.2.png
+2023-03-09 13:46:07 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:10 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 69464
+2023-03-09 13:46:10 DEBUG image ./static/ARR.marian.Gorras_rotas.0.2.png successfully removed bg
+2023-03-09 13:46:10 DEBUG and saved
+2023-03-09 13:46:10 DEBUG successfully processed file ARR.marian.Gorras_rotas.0.2.png
+2023-03-09 13:46:10 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_street.0.1.png
+2023-03-09 13:46:10 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:12 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 88120
+2023-03-09 13:46:12 DEBUG image ./static/marian.Gorras_street.0.1.png successfully removed bg
+2023-03-09 13:46:12 DEBUG and saved
+2023-03-09 13:46:12 DEBUG successfully processed file marian.Gorras_street.0.1.png
+2023-03-09 13:46:12 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_street.0.2.png
+2023-03-09 13:46:12 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:14 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 51247
+2023-03-09 13:46:14 DEBUG image ./static/ARR.marian.Gorras_street.0.2.png successfully removed bg
+2023-03-09 13:46:14 DEBUG and saved
+2023-03-09 13:46:14 DEBUG successfully processed file ARR.marian.Gorras_street.0.2.png
+2023-03-09 13:46:14 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.0.1.png
+2023-03-09 13:46:14 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:16 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 71043
+2023-03-09 13:46:16 DEBUG image ./static/marian.Nick_Adidas_etc.0.1.png successfully removed bg
+2023-03-09 13:46:16 DEBUG and saved
+2023-03-09 13:46:16 DEBUG successfully processed file marian.Nick_Adidas_etc.0.1.png
+2023-03-09 13:46:16 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Nick_Adidas_etc.0.2.png
+2023-03-09 13:46:16 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:18 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 71522
+2023-03-09 13:46:18 DEBUG image ./static/ARR.marian.Nick_Adidas_etc.0.2.png successfully removed bg
+2023-03-09 13:46:18 DEBUG and saved
+2023-03-09 13:46:18 DEBUG successfully processed file ARR.marian.Nick_Adidas_etc.0.2.png
+2023-03-09 13:46:18 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.1.1.png
+2023-03-09 13:46:18 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 13:46:20 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 429 73
+2023-03-09 13:46:20 DEBUG Error: 429 {"errors":[{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]}
+2023-03-09 13:46:20 DEBUG stopping imageEdit for rm bg
+2023-03-09 13:46:20 DEBUG found stop next to be true in pendingRmBg, stopping.
+2023-03-09 13:46:20 INFO 127.0.0.1 - - [09/Mar/2023 13:46:20] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 13:47:03 INFO 127.0.0.1 - - [09/Mar/2023 13:47:03] "GET / HTTP/1.1" 200 -
+2023-03-09 13:47:03 INFO 127.0.0.1 - - [09/Mar/2023 13:47:03] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 13:49:24 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-09 13:49:26 INFO 127.0.0.1 - - [09/Mar/2023 13:49:26] "GET / HTTP/1.1" 200 -
+2023-03-09 13:49:26 INFO 127.0.0.1 - - [09/Mar/2023 13:49:26] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:01:40 INFO 127.0.0.1 - - [09/Mar/2023 14:01:40] "GET / HTTP/1.1" 200 -
+2023-03-09 14:01:40 INFO 127.0.0.1 - - [09/Mar/2023 14:01:40] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:01:58 DEBUG Using proactor: IocpProactor
+2023-03-09 14:01:58 DEBUG starting processing images
+2023-03-09 14:01:58 DEBUG found stop next to be true, stopping.
+2023-03-09 14:01:58 INFO 127.0.0.1 - - [09/Mar/2023 14:01:58] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 14:02:05 DEBUG reseting
+2023-03-09 14:02:05 INFO 127.0.0.1 - - [09/Mar/2023 14:02:05] "GET /reset HTTP/1.1" 200 -
+2023-03-09 14:02:07 DEBUG Using proactor: IocpProactor
+2023-03-09 14:02:07 DEBUG starting processing images
+2023-03-09 14:02:07 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:02:07 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-09 14:02:07 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 32 left
+2023-03-09 14:02:07 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-09 14:02:07 INFO 127.0.0.1 - - [09/Mar/2023 14:02:07] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 14:02:32 INFO 127.0.0.1 - - [09/Mar/2023 14:02:32] "GET / HTTP/1.1" 200 -
+2023-03-09 14:02:32 INFO 127.0.0.1 - - [09/Mar/2023 14:02:32] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:04:20 DEBUG Using proactor: IocpProactor
+2023-03-09 14:04:20 DEBUG starting processing images
+2023-03-09 14:04:20 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:04:21 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-09 14:04:21 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 32 left
+2023-03-09 14:04:21 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-09 14:04:21 INFO 127.0.0.1 - - [09/Mar/2023 14:04:21] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 14:06:51 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-09 14:06:56 INFO 127.0.0.1 - - [09/Mar/2023 14:06:56] "GET / HTTP/1.1" 200 -
+2023-03-09 14:06:56 INFO 127.0.0.1 - - [09/Mar/2023 14:06:56] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:07:03 DEBUG Using proactor: IocpProactor
+2023-03-09 14:07:03 DEBUG starting processing images
+2023-03-09 14:07:03 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:04 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-09 14:07:04 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 32 left
+2023-03-09 14:07:04 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-09 14:07:04 DEBUG found 0 pendingRmBg
+2023-03-09 14:07:04 DEBUG processing is not empty
+2023-03-09 14:07:04 DEBUG processingRmBg 30 ['marian.Gorras_rotas.0.1.png', 'ARR.marian.Gorras_rotas.0.2.png', 'marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png', 'marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png', 'marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png', 'marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png', 'marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png', 'marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'marian.Gorras_rotas.1.1.png', 'ARR.marian.Gorras_rotas.1.2.png', 'marian.Gorras_rotas.2.1.png', 'ARR.marian.Gorras_rotas.2.2.png', 'marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.9.1.png'] files
+2023-03-09 14:07:04 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_rotas.0.1.png
+2023-03-09 14:07:04 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:05 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 121647
+2023-03-09 14:07:05 DEBUG image ./static/marian.Gorras_rotas.0.1.png successfully removed bg
+2023-03-09 14:07:05 DEBUG and saved
+2023-03-09 14:07:05 DEBUG successfully processed file marian.Gorras_rotas.0.1.png
+2023-03-09 14:07:05 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_rotas.0.2.png
+2023-03-09 14:07:05 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:08 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 68855
+2023-03-09 14:07:08 DEBUG image ./static/ARR.marian.Gorras_rotas.0.2.png successfully removed bg
+2023-03-09 14:07:08 DEBUG and saved
+2023-03-09 14:07:08 DEBUG successfully processed file ARR.marian.Gorras_rotas.0.2.png
+2023-03-09 14:07:08 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_street.0.1.png
+2023-03-09 14:07:08 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:12 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 88289
+2023-03-09 14:07:12 DEBUG image ./static/marian.Gorras_street.0.1.png successfully removed bg
+2023-03-09 14:07:12 DEBUG and saved
+2023-03-09 14:07:12 DEBUG successfully processed file marian.Gorras_street.0.1.png
+2023-03-09 14:07:12 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_street.0.2.png
+2023-03-09 14:07:12 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:13 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 51711
+2023-03-09 14:07:13 DEBUG image ./static/ARR.marian.Gorras_street.0.2.png successfully removed bg
+2023-03-09 14:07:13 DEBUG and saved
+2023-03-09 14:07:13 DEBUG successfully processed file ARR.marian.Gorras_street.0.2.png
+2023-03-09 14:07:13 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.0.1.png
+2023-03-09 14:07:13 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:14 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 70688
+2023-03-09 14:07:14 DEBUG image ./static/marian.Nick_Adidas_etc.0.1.png successfully removed bg
+2023-03-09 14:07:14 DEBUG and saved
+2023-03-09 14:07:14 DEBUG successfully processed file marian.Nick_Adidas_etc.0.1.png
+2023-03-09 14:07:14 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Nick_Adidas_etc.0.2.png
+2023-03-09 14:07:14 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:15 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 71581
+2023-03-09 14:07:15 DEBUG image ./static/ARR.marian.Nick_Adidas_etc.0.2.png successfully removed bg
+2023-03-09 14:07:15 DEBUG and saved
+2023-03-09 14:07:15 DEBUG successfully processed file ARR.marian.Nick_Adidas_etc.0.2.png
+2023-03-09 14:07:15 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.1.1.png
+2023-03-09 14:07:15 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:17 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 60416
+2023-03-09 14:07:17 DEBUG image ./static/marian.Nick_Adidas_etc.1.1.png successfully removed bg
+2023-03-09 14:07:17 DEBUG and saved
+2023-03-09 14:07:17 DEBUG successfully processed file marian.Nick_Adidas_etc.1.1.png
+2023-03-09 14:07:17 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Nick_Adidas_etc.1.2.png
+2023-03-09 14:07:17 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:19 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 57822
+2023-03-09 14:07:20 DEBUG image ./static/ARR.marian.Nick_Adidas_etc.1.2.png successfully removed bg
+2023-03-09 14:07:20 DEBUG and saved
+2023-03-09 14:07:20 DEBUG successfully processed file ARR.marian.Nick_Adidas_etc.1.2.png
+2023-03-09 14:07:20 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.2.1.png
+2023-03-09 14:07:20 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:21 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 69837
+2023-03-09 14:07:21 DEBUG image ./static/marian.Nick_Adidas_etc.2.1.png successfully removed bg
+2023-03-09 14:07:21 DEBUG and saved
+2023-03-09 14:07:21 DEBUG successfully processed file marian.Nick_Adidas_etc.2.1.png
+2023-03-09 14:07:21 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Nick_Adidas_etc.2.2.png
+2023-03-09 14:07:21 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:23 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 53616
+2023-03-09 14:07:23 DEBUG image ./static/ARR.marian.Nick_Adidas_etc.2.2.png successfully removed bg
+2023-03-09 14:07:23 DEBUG and saved
+2023-03-09 14:07:23 DEBUG successfully processed file ARR.marian.Nick_Adidas_etc.2.2.png
+2023-03-09 14:07:23 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.3.1.png
+2023-03-09 14:07:23 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:25 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 84692
+2023-03-09 14:07:25 DEBUG image ./static/marian.Nick_Adidas_etc.3.1.png successfully removed bg
+2023-03-09 14:07:25 DEBUG and saved
+2023-03-09 14:07:25 DEBUG successfully processed file marian.Nick_Adidas_etc.3.1.png
+2023-03-09 14:07:25 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.3.2.png
+2023-03-09 14:07:25 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:07:27 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 429 73
+2023-03-09 14:07:27 DEBUG Error: 429 {"errors":[{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]}
+2023-03-09 14:07:27 DEBUG stopping imageEdit for rm bg
+2023-03-09 14:07:27 DEBUG found stop next to be true in pendingRmBg, stopping.
+2023-03-09 14:07:27 INFO 127.0.0.1 - - [09/Mar/2023 14:07:27] "GET /processPending HTTP/1.1" 200 -
+2023-03-09 14:15:57 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-09 14:16:04 INFO 127.0.0.1 - - [09/Mar/2023 14:16:04] "GET / HTTP/1.1" 200 -
+2023-03-09 14:16:04 INFO 127.0.0.1 - - [09/Mar/2023 14:16:04] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:16:05 DEBUG reseting
+2023-03-09 14:16:05 INFO 127.0.0.1 - - [09/Mar/2023 14:16:05] "GET /reset HTTP/1.1" 200 -
+2023-03-09 14:16:07 DEBUG Using proactor: IocpProactor
+2023-03-09 14:16:07 DEBUG starting processing images
+2023-03-09 14:16:07 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:07 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-09 14:16:07 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 21 left
+2023-03-09 14:16:07 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-09 14:16:07 DEBUG found 0 pendingRmBg
+2023-03-09 14:16:07 DEBUG processing is not empty
+2023-03-09 14:16:07 DEBUG processingRmBg 19 ['marian.Nick_Adidas_etc.3.2.png', 'marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png', 'marian.Gorras_rotas.1.1.png', 'ARR.marian.Gorras_rotas.1.2.png', 'marian.Gorras_rotas.2.1.png', 'ARR.marian.Gorras_rotas.2.2.png', 'marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png', 'marian.Gorros_lana_rocky.0.1.png', 'marian.Gorros_lana_rocky.1.1.png', 'marian.Gorros_lana_rocky.2.1.png', 'marian.Gorros_lana_rocky.3.1.png', 'marian.Gorros_lana_rocky.4.1.png', 'marian.Gorros_lana_rocky.5.1.png', 'marian.Gorros_lana_rocky.6.1.png', 'marian.Gorros_lana_rocky.7.1.png', 'marian.Gorros_lana_rocky.8.1.png', 'marian.Gorros_lana_rocky.9.1.png'] files
+2023-03-09 14:16:07 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.3.2.png
+2023-03-09 14:16:07 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:09 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 57564
+2023-03-09 14:16:09 DEBUG image ./static/marian.Nick_Adidas_etc.3.2.png successfully removed bg
+2023-03-09 14:16:09 DEBUG and saved
+2023-03-09 14:16:09 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:09 DEBUG successfully processed file marian.Nick_Adidas_etc.3.2.png
+2023-03-09 14:16:09 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Nick_Adidas_etc.4.1.png
+2023-03-09 14:16:09 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:11 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 68221
+2023-03-09 14:16:11 DEBUG image ./static/marian.Nick_Adidas_etc.4.1.png successfully removed bg
+2023-03-09 14:16:11 DEBUG and saved
+2023-03-09 14:16:11 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:11 DEBUG successfully processed file marian.Nick_Adidas_etc.4.1.png
+2023-03-09 14:16:11 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Nick_Adidas_etc.4.2.png
+2023-03-09 14:16:11 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:12 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 57974
+2023-03-09 14:16:13 DEBUG image ./static/ARR.marian.Nick_Adidas_etc.4.2.png successfully removed bg
+2023-03-09 14:16:13 DEBUG and saved
+2023-03-09 14:16:13 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:13 DEBUG successfully processed file ARR.marian.Nick_Adidas_etc.4.2.png
+2023-03-09 14:16:13 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_rotas.1.1.png
+2023-03-09 14:16:13 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:15 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 79254
+2023-03-09 14:16:16 DEBUG image ./static/marian.Gorras_rotas.1.1.png successfully removed bg
+2023-03-09 14:16:16 DEBUG and saved
+2023-03-09 14:16:16 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:16 DEBUG successfully processed file marian.Gorras_rotas.1.1.png
+2023-03-09 14:16:16 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_rotas.1.2.png
+2023-03-09 14:16:16 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:17 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 70956
+2023-03-09 14:16:18 DEBUG image ./static/ARR.marian.Gorras_rotas.1.2.png successfully removed bg
+2023-03-09 14:16:18 DEBUG and saved
+2023-03-09 14:16:18 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:18 DEBUG successfully processed file ARR.marian.Gorras_rotas.1.2.png
+2023-03-09 14:16:18 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_rotas.2.1.png
+2023-03-09 14:16:18 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:20 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 72743
+2023-03-09 14:16:20 DEBUG image ./static/marian.Gorras_rotas.2.1.png successfully removed bg
+2023-03-09 14:16:20 DEBUG and saved
+2023-03-09 14:16:20 DEBUG deleting image from processingRmBg
+2023-03-09 14:16:20 DEBUG successfully processed file marian.Gorras_rotas.2.1.png
+2023-03-09 14:16:20 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_rotas.2.2.png
+2023-03-09 14:16:20 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:16:21 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 429 73
+2023-03-09 14:16:21 DEBUG Rate limit exceeded, waiting for 1 minute
+2023-03-09 14:16:54 INFO 127.0.0.1 - - [09/Mar/2023 14:16:54] "GET / HTTP/1.1" 200 -
+2023-03-09 14:16:57 INFO 127.0.0.1 - - [09/Mar/2023 14:16:57] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:16:59 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-09 14:16:59 INFO 127.0.0.1 - - [09/Mar/2023 14:16:59] "GET /negocios HTTP/1.1" 200 -
+2023-03-09 14:17:00 DEBUG rendering negocios
+2023-03-09 14:17:00 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky']
+2023-03-09 14:17:00 INFO 127.0.0.1 - - [09/Mar/2023 14:17:00] "GET /negocios/marian HTTP/1.1" 200 -
+2023-03-09 14:17:01 DEBUG rendering images for negocio: marian in type: Gorras_rotas
+2023-03-09 14:17:01 DEBUG rendering images: {'0': {'images': ['marian.Gorras_rotas.0.1.png', 'ARR.marian.Gorras_rotas.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Hdhhdh', 'uniqueID': '3'}, '1': {'images': ['marian.Gorras_rotas.1.1.png', 'ARR.marian.Gorras_rotas.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': 'A'}, '2': {'images': ['marian.Gorras_rotas.2.1.png', 'ARR.marian.Gorras_rotas.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': 'C'}}
+2023-03-09 14:17:01 INFO 127.0.0.1 - - [09/Mar/2023 14:17:01] "GET /images/marian/Gorras_rotas HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "GET /static/marian.Gorras_rotas.0.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "GET /static/ARR.marian.Gorras_rotas.0.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "GET /static/marian.Gorras_rotas.1.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "GET /static/ARR.marian.Gorras_rotas.1.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "GET /static/marian.Gorras_rotas.2.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:02 INFO 127.0.0.1 - - [09/Mar/2023 14:17:02] "[36mGET /static/ARR.marian.Gorras_rotas.2.2.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:04 DEBUG rendering images for negocio: marian in type: Gorras_street
+2023-03-09 14:17:04 DEBUG rendering images: {'0': {'images': ['marian.Gorras_street.0.1.png', 'ARR.marian.Gorras_street.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de los Yankees negra ', 'uniqueID': '4'}}
+2023-03-09 14:17:04 INFO 127.0.0.1 - - [09/Mar/2023 14:17:04] "GET /images/marian/Gorras_street HTTP/1.1" 200 -
+2023-03-09 14:17:04 INFO 127.0.0.1 - - [09/Mar/2023 14:17:04] "GET /static/marian.Gorras_street.0.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:04 INFO 127.0.0.1 - - [09/Mar/2023 14:17:04] "GET /static/ARR.marian.Gorras_street.0.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-09 14:17:05 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /images/marian/Nick_Adidas_etc HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/marian.Nick_Adidas_etc.0.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/marian.Nick_Adidas_etc.4.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/marian.Nick_Adidas_etc.3.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/ARR.marian.Nick_Adidas_etc.4.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/ARR.marian.Nick_Adidas_etc.0.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/marian.Nick_Adidas_etc.1.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:05 INFO 127.0.0.1 - - [09/Mar/2023 14:17:05] "GET /static/ARR.marian.Nick_Adidas_etc.1.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:06 INFO 127.0.0.1 - - [09/Mar/2023 14:17:06] "GET /static/marian.Nick_Adidas_etc.2.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:06 INFO 127.0.0.1 - - [09/Mar/2023 14:17:06] "GET /static/ARR.marian.Nick_Adidas_etc.2.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:06 INFO 127.0.0.1 - - [09/Mar/2023 14:17:06] "GET /static/marian.Nick_Adidas_etc.3.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:07 DEBUG rendering images for negocio: marian in type: Gorras_Animales
+2023-03-09 14:17:07 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Animales.0.1.png', 'ARR.marian.Gorras_Animales.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra animal pantera ', 'uniqueID': 'D'}}
+2023-03-09 14:17:07 INFO 127.0.0.1 - - [09/Mar/2023 14:17:07] "GET /images/marian/Gorras_Animales HTTP/1.1" 200 -
+2023-03-09 14:17:07 INFO 127.0.0.1 - - [09/Mar/2023 14:17:07] "GET /static/marian.Gorras_Animales.0.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:07 INFO 127.0.0.1 - - [09/Mar/2023 14:17:07] "GET /static/ARR.marian.Gorras_Animales.0.2.png HTTP/1.1" 200 -
+2023-03-09 14:17:09 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 14:17:09 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "GET /images/marian/Gorros_lana_rocky HTTP/1.1" 200 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.0.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.1.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.2.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.3.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.4.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.5.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.6.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.7.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.8.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:09 INFO 127.0.0.1 - - [09/Mar/2023 14:17:09] "[36mGET /static/marian.Gorros_lana_rocky.9.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:21 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_rotas.2.2.png
+2023-03-09 14:17:21 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:23 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 67223
+2023-03-09 14:17:23 DEBUG image ./static/ARR.marian.Gorras_rotas.2.2.png successfully removed bg
+2023-03-09 14:17:23 DEBUG and saved
+2023-03-09 14:17:23 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:23 DEBUG successfully processed file ARR.marian.Gorras_rotas.2.2.png
+2023-03-09 14:17:23 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorras_Animales.0.1.png
+2023-03-09 14:17:23 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:25 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 71270
+2023-03-09 14:17:26 DEBUG image ./static/marian.Gorras_Animales.0.1.png successfully removed bg
+2023-03-09 14:17:26 DEBUG and saved
+2023-03-09 14:17:26 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:26 DEBUG successfully processed file marian.Gorras_Animales.0.1.png
+2023-03-09 14:17:26 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/ARR.marian.Gorras_Animales.0.2.png
+2023-03-09 14:17:26 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:27 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 79079
+2023-03-09 14:17:28 DEBUG image ./static/ARR.marian.Gorras_Animales.0.2.png successfully removed bg
+2023-03-09 14:17:28 DEBUG and saved
+2023-03-09 14:17:28 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:28 DEBUG successfully processed file ARR.marian.Gorras_Animales.0.2.png
+2023-03-09 14:17:28 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.0.1.png
+2023-03-09 14:17:28 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:30 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 112719
+2023-03-09 14:17:30 DEBUG image ./static/marian.Gorros_lana_rocky.0.1.png successfully removed bg
+2023-03-09 14:17:30 DEBUG and saved
+2023-03-09 14:17:30 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:30 DEBUG successfully processed file marian.Gorros_lana_rocky.0.1.png
+2023-03-09 14:17:30 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.1.1.png
+2023-03-09 14:17:30 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:32 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 99992
+2023-03-09 14:17:33 DEBUG image ./static/marian.Gorros_lana_rocky.1.1.png successfully removed bg
+2023-03-09 14:17:33 DEBUG and saved
+2023-03-09 14:17:33 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:33 DEBUG successfully processed file marian.Gorros_lana_rocky.1.1.png
+2023-03-09 14:17:33 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.2.1.png
+2023-03-09 14:17:33 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:35 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 86140
+2023-03-09 14:17:35 DEBUG image ./static/marian.Gorros_lana_rocky.2.1.png successfully removed bg
+2023-03-09 14:17:35 DEBUG and saved
+2023-03-09 14:17:35 DEBUG deleting image from processingRmBg
+2023-03-09 14:17:35 DEBUG successfully processed file marian.Gorros_lana_rocky.2.1.png
+2023-03-09 14:17:35 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.3.1.png
+2023-03-09 14:17:35 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:17:37 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 429 73
+2023-03-09 14:17:37 DEBUG Rate limit exceeded, waiting for 1 minute
+2023-03-09 14:17:40 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-09 14:17:40 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "GET /images/marian/Gorros_lana_rocky HTTP/1.1" 200 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "[36mGET /static/marian.Gorros_lana_rocky.6.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "GET /static/marian.Gorros_lana_rocky.0.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "GET /static/marian.Gorros_lana_rocky.1.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "GET /static/marian.Gorros_lana_rocky.2.1.png HTTP/1.1" 200 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "[36mGET /static/marian.Gorros_lana_rocky.3.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:40 INFO 127.0.0.1 - - [09/Mar/2023 14:17:40] "[36mGET /static/marian.Gorros_lana_rocky.4.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:41 INFO 127.0.0.1 - - [09/Mar/2023 14:17:41] "[36mGET /static/marian.Gorros_lana_rocky.5.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:41 INFO 127.0.0.1 - - [09/Mar/2023 14:17:41] "[36mGET /static/marian.Gorros_lana_rocky.7.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:41 INFO 127.0.0.1 - - [09/Mar/2023 14:17:41] "[36mGET /static/marian.Gorros_lana_rocky.8.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:17:41 INFO 127.0.0.1 - - [09/Mar/2023 14:17:41] "[36mGET /static/marian.Gorros_lana_rocky.9.1.png HTTP/1.1[0m" 304 -
+2023-03-09 14:18:37 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.3.1.png
+2023-03-09 14:18:37 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:39 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 82460
+2023-03-09 14:18:40 DEBUG image ./static/marian.Gorros_lana_rocky.3.1.png successfully removed bg
+2023-03-09 14:18:40 DEBUG and saved
+2023-03-09 14:18:40 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:40 DEBUG successfully processed file marian.Gorros_lana_rocky.3.1.png
+2023-03-09 14:18:40 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.4.1.png
+2023-03-09 14:18:40 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:42 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 75859
+2023-03-09 14:18:42 DEBUG image ./static/marian.Gorros_lana_rocky.4.1.png successfully removed bg
+2023-03-09 14:18:42 DEBUG and saved
+2023-03-09 14:18:42 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:42 DEBUG successfully processed file marian.Gorros_lana_rocky.4.1.png
+2023-03-09 14:18:42 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.5.1.png
+2023-03-09 14:18:42 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:44 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 70134
+2023-03-09 14:18:44 DEBUG image ./static/marian.Gorros_lana_rocky.5.1.png successfully removed bg
+2023-03-09 14:18:44 DEBUG and saved
+2023-03-09 14:18:44 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:44 DEBUG successfully processed file marian.Gorros_lana_rocky.5.1.png
+2023-03-09 14:18:44 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.6.1.png
+2023-03-09 14:18:44 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:47 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 84000
+2023-03-09 14:18:47 DEBUG image ./static/marian.Gorros_lana_rocky.6.1.png successfully removed bg
+2023-03-09 14:18:47 DEBUG and saved
+2023-03-09 14:18:47 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:47 DEBUG successfully processed file marian.Gorros_lana_rocky.6.1.png
+2023-03-09 14:18:47 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.7.1.png
+2023-03-09 14:18:47 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:48 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 84735
+2023-03-09 14:18:49 DEBUG image ./static/marian.Gorros_lana_rocky.7.1.png successfully removed bg
+2023-03-09 14:18:49 DEBUG and saved
+2023-03-09 14:18:49 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:49 DEBUG successfully processed file marian.Gorros_lana_rocky.7.1.png
+2023-03-09 14:18:49 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.8.1.png
+2023-03-09 14:18:49 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:51 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 79369
+2023-03-09 14:18:51 DEBUG image ./static/marian.Gorros_lana_rocky.8.1.png successfully removed bg
+2023-03-09 14:18:51 DEBUG and saved
+2023-03-09 14:18:51 DEBUG deleting image from processingRmBg
+2023-03-09 14:18:51 DEBUG successfully processed file marian.Gorros_lana_rocky.8.1.png
+2023-03-09 14:18:51 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.9.1.png
+2023-03-09 14:18:51 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:18:53 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 429 73
+2023-03-09 14:18:53 DEBUG Rate limit exceeded, waiting for 1 minute
+2023-03-09 14:19:34 INFO 127.0.0.1 - - [09/Mar/2023 14:19:34] "GET / HTTP/1.1" 200 -
+2023-03-09 14:19:34 INFO 127.0.0.1 - - [09/Mar/2023 14:19:34] "GET /getKeys HTTP/1.1" 200 -
+2023-03-09 14:19:53 DEBUG using key: ShYSmkGi19ztn5G7oDBPLUbN for image ./static/marian.Gorros_lana_rocky.9.1.png
+2023-03-09 14:19:53 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-09 14:19:55 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 141779
+2023-03-09 14:19:56 DEBUG image ./static/marian.Gorros_lana_rocky.9.1.png successfully removed bg
+2023-03-09 14:19:56 DEBUG and saved
+2023-03-09 14:19:56 DEBUG deleting image from processingRmBg
+2023-03-09 14:19:56 DEBUG successfully processed file marian.Gorros_lana_rocky.9.1.png
+2023-03-09 14:19:56 INFO 127.0.0.1 - - [09/Mar/2023 14:19:56] "GET /processPending HTTP/1.1" 200 -

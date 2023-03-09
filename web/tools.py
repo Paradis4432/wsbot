@@ -21,6 +21,13 @@ def saveValue(path, value):
     data[path] = value
     saveData(data)
 
+def delValue(path, name):
+    
+    data = loadData()
+    data[path].remove(name)
+    saveData(data)
+
+
 def addWhiteBackground(path):
     try:
         img = Image.open(path).convert("RGBA")

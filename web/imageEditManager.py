@@ -1,9 +1,11 @@
+import time
 import json
 import requests
 import logging
 import cv2
 
 from .tools import *
+# import tools
 
 # general values
 keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG',
@@ -33,8 +35,8 @@ def has0left():
     return callsLeft == 0
 
 
-def removeBG(path):
-    path = "static/" + path
+def removeBG(name):
+    path = "./static/" + name
     global currentKey
 
     try:
@@ -51,6 +53,13 @@ def removeBG(path):
                 logging.debug(f"image {path} successfully removed bg")
                 out.write(response.content)
                 logging.debug("and saved")
+                logging.debug("deleting image from processingRmBg")
+                delValue("processingRmBg", name)
+
+        elif response.status_code == 429:
+            logging.debug(f"Rate limit exceeded, waiting for 1 minute")
+            time.sleep(60)
+            removeBG(name)
         else:
             logging.debug(f"Error: {response.status_code} {response.text}")
             return "error1"
@@ -59,6 +68,9 @@ def removeBG(path):
         return "error2"
     return "success"
 
+
+# x = removeBG("../c.jpeg")
+# print(x)
 
 def processFiles(pendingFiles):
     for pending in pendingFiles:
@@ -102,11 +114,16 @@ def addArrows(pendingFiles):
 
 async def processPendingFiles(pendingKey, processingKey, processedKey, processFunc, processMsg):
     data = loadData()
-    if len(data[pendingKey]) > 0:
+    if len(data[pendingKey]) > 0 or len(data[processingKey]) > 0:
         logging.debug(f"found {len(data[pendingKey])} {pendingKey}")
-        pendingFiles = data[pendingKey]
-        data[processingKey] = pendingFiles
-        data[pendingKey] = []
+        if (len(data[processingKey]) == 0):
+            logging.debug("processing is empty")
+            pendingFiles = data[pendingKey]
+            data[processingKey] = pendingFiles
+            data[pendingKey] = []
+        else:
+            logging.debug("processing is not empty")
+            pendingFiles = data[processingKey]
         saveData(data)
 
         logging.debug(f"{processMsg} {len(pendingFiles)} {pendingFiles} files")
@@ -124,12 +141,14 @@ async def processPendingFiles(pendingKey, processingKey, processedKey, processFu
             data[processingKey] = []
             data[processedKey].extend(processed)
         saveData(data)
+    else:
+        logging.debug(f"no {pendingKey} or {processingKey} in data.json")
 
 
 async def startProcessing():
     global currentKey
-    logging.debug("not processing keys")
-    return 
+    # logging.debug("not processing keys")
+    # return
     # if stopNext: log and stop
     data = loadData()
     if data["stopNext"]:
@@ -150,7 +169,7 @@ async def startProcessing():
 
     logging.debug(f"using key {keys[currentKey]}")
 
-    # await processPendingFiles("pendingRmBg", "processingRmBg", "processedRmBg", processFiles, "processingRmBg")
+    await processPendingFiles("pendingRmBg", "processingRmBg", "processedRmBg", processFiles, "processingRmBg")
 
     # await processPendingFiles("pendingAddArr", "processingAddArr", "processedAddArr", addArrows, "processingAddArr")
 
