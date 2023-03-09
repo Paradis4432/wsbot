@@ -11,14 +11,18 @@ import glob
 import asyncio
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 50 * 1000 * 1000
 
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s", datefmt="%Y-%m-%d %H:%M:%S", filename="basic.log")
 
 # TODO: arrows for images, excel loading
-# TODO: idea: add tags for each group of images
+# fix max size done
+# TODO: change upload to button no
+# TODO: cambiar cargado de imagenes boton -> grupo info etc
+# TODO: add button on new type
 
-
+# idea: add tags for each group of images no
 @app.route("/")
 def index():
     data = loadData()
@@ -68,6 +72,10 @@ def renderImages(neg=None, t=None):
 def getExcel(negocio=None):
     return 0
 
+@app.route("/test", methods=["POST"])
+def test():
+    x = request.form
+    return "test"
 
 @app.route("/nuevoTipo/<neg>/<name>", methods=['POST'])
 def newType(neg=None, name=None):

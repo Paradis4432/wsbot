@@ -1,6 +1,7 @@
 import json
 import requests
 import logging
+import cv2
 
 from .tools import *
 
@@ -62,36 +63,73 @@ def removeBG(path):
 def processFiles(pendingFiles):
     for pending in pendingFiles:
         status = removeBG(pending)
-        # status = "success"
 
         if status == "success":
             logging.debug(f"successfully processed file {pending}")
             continue
 
-        logging.debug(f"stopping imageEdit")
+        logging.debug(f"stopping imageEdit for rm bg")
         saveValue("stopNext", True)
         saveValue("currentStatus", "ERROR RMBG")
         return
 
 
 def addArrows(pendingFiles):
+    status = "success"
     for pending in pendingFiles:
 
-        status = "success"
-        # add arrows
+        try:
+            # add arrows to pending
+            img = cv2.imread(f"./static/{pending}")
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            edges = cv2.Canny(gray, 20, 100)
+            contours, _ = cv2.findContours(
+                edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            largest_contour = max(contours, key=cv2.contourArea)
+            x, y, w, h = cv2.boundingRect(largest_contour)
+            cv2.line(img, (x, y + h), (x, y), (0, 255, 0), 2)
+            cv2.line(img, (x, y + h), (x + w, y + h), (0, 255, 0), 2)
+            cv2.imwrite(f"./static/{pending}", img)
 
-        if status == "success":
             logging.debug(f"successfully added arrows to {pending}")
-            continue
+        except Exception as e:
+            logging.debug(f"error adding arrows to {pending}: {e}")
+            logging.debug(f"stopping imageEdit for add arrows")
+            saveValue("stopNext", True)
+            saveValue("currentStatus", "ERROR ARROWS")
+            return "errorArrows"
 
-        logging.debug(f"stopping imageEdit")
-        saveValue("stopNext", True)
-        saveValue("currentStatus", "ERROR ARROWS")
-        return
+
+async def processPendingFiles(pendingKey, processingKey, processedKey, processFunc, processMsg):
+    data = loadData()
+    if len(data[pendingKey]) > 0:
+        logging.debug(f"found {len(data[pendingKey])} {pendingKey}")
+        pendingFiles = data[pendingKey]
+        data[processingKey] = pendingFiles
+        data[pendingKey] = []
+        saveData(data)
+
+        logging.debug(f"{processMsg} {len(pendingFiles)} {pendingFiles} files")
+        processFunc(pendingFiles)
+
+        data = loadData()
+        if data["stopNext"]:
+            logging.debug(
+                f"found stop next to be true in {pendingKey}, stopping.")
+            return
+
+        with open("data.json", "r") as f:
+            data = json.load(f)
+            processed = data[processingKey]
+            data[processingKey] = []
+            data[processedKey].extend(processed)
+        saveData(data)
 
 
 async def startProcessing():
     global currentKey
+    logging.debug("not processing keys")
+    return 
     # if stopNext: log and stop
     data = loadData()
     if data["stopNext"]:
@@ -112,60 +150,9 @@ async def startProcessing():
 
     logging.debug(f"using key {keys[currentKey]}")
 
-    data = loadData()
+    # await processPendingFiles("pendingRmBg", "processingRmBg", "processedRmBg", processFiles, "processingRmBg")
 
-    if len(data["pendingRmBg"]) > 0:
-        logging.debug(f"found {data['pendingRmBg']} pendingRmBg")
-
-        pendingFiles = data["pendingRmBg"]
-        data["processingRmBg"] = pendingFiles
-        data["pendingRmBg"] = []
-
-        saveData(data)
-
-        logging.debug(
-            f"processingRmBg {len(pendingFiles)} {pendingFiles} files")
-        processFiles(pendingFiles)
-
-        data = loadData()
-        if data["stopNext"]:
-            logging.debug("found stop next to be true in rmbg, stopping.")
-            return
-
-        with open("data.json", "r") as f:
-            data = json.load(f)
-            processed = data["processingRmBg"]
-            data["processingRmBg"] = []
-            data["processedRmBg"].extend(processed)
-        saveData(data)
-
-    # ARROWS
-    data = loadData()
-
-    if len(data["pendingAddArr"]) > 0:
-        logging.debug(f"found {data['pendingAddArr']} pendingAddArr")
-
-        pendingFiles = data["pendingAddArr"]
-        data["processingAddArr"] = pendingFiles
-        data["pendingAddArr"] = []
-
-        saveData(data)
-
-        logging.debug(
-            f"processingAddArr {len(pendingFiles)} {pendingFiles} files")
-        addArrows(pendingFiles)
-
-        data = loadData()
-        if data["stopNext"]:
-            logging.debug("found stop next to be true in arrows, stopping.")
-            return
-
-        with open("data.json", "r") as f:
-            data = json.load(f)
-            processed = data["processingAddArr"]
-            data["processingAddArr"] = []
-            data["processedAddArr"].extend(processed)
-        saveData(data)
+    # await processPendingFiles("pendingAddArr", "processingAddArr", "processedAddArr", addArrows, "processingAddArr")
 
 
 def getAllCallsLeft():
@@ -180,3 +167,12 @@ def getAllCallsLeft():
         calls += callsLeft
     logging.debug(f"found a total of {calls} calls left")
     return calls
+
+
+def resizeImage():
+    # for filename in os.listdir(input_dir):
+    # if filename.endswith('.jpg') or filename.endswith('.png'):  # check if the file is an image
+    #    with Image.open(os.path.join(input_dir, filename)) as im:
+    #        im.thumbnail(max_size)  # resize the image to fit within the maximum size
+    #        im.save(os.path.join(output_dir, filename))  # save the resized image to the output folder
+    ...

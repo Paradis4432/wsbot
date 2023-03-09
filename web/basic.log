@@ -1,2 +1,1192 @@
 2023-03-06 14:54:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
 2023-03-06 14:54:33 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 14:54:33 WARNING  * Debugger is active!
+2023-03-06 14:54:33 INFO  * Debugger PIN: 123-843-478
+2023-03-06 14:56:49 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\json\\__init__.py', reloading
+2023-03-06 14:56:49 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2023-03-06 14:56:49 INFO  * Restarting with watchdog (windowsapi)
+2023-03-06 14:56:49 WARNING  * Debugger is active!
+2023-03-06 14:56:49 INFO  * Debugger PIN: 123-843-478
+2023-03-08 00:59:29 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-08 00:59:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 00:59:29 WARNING  * Debugger is active!
+2023-03-08 00:59:29 INFO  * Debugger PIN: 123-843-478
+2023-03-08 00:59:33 INFO 127.0.0.1 - - [08/Mar/2023 00:59:33] "GET / HTTP/1.1" 200 -
+2023-03-08 00:59:33 INFO 127.0.0.1 - - [08/Mar/2023 00:59:33] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 00:59:33 INFO 127.0.0.1 - - [08/Mar/2023 00:59:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-08 00:59:35 DEBUG rendering negocios with negs: ['cholo', 'marian']
+2023-03-08 00:59:35 INFO 127.0.0.1 - - [08/Mar/2023 00:59:35] "GET /negocios HTTP/1.1" 200 -
+2023-03-08 01:01:09 DEBUG rendering negocios
+2023-03-08 01:01:09 DEBUG rendering tempNeg for: cholo with types []
+2023-03-08 01:01:09 INFO 127.0.0.1 - - [08/Mar/2023 01:01:09] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:02:19 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-08 01:02:19 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:02:19 WARNING  * Debugger is active!
+2023-03-08 01:02:19 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:05:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:05:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:05:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:05:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:05:04 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:05:05 WARNING  * Debugger is active!
+2023-03-08 01:05:05 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:05:18 INFO 127.0.0.1 - - [08/Mar/2023 01:05:18] "POST /test HTTP/1.1" 200 -
+2023-03-08 01:06:36 INFO 127.0.0.1 - - [08/Mar/2023 01:06:36] "POST /test HTTP/1.1" 200 -
+2023-03-08 01:06:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:06:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:06:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:06:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:06:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:06:52 WARNING  * Debugger is active!
+2023-03-08 01:06:52 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:07:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:21 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:07:21 WARNING  * Debugger is active!
+2023-03-08 01:07:21 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:07:25 INFO 127.0.0.1 - - [08/Mar/2023 01:07:25] "[31m[1mPOST /test HTTP/1.1[0m" 413 -
+2023-03-08 01:07:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:07:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:07:52 WARNING  * Debugger is active!
+2023-03-08 01:07:52 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:07:55 INFO 127.0.0.1 - - [08/Mar/2023 01:07:55] "[31m[1mPOST /test HTTP/1.1[0m" 413 -
+2023-03-08 01:08:20 INFO 127.0.0.1 - - [08/Mar/2023 01:08:20] "[31m[1mPOST /test HTTP/1.1[0m" 413 -
+2023-03-08 01:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:08:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:08:47 WARNING  * Debugger is active!
+2023-03-08 01:08:47 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:08:52 INFO 127.0.0.1 - - [08/Mar/2023 01:08:52] "POST /test HTTP/1.1" 200 -
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:12:14 WARNING  * Debugger is active!
+2023-03-08 01:12:14 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:12:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:12:18 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:12:18 WARNING  * Debugger is active!
+2023-03-08 01:12:18 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:12:22 DEBUG rendering negocios
+2023-03-08 01:12:22 DEBUG rendering tempNeg for: cholo with types []
+2023-03-08 01:12:22 INFO 127.0.0.1 - - [08/Mar/2023 01:12:22] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:12:25 INFO 127.0.0.1 - - [08/Mar/2023 01:12:25] "POST /test HTTP/1.1" 200 -
+2023-03-08 01:12:29 INFO 127.0.0.1 - - [08/Mar/2023 01:12:29] "[31m[1mPOST /test HTTP/1.1[0m" 413 -
+2023-03-08 01:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:17:41 WARNING  * Debugger is active!
+2023-03-08 01:17:41 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:17:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:17:44 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:17:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:17:56 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:17:57 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:18:03 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:18:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:18:07 WARNING  * Debugger is active!
+2023-03-08 01:18:07 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:18:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:18:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:18:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:18:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:18:39 WARNING  * Debugger is active!
+2023-03-08 01:18:39 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:19:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:23 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:19:23 WARNING  * Debugger is active!
+2023-03-08 01:19:23 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:19:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:19:43 WARNING  * Debugger is active!
+2023-03-08 01:19:43 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:19:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:45 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:19:45 WARNING  * Debugger is active!
+2023-03-08 01:19:45 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:19:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:19:49 WARNING  * Debugger is active!
+2023-03-08 01:19:49 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:31:25 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-08 01:31:25 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:31:26 WARNING  * Debugger is active!
+2023-03-08 01:31:26 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:31:27 DEBUG rendering negocios
+2023-03-08 01:31:27 DEBUG rendering tempNeg for: cholo with types []
+2023-03-08 01:31:27 INFO 127.0.0.1 - - [08/Mar/2023 01:31:27] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:31:29 DEBUG creating new type: test
+2023-03-08 01:31:29 DEBUG new type added
+2023-03-08 01:31:29 INFO 127.0.0.1 - - [08/Mar/2023 01:31:29] "POST /nuevoTipo/cholo/test HTTP/1.1" 200 -
+2023-03-08 01:31:31 DEBUG rendering negocios
+2023-03-08 01:31:31 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:31:31 INFO 127.0.0.1 - - [08/Mar/2023 01:31:31] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:31:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:40 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:31:41 WARNING  * Debugger is active!
+2023-03-08 01:31:41 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:31:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-08 01:31:44 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:31:44 WARNING  * Debugger is active!
+2023-03-08 01:31:44 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:31:55 DEBUG adding new group for neg: cholo
+2023-03-08 01:31:55 DEBUG saving images with neg cholo type test group 0
+2023-03-08 01:31:55 DEBUG added ARR.cholo.test.0.1.png to pendingRmBg
+2023-03-08 01:31:55 DEBUG adding image 1 to pending arrows
+2023-03-08 01:31:55 DEBUG saved image id 1
+2023-03-08 01:31:55 DEBUG added ARR.cholo.test.0.2.png to pendingRmBg
+2023-03-08 01:31:55 DEBUG adding image 2 to pending arrows
+2023-03-08 01:31:55 DEBUG saved image id 2
+2023-03-08 01:31:55 DEBUG got no images on upload of file 3
+2023-03-08 01:31:55 DEBUG saved image name in json as cholo.test.0.3
+2023-03-08 01:31:55 DEBUG json saved
+2023-03-08 01:31:55 INFO 127.0.0.1 - - [08/Mar/2023 01:31:55] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:31:57 DEBUG rendering negocios
+2023-03-08 01:31:57 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:31:57 INFO 127.0.0.1 - - [08/Mar/2023 01:31:57] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:32:02 INFO 127.0.0.1 - - [08/Mar/2023 01:32:02] "GET / HTTP/1.1" 200 -
+2023-03-08 01:32:02 INFO 127.0.0.1 - - [08/Mar/2023 01:32:02] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:32:24 DEBUG adding new group for neg: cholo
+2023-03-08 01:32:24 DEBUG saving images with neg cholo type test group 1
+2023-03-08 01:32:24 DEBUG found image id 1 to have KO
+2023-03-08 01:32:24 DEBUG adding image 1 to pending arrows
+2023-03-08 01:32:24 DEBUG saved image id 1
+2023-03-08 01:32:24 DEBUG found image id 2 to have KO
+2023-03-08 01:32:24 DEBUG adding image 2 to pending arrows
+2023-03-08 01:32:24 DEBUG saved image id 2
+2023-03-08 01:32:24 DEBUG found image id 3 to have KO
+2023-03-08 01:32:24 DEBUG adding image 3 to pending arrows
+2023-03-08 01:32:24 DEBUG saved image id 3
+2023-03-08 01:32:24 DEBUG saved image name in json as cholo.test.1.3
+2023-03-08 01:32:24 DEBUG json saved
+2023-03-08 01:32:24 INFO 127.0.0.1 - - [08/Mar/2023 01:32:24] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:32:27 INFO 127.0.0.1 - - [08/Mar/2023 01:32:27] "GET / HTTP/1.1" 200 -
+2023-03-08 01:32:27 INFO 127.0.0.1 - - [08/Mar/2023 01:32:27] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:32:38 INFO 127.0.0.1 - - [08/Mar/2023 01:32:38] "GET / HTTP/1.1" 200 -
+2023-03-08 01:32:38 INFO 127.0.0.1 - - [08/Mar/2023 01:32:38] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:32:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:32:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:32:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:32:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:32:47 WARNING  * Debugger is active!
+2023-03-08 01:32:47 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:33:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:33:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:33:09 WARNING  * Debugger is active!
+2023-03-08 01:33:09 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:33:09 DEBUG Using proactor: IocpProactor
+2023-03-08 01:33:09 DEBUG starting processing images
+2023-03-08 01:33:09 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:33:10 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:33:10 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:33:10 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:33:10 DEBUG found 5 pendingAddArr
+2023-03-08 01:33:10 DEBUG processingAddArr 5 ['ARR.cholo.test.0.1.png', 'ARR.cholo.test.0.2.png', 'KO.ARR.cholo.test.1.1.png', 'KO.ARR.cholo.test.1.2.png', 'KO.ARR.cholo.test.1.3.png'] files
+2023-03-08 01:33:10 ERROR Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<startProcessing() done, defined at C:\Users\Lucas\Escritorio\e\wsbot\web\imageEditManager.py:129> exception=error("OpenCV(4.7.0) :-1: error: (-5:Bad argument) in function 'imwrite'\n> Overload resolution failed:\n>  - Can't convert object to 'str' for 'filename'\n>  - Can't convert object to 'str' for 'filename'\n")>
+Traceback (most recent call last):
+  File "C:\Users\Lucas\Escritorio\e\wsbot\web\imageEditManager.py", line 153, in startProcessing
+    await processPendingFiles("pendingAddArr", "processingAddArr", "processedAddArr", addArrows, "processingAddArr")
+  File "C:\Users\Lucas\Escritorio\e\wsbot\web\imageEditManager.py", line 113, in processPendingFiles
+    processFunc(pendingFiles)
+  File "C:\Users\Lucas\Escritorio\e\wsbot\web\imageEditManager.py", line 91, in addArrows
+    cv2.imwrite(img, img)
+cv2.error: OpenCV(4.7.0) :-1: error: (-5:Bad argument) in function 'imwrite'
+> Overload resolution failed:
+>  - Can't convert object to 'str' for 'filename'
+>  - Can't convert object to 'str' for 'filename'
+
+2023-03-08 01:33:10 INFO 127.0.0.1 - - [08/Mar/2023 01:33:10] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:33:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:33:43 WARNING  * Debugger is active!
+2023-03-08 01:33:43 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:33:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:33:49 WARNING  * Debugger is active!
+2023-03-08 01:33:49 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:33:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:33:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:33:50 WARNING  * Debugger is active!
+2023-03-08 01:33:50 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:33:55 INFO 127.0.0.1 - - [08/Mar/2023 01:33:55] "GET / HTTP/1.1" 200 -
+2023-03-08 01:33:55 INFO 127.0.0.1 - - [08/Mar/2023 01:33:55] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:33:57 DEBUG rendering negocios
+2023-03-08 01:33:57 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:33:57 INFO 127.0.0.1 - - [08/Mar/2023 01:33:57] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:34:01 DEBUG adding new group for neg: cholo
+2023-03-08 01:34:01 DEBUG saving images with neg cholo type test group 2
+2023-03-08 01:34:01 DEBUG found image id 1 to have KO
+2023-03-08 01:34:01 DEBUG adding image 1 to pending arrows
+2023-03-08 01:34:01 DEBUG saved image id 1
+2023-03-08 01:34:01 DEBUG found image id 2 to have KO
+2023-03-08 01:34:01 DEBUG adding image 2 to pending arrows
+2023-03-08 01:34:01 DEBUG saved image id 2
+2023-03-08 01:34:01 DEBUG found image id 3 to have KO
+2023-03-08 01:34:01 DEBUG adding image 3 to pending arrows
+2023-03-08 01:34:01 DEBUG saved image id 3
+2023-03-08 01:34:01 DEBUG saved image name in json as cholo.test.2.3
+2023-03-08 01:34:01 DEBUG json saved
+2023-03-08 01:34:01 INFO 127.0.0.1 - - [08/Mar/2023 01:34:01] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:34:02 DEBUG rendering negocios
+2023-03-08 01:34:02 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:34:02 INFO 127.0.0.1 - - [08/Mar/2023 01:34:02] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:34:03 INFO 127.0.0.1 - - [08/Mar/2023 01:34:03] "GET / HTTP/1.1" 200 -
+2023-03-08 01:34:03 INFO 127.0.0.1 - - [08/Mar/2023 01:34:03] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:34:04 DEBUG Using proactor: IocpProactor
+2023-03-08 01:34:04 DEBUG starting processing images
+2023-03-08 01:34:04 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:34:05 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:34:05 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:34:05 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:34:05 DEBUG found 3 pendingAddArr
+2023-03-08 01:34:05 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.2.1.png', 'KO.ARR.cholo.test.2.2.png', 'KO.ARR.cholo.test.2.3.png'] files
+2023-03-08 01:34:05 DEBUG successfully added arrows to KO.ARR.cholo.test.2.1.png
+2023-03-08 01:34:05 DEBUG successfully added arrows to KO.ARR.cholo.test.2.2.png
+2023-03-08 01:34:05 DEBUG successfully added arrows to KO.ARR.cholo.test.2.3.png
+2023-03-08 01:34:05 DEBUG stopping imageEdit for add arrows
+2023-03-08 01:34:05 DEBUG found stop next to be true in pendingAddArr, stopping.
+2023-03-08 01:34:05 INFO 127.0.0.1 - - [08/Mar/2023 01:34:05] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:34:07 INFO 127.0.0.1 - - [08/Mar/2023 01:34:07] "GET / HTTP/1.1" 200 -
+2023-03-08 01:34:07 INFO 127.0.0.1 - - [08/Mar/2023 01:34:07] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:34:31 DEBUG reseting
+2023-03-08 01:34:31 INFO 127.0.0.1 - - [08/Mar/2023 01:34:31] "GET /reset HTTP/1.1" 200 -
+2023-03-08 01:34:33 INFO 127.0.0.1 - - [08/Mar/2023 01:34:33] "GET / HTTP/1.1" 200 -
+2023-03-08 01:34:34 INFO 127.0.0.1 - - [08/Mar/2023 01:34:34] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:34:43 INFO 127.0.0.1 - - [08/Mar/2023 01:34:43] "GET / HTTP/1.1" 200 -
+2023-03-08 01:34:43 INFO 127.0.0.1 - - [08/Mar/2023 01:34:43] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:34:43 DEBUG Using proactor: IocpProactor
+2023-03-08 01:34:43 DEBUG starting processing images
+2023-03-08 01:34:43 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:34:44 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:34:44 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:34:44 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:34:44 INFO 127.0.0.1 - - [08/Mar/2023 01:34:44] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:34:46 INFO 127.0.0.1 - - [08/Mar/2023 01:34:46] "GET / HTTP/1.1" 200 -
+2023-03-08 01:34:46 INFO 127.0.0.1 - - [08/Mar/2023 01:34:46] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:35:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:35:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:35:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:35:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:35:55 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:35:57 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:36:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:36:00 WARNING  * Debugger is active!
+2023-03-08 01:36:00 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:36:07 INFO 127.0.0.1 - - [08/Mar/2023 01:36:07] "GET / HTTP/1.1" 200 -
+2023-03-08 01:36:07 INFO 127.0.0.1 - - [08/Mar/2023 01:36:07] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:36:10 DEBUG adding new group for neg: cholo
+2023-03-08 01:36:10 DEBUG saving images with neg cholo type test group 3
+2023-03-08 01:36:10 DEBUG found image id 1 to have KO
+2023-03-08 01:36:10 DEBUG adding image 1 to pending arrows
+2023-03-08 01:36:10 DEBUG saved image id 1
+2023-03-08 01:36:10 DEBUG found image id 2 to have KO
+2023-03-08 01:36:10 DEBUG adding image 2 to pending arrows
+2023-03-08 01:36:10 DEBUG saved image id 2
+2023-03-08 01:36:10 DEBUG found image id 3 to have KO
+2023-03-08 01:36:10 DEBUG adding image 3 to pending arrows
+2023-03-08 01:36:10 DEBUG saved image id 3
+2023-03-08 01:36:10 DEBUG saved image name in json as cholo.test.3.3
+2023-03-08 01:36:10 DEBUG json saved
+2023-03-08 01:36:10 INFO 127.0.0.1 - - [08/Mar/2023 01:36:10] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:36:11 DEBUG rendering negocios
+2023-03-08 01:36:11 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:36:11 INFO 127.0.0.1 - - [08/Mar/2023 01:36:11] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:36:13 INFO 127.0.0.1 - - [08/Mar/2023 01:36:13] "GET / HTTP/1.1" 200 -
+2023-03-08 01:36:13 INFO 127.0.0.1 - - [08/Mar/2023 01:36:13] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:36:14 DEBUG Using proactor: IocpProactor
+2023-03-08 01:36:14 DEBUG starting processing images
+2023-03-08 01:36:14 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:36:14 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:36:14 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:36:14 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:36:14 DEBUG found 3 pendingAddArr
+2023-03-08 01:36:14 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.3.1.png', 'KO.ARR.cholo.test.3.2.png', 'KO.ARR.cholo.test.3.3.png'] files
+2023-03-08 01:36:15 DEBUG successfully added arrows to KO.ARR.cholo.test.3.1.png
+2023-03-08 01:36:15 DEBUG successfully added arrows to KO.ARR.cholo.test.3.2.png
+2023-03-08 01:36:15 DEBUG successfully added arrows to KO.ARR.cholo.test.3.3.png
+2023-03-08 01:36:15 DEBUG stopping imageEdit for add arrows
+2023-03-08 01:36:15 DEBUG found stop next to be true in pendingAddArr, stopping.
+2023-03-08 01:36:15 INFO 127.0.0.1 - - [08/Mar/2023 01:36:15] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:36:48 DEBUG adding new group for neg: cholo
+2023-03-08 01:36:48 DEBUG saving images with neg cholo type test group 4
+2023-03-08 01:36:48 DEBUG found image id 1 to have KO
+2023-03-08 01:36:48 DEBUG adding image 1 to pending arrows
+2023-03-08 01:36:48 DEBUG saved image id 1
+2023-03-08 01:36:48 DEBUG found image id 2 to have KO
+2023-03-08 01:36:48 DEBUG adding image 2 to pending arrows
+2023-03-08 01:36:48 DEBUG saved image id 2
+2023-03-08 01:36:48 DEBUG found image id 3 to have KO
+2023-03-08 01:36:48 DEBUG adding image 3 to pending arrows
+2023-03-08 01:36:48 DEBUG saved image id 3
+2023-03-08 01:36:48 DEBUG saved image name in json as cholo.test.4.3
+2023-03-08 01:36:48 DEBUG json saved
+2023-03-08 01:36:48 INFO 127.0.0.1 - - [08/Mar/2023 01:36:48] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:36:50 INFO 127.0.0.1 - - [08/Mar/2023 01:36:50] "GET / HTTP/1.1" 200 -
+2023-03-08 01:36:50 INFO 127.0.0.1 - - [08/Mar/2023 01:36:50] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:37:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:37:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:37:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:37:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:37:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:37:56 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:37:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:02 WARNING  * Debugger is active!
+2023-03-08 01:38:02 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:38:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:05 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:05 WARNING  * Debugger is active!
+2023-03-08 01:38:05 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:38:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:08 WARNING  * Debugger is active!
+2023-03-08 01:38:08 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:38:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:09 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:10 WARNING  * Debugger is active!
+2023-03-08 01:38:10 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:38:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:16 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:16 WARNING  * Debugger is active!
+2023-03-08 01:38:16 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:38:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:38:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:56 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:38:57 WARNING  * Debugger is active!
+2023-03-08 01:38:57 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:04 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:04 WARNING  * Debugger is active!
+2023-03-08 01:39:04 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:11 WARNING  * Debugger is active!
+2023-03-08 01:39:11 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:12 WARNING  * Debugger is active!
+2023-03-08 01:39:12 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:36 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:37 WARNING  * Debugger is active!
+2023-03-08 01:39:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:55 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:57 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:39:57 WARNING  * Debugger is active!
+2023-03-08 01:39:57 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:39:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:39:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:11 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:14 WARNING  * Debugger is active!
+2023-03-08 01:40:14 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:40:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:18 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:18 WARNING  * Debugger is active!
+2023-03-08 01:40:18 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:40:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:19 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:20 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:21 WARNING  * Debugger is active!
+2023-03-08 01:40:21 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:40:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:40:22 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:40:22 WARNING  * Debugger is active!
+2023-03-08 01:40:22 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:40:33 DEBUG reseting
+2023-03-08 01:40:33 INFO 127.0.0.1 - - [08/Mar/2023 01:40:33] "GET /reset HTTP/1.1" 200 -
+2023-03-08 01:40:34 INFO 127.0.0.1 - - [08/Mar/2023 01:40:34] "GET / HTTP/1.1" 200 -
+2023-03-08 01:40:35 INFO 127.0.0.1 - - [08/Mar/2023 01:40:35] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:40:42 DEBUG Using proactor: IocpProactor
+2023-03-08 01:40:42 DEBUG starting processing images
+2023-03-08 01:40:42 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:40:42 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:40:42 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:40:42 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:40:42 DEBUG found 3 pendingAddArr
+2023-03-08 01:40:42 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.4.1.png', 'KO.ARR.cholo.test.4.2.png', 'KO.ARR.cholo.test.4.3.png'] files
+2023-03-08 01:40:43 DEBUG successfully added arrows to KO.ARR.cholo.test.4.1.png
+2023-03-08 01:40:43 DEBUG successfully added arrows to KO.ARR.cholo.test.4.2.png
+2023-03-08 01:40:43 DEBUG successfully added arrows to KO.ARR.cholo.test.4.3.png
+2023-03-08 01:40:43 INFO 127.0.0.1 - - [08/Mar/2023 01:40:43] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:41:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:41:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:41:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:41:03 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:41:04 WARNING  * Debugger is active!
+2023-03-08 01:41:04 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:41:07 DEBUG rendering negocios
+2023-03-08 01:41:07 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:41:07 INFO 127.0.0.1 - - [08/Mar/2023 01:41:07] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:41:08 DEBUG adding new group for neg: cholo
+2023-03-08 01:41:08 DEBUG saving images with neg cholo type test group 5
+2023-03-08 01:41:08 DEBUG found image id 1 to have KO
+2023-03-08 01:41:08 DEBUG adding image 1 to pending arrows
+2023-03-08 01:41:08 DEBUG saved image id 1
+2023-03-08 01:41:08 DEBUG found image id 2 to have KO
+2023-03-08 01:41:08 DEBUG adding image 2 to pending arrows
+2023-03-08 01:41:08 DEBUG saved image id 2
+2023-03-08 01:41:08 DEBUG found image id 3 to have KO
+2023-03-08 01:41:08 DEBUG adding image 3 to pending arrows
+2023-03-08 01:41:08 DEBUG saved image id 3
+2023-03-08 01:41:08 DEBUG saved image name in json as cholo.test.5.3
+2023-03-08 01:41:08 DEBUG json saved
+2023-03-08 01:41:08 INFO 127.0.0.1 - - [08/Mar/2023 01:41:08] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:41:11 DEBUG Using proactor: IocpProactor
+2023-03-08 01:41:11 DEBUG starting processing images
+2023-03-08 01:41:11 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:41:11 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:41:11 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:41:11 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:41:11 DEBUG found 3 pendingAddArr
+2023-03-08 01:41:11 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.5.1.png', 'KO.ARR.cholo.test.5.2.png', 'KO.ARR.cholo.test.5.3.png'] files
+2023-03-08 01:41:11 DEBUG successfully added arrows to KO.ARR.cholo.test.5.1.png
+2023-03-08 01:41:11 DEBUG successfully added arrows to KO.ARR.cholo.test.5.2.png
+2023-03-08 01:41:11 DEBUG successfully added arrows to KO.ARR.cholo.test.5.3.png
+2023-03-08 01:41:11 INFO 127.0.0.1 - - [08/Mar/2023 01:41:11] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:43:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:10 WARNING  * Debugger is active!
+2023-03-08 01:43:10 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:14 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-08 01:43:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:15 WARNING  * Debugger is active!
+2023-03-08 01:43:15 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:17 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:17 WARNING  * Debugger is active!
+2023-03-08 01:43:17 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:20 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:20 WARNING  * Debugger is active!
+2023-03-08 01:43:20 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:24 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:24 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:24 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:25 WARNING  * Debugger is active!
+2023-03-08 01:43:25 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:26 WARNING  * Debugger is active!
+2023-03-08 01:43:26 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:27 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:28 WARNING  * Debugger is active!
+2023-03-08 01:43:28 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:29 WARNING  * Debugger is active!
+2023-03-08 01:43:29 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:37 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:37 WARNING  * Debugger is active!
+2023-03-08 01:43:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:40 WARNING  * Debugger is active!
+2023-03-08 01:43:40 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:42 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:42 WARNING  * Debugger is active!
+2023-03-08 01:43:42 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:45 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:45 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:46 WARNING  * Debugger is active!
+2023-03-08 01:43:46 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:43:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:43:47 WARNING  * Debugger is active!
+2023-03-08 01:43:47 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:43:52 INFO 127.0.0.1 - - [08/Mar/2023 01:43:52] "GET / HTTP/1.1" 200 -
+2023-03-08 01:43:52 INFO 127.0.0.1 - - [08/Mar/2023 01:43:52] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:43:54 DEBUG rendering negocios
+2023-03-08 01:43:54 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:43:54 INFO 127.0.0.1 - - [08/Mar/2023 01:43:54] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:43:54 DEBUG adding new group for neg: cholo
+2023-03-08 01:43:54 DEBUG saving images with neg cholo type test group 6
+2023-03-08 01:43:54 DEBUG found image id 1 to have KO
+2023-03-08 01:43:54 DEBUG adding image 1 to pending arrows
+2023-03-08 01:43:54 DEBUG saved image id 1
+2023-03-08 01:43:54 DEBUG found image id 2 to have KO
+2023-03-08 01:43:54 DEBUG adding image 2 to pending arrows
+2023-03-08 01:43:54 DEBUG saved image id 2
+2023-03-08 01:43:54 DEBUG found image id 3 to have KO
+2023-03-08 01:43:54 DEBUG adding image 3 to pending arrows
+2023-03-08 01:43:54 DEBUG saved image id 3
+2023-03-08 01:43:54 DEBUG saved image name in json as cholo.test.6.3
+2023-03-08 01:43:54 DEBUG json saved
+2023-03-08 01:43:54 INFO 127.0.0.1 - - [08/Mar/2023 01:43:54] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:43:56 INFO 127.0.0.1 - - [08/Mar/2023 01:43:56] "GET / HTTP/1.1" 200 -
+2023-03-08 01:43:57 INFO 127.0.0.1 - - [08/Mar/2023 01:43:57] "GET /getKeys HTTP/1.1" 200 -
+2023-03-08 01:44:03 DEBUG Using proactor: IocpProactor
+2023-03-08 01:44:03 DEBUG starting processing images
+2023-03-08 01:44:03 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:44:03 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:44:03 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:44:03 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:44:03 DEBUG found 3 pendingAddArr
+2023-03-08 01:44:03 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.6.1.png', 'KO.ARR.cholo.test.6.2.png', 'KO.ARR.cholo.test.6.3.png'] files
+2023-03-08 01:44:03 DEBUG successfully added arrows to KO.ARR.cholo.test.6.1.png
+2023-03-08 01:44:03 DEBUG successfully added arrows to KO.ARR.cholo.test.6.2.png
+2023-03-08 01:44:03 DEBUG successfully added arrows to KO.ARR.cholo.test.6.3.png
+2023-03-08 01:44:03 INFO 127.0.0.1 - - [08/Mar/2023 01:44:03] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:44:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:17 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:17 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:44:18 WARNING  * Debugger is active!
+2023-03-08 01:44:18 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:44:20 DEBUG rendering negocios
+2023-03-08 01:44:20 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:44:20 INFO 127.0.0.1 - - [08/Mar/2023 01:44:20] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:44:20 DEBUG adding new group for neg: cholo
+2023-03-08 01:44:20 DEBUG saving images with neg cholo type test group 7
+2023-03-08 01:44:20 DEBUG found image id 1 to have KO
+2023-03-08 01:44:20 DEBUG adding image 1 to pending arrows
+2023-03-08 01:44:20 DEBUG saved image id 1
+2023-03-08 01:44:20 DEBUG found image id 2 to have KO
+2023-03-08 01:44:20 DEBUG adding image 2 to pending arrows
+2023-03-08 01:44:20 DEBUG saved image id 2
+2023-03-08 01:44:20 DEBUG found image id 3 to have KO
+2023-03-08 01:44:20 DEBUG adding image 3 to pending arrows
+2023-03-08 01:44:20 DEBUG saved image id 3
+2023-03-08 01:44:20 DEBUG saved image name in json as cholo.test.7.3
+2023-03-08 01:44:20 DEBUG json saved
+2023-03-08 01:44:20 INFO 127.0.0.1 - - [08/Mar/2023 01:44:20] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:44:22 DEBUG Using proactor: IocpProactor
+2023-03-08 01:44:22 DEBUG starting processing images
+2023-03-08 01:44:22 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:44:23 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:44:23 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:44:23 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:44:23 DEBUG found 3 pendingAddArr
+2023-03-08 01:44:23 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.7.1.png', 'KO.ARR.cholo.test.7.2.png', 'KO.ARR.cholo.test.7.3.png'] files
+2023-03-08 01:44:23 DEBUG successfully added arrows to KO.ARR.cholo.test.7.1.png
+2023-03-08 01:44:23 DEBUG successfully added arrows to KO.ARR.cholo.test.7.2.png
+2023-03-08 01:44:23 DEBUG successfully added arrows to KO.ARR.cholo.test.7.3.png
+2023-03-08 01:44:23 INFO 127.0.0.1 - - [08/Mar/2023 01:44:23] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:44:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:31 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:44:31 WARNING  * Debugger is active!
+2023-03-08 01:44:31 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:44:36 DEBUG rendering negocios
+2023-03-08 01:44:36 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:44:36 INFO 127.0.0.1 - - [08/Mar/2023 01:44:36] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:44:36 DEBUG adding new group for neg: cholo
+2023-03-08 01:44:36 DEBUG saving images with neg cholo type test group 8
+2023-03-08 01:44:36 DEBUG found image id 1 to have KO
+2023-03-08 01:44:36 DEBUG adding image 1 to pending arrows
+2023-03-08 01:44:36 DEBUG saved image id 1
+2023-03-08 01:44:36 DEBUG found image id 2 to have KO
+2023-03-08 01:44:36 DEBUG adding image 2 to pending arrows
+2023-03-08 01:44:36 DEBUG saved image id 2
+2023-03-08 01:44:36 DEBUG found image id 3 to have KO
+2023-03-08 01:44:36 DEBUG adding image 3 to pending arrows
+2023-03-08 01:44:36 DEBUG saved image id 3
+2023-03-08 01:44:36 DEBUG saved image name in json as cholo.test.8.3
+2023-03-08 01:44:36 DEBUG json saved
+2023-03-08 01:44:36 INFO 127.0.0.1 - - [08/Mar/2023 01:44:36] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:44:38 DEBUG Using proactor: IocpProactor
+2023-03-08 01:44:38 DEBUG starting processing images
+2023-03-08 01:44:38 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:44:38 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:44:38 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:44:38 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:44:38 DEBUG found 3 pendingAddArr
+2023-03-08 01:44:38 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.8.1.png', 'KO.ARR.cholo.test.8.2.png', 'KO.ARR.cholo.test.8.3.png'] files
+2023-03-08 01:44:38 DEBUG successfully added arrows to KO.ARR.cholo.test.8.1.png
+2023-03-08 01:44:38 DEBUG successfully added arrows to KO.ARR.cholo.test.8.2.png
+2023-03-08 01:44:38 DEBUG successfully added arrows to KO.ARR.cholo.test.8.3.png
+2023-03-08 01:44:38 INFO 127.0.0.1 - - [08/Mar/2023 01:44:38] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:44:58 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:44:59 WARNING  * Debugger is active!
+2023-03-08 01:44:59 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:45:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:45:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:45:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:45:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:45:01 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:45:01 WARNING  * Debugger is active!
+2023-03-08 01:45:01 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:45:06 DEBUG rendering negocios
+2023-03-08 01:45:06 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:45:06 INFO 127.0.0.1 - - [08/Mar/2023 01:45:06] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:45:07 DEBUG adding new group for neg: cholo
+2023-03-08 01:45:07 DEBUG saving images with neg cholo type test group 9
+2023-03-08 01:45:07 DEBUG found image id 1 to have KO
+2023-03-08 01:45:07 DEBUG adding image 1 to pending arrows
+2023-03-08 01:45:07 DEBUG saved image id 1
+2023-03-08 01:45:07 DEBUG found image id 2 to have KO
+2023-03-08 01:45:07 DEBUG adding image 2 to pending arrows
+2023-03-08 01:45:07 DEBUG saved image id 2
+2023-03-08 01:45:07 DEBUG found image id 3 to have KO
+2023-03-08 01:45:07 DEBUG adding image 3 to pending arrows
+2023-03-08 01:45:07 DEBUG saved image id 3
+2023-03-08 01:45:07 DEBUG saved image name in json as cholo.test.9.3
+2023-03-08 01:45:07 DEBUG json saved
+2023-03-08 01:45:07 INFO 127.0.0.1 - - [08/Mar/2023 01:45:07] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:45:08 DEBUG Using proactor: IocpProactor
+2023-03-08 01:45:08 DEBUG starting processing images
+2023-03-08 01:45:08 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-08 01:45:09 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-08 01:45:09 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with 45 left
+2023-03-08 01:45:09 DEBUG using key ShYSmkGi19ztn5G7oDBPLUbN
+2023-03-08 01:45:09 DEBUG found 3 pendingAddArr
+2023-03-08 01:45:09 DEBUG processingAddArr 3 ['KO.ARR.cholo.test.9.1.png', 'KO.ARR.cholo.test.9.2.png', 'KO.ARR.cholo.test.9.3.png'] files
+2023-03-08 01:45:09 DEBUG successfully added arrows to KO.ARR.cholo.test.9.1.png
+2023-03-08 01:45:09 DEBUG successfully added arrows to KO.ARR.cholo.test.9.2.png
+2023-03-08 01:45:09 DEBUG successfully added arrows to KO.ARR.cholo.test.9.3.png
+2023-03-08 01:45:09 INFO 127.0.0.1 - - [08/Mar/2023 01:45:09] "GET /processPending HTTP/1.1" 200 -
+2023-03-08 01:46:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:46:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:46:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:46:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-08 01:46:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:46:02 WARNING  * Debugger is active!
+2023-03-08 01:46:02 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:46:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:46:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:46:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:46:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:46:49 WARNING  * Debugger is active!
+2023-03-08 01:46:49 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:47:09 DEBUG rendering negocios
+2023-03-08 01:47:09 DEBUG rendering tempNeg for: cholo with types ['test']
+2023-03-08 01:47:09 INFO 127.0.0.1 - - [08/Mar/2023 01:47:09] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-08 01:47:10 DEBUG adding new group for neg: cholo
+2023-03-08 01:47:10 DEBUG saving images with neg cholo type test group 10
+2023-03-08 01:47:10 DEBUG found image id 1 to have KO
+2023-03-08 01:47:10 DEBUG adding image 1 to pending arrows
+2023-03-08 01:47:10 DEBUG saved image id 1
+2023-03-08 01:47:10 DEBUG found image id 2 to have KO
+2023-03-08 01:47:10 DEBUG adding image 2 to pending arrows
+2023-03-08 01:47:10 DEBUG saved image id 2
+2023-03-08 01:47:10 DEBUG found image id 3 to have KO
+2023-03-08 01:47:10 DEBUG adding image 3 to pending arrows
+2023-03-08 01:47:10 DEBUG saved image id 3
+2023-03-08 01:47:10 DEBUG saved image name in json as cholo.test.10.3
+2023-03-08 01:47:10 DEBUG json saved
+2023-03-08 01:47:10 INFO 127.0.0.1 - - [08/Mar/2023 01:47:10] "POST /newImageGroup/cholo HTTP/1.1" 200 -
+2023-03-08 01:47:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:39 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:40 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:47:41 WARNING  * Debugger is active!
+2023-03-08 01:47:41 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:47:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:44 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:45 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:47:45 WARNING  * Debugger is active!
+2023-03-08 01:47:45 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:47:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:46 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:47:46 WARNING  * Debugger is active!
+2023-03-08 01:47:46 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:47:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:47:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:47:48 WARNING  * Debugger is active!
+2023-03-08 01:47:48 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:15 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:15 WARNING  * Debugger is active!
+2023-03-08 01:48:15 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:22 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:23 WARNING  * Debugger is active!
+2023-03-08 01:48:23 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:28 WARNING  * Debugger is active!
+2023-03-08 01:48:28 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:30 WARNING  * Debugger is active!
+2023-03-08 01:48:30 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:31 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:31 WARNING  * Debugger is active!
+2023-03-08 01:48:31 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:40 WARNING  * Debugger is active!
+2023-03-08 01:48:40 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:49 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:49 WARNING  * Debugger is active!
+2023-03-08 01:48:49 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:48:54 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:48:54 WARNING  * Debugger is active!
+2023-03-08 01:48:54 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:48:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:48:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:49:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:49:00 WARNING  * Debugger is active!
+2023-03-08 01:49:00 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:49:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:49:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:49:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:49:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:49:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:49:12 WARNING  * Debugger is active!
+2023-03-08 01:49:12 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:50:33 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:33 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:33 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:33 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:50:33 WARNING  * Debugger is active!
+2023-03-08 01:50:33 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:50:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:50:41 WARNING  * Debugger is active!
+2023-03-08 01:50:41 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:50:55 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:55 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:55 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:55 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:50:56 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:50:56 WARNING  * Debugger is active!
+2023-03-08 01:50:56 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:51:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:35 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:51:35 WARNING  * Debugger is active!
+2023-03-08 01:51:35 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:51:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:37 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:51:37 WARNING  * Debugger is active!
+2023-03-08 01:51:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:51:38 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:51:39 WARNING  * Debugger is active!
+2023-03-08 01:51:39 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:51:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:51:48 WARNING  * Debugger is active!
+2023-03-08 01:51:48 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:51:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:51:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:51:54 WARNING  * Debugger is active!
+2023-03-08 01:51:54 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\0.1.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\0.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\03.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\1.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\2.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\bgreplace.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\reTest.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\scpTest.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\test.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\testConsole.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\whiteBG.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\eraseBG\\01.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\eraseBG\\listDirTest.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\multiImg\\01.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\multiImg\\011.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\multiImg\\pixelBin01.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\multiImg\\pixelBin02.py', reloading
+2023-03-08 01:52:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-08 01:52:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:52:50 WARNING  * Debugger is active!
+2023-03-08 01:52:50 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:26 WARNING  * Debugger is active!
+2023-03-08 01:53:26 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:27 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:28 WARNING  * Debugger is active!
+2023-03-08 01:53:28 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:36 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\config.py', reloading
+2023-03-08 01:53:36 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\config-3.py', reloading
+2023-03-08 01:53:37 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:37 WARNING  * Debugger is active!
+2023-03-08 01:53:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:45 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\\__init__.py', reloading
+2023-03-08 01:53:45 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:45 WARNING  * Debugger is active!
+2023-03-08 01:53:45 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:48 WARNING  * Debugger is active!
+2023-03-08 01:53:48 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:53:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:53 WARNING  * Debugger is active!
+2023-03-08 01:53:53 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:53:53 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2023-03-08 01:53:54 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:53:55 WARNING  * Debugger is active!
+2023-03-08 01:53:55 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:09 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:10 WARNING  * Debugger is active!
+2023-03-08 01:55:10 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\01.py', reloading
+2023-03-08 01:55:16 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:16 WARNING  * Debugger is active!
+2023-03-08 01:55:16 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:23 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:23 WARNING  * Debugger is active!
+2023-03-08 01:55:23 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:26 WARNING  * Debugger is active!
+2023-03-08 01:55:26 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\02.py', reloading
+2023-03-08 01:55:27 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:27 WARNING  * Debugger is active!
+2023-03-08 01:55:27 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:36 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:36 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:37 WARNING  * Debugger is active!
+2023-03-08 01:55:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:37 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:38 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:38 WARNING  * Debugger is active!
+2023-03-08 01:55:38 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:41 WARNING  * Debugger is active!
+2023-03-08 01:55:41 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:55:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:55:58 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:55:58 WARNING  * Debugger is active!
+2023-03-08 01:55:58 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:56:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:32 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:32 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:56:33 WARNING  * Debugger is active!
+2023-03-08 01:56:33 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:56:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:42 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:56:42 WARNING  * Debugger is active!
+2023-03-08 01:56:42 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:56:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:56:52 WARNING  * Debugger is active!
+2023-03-08 01:56:52 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:56:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:56:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:00 WARNING  * Debugger is active!
+2023-03-08 01:57:00 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:13 WARNING  * Debugger is active!
+2023-03-08 01:57:13 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:24 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:24 WARNING  * Debugger is active!
+2023-03-08 01:57:24 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:30 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:30 WARNING  * Debugger is active!
+2023-03-08 01:57:30 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:39 WARNING  * Debugger is active!
+2023-03-08 01:57:39 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:42 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:42 WARNING  * Debugger is active!
+2023-03-08 01:57:42 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:54 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:57:55 WARNING  * Debugger is active!
+2023-03-08 01:57:55 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:57:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:57:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:58:00 WARNING  * Debugger is active!
+2023-03-08 01:58:00 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:58:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:58:08 WARNING  * Debugger is active!
+2023-03-08 01:58:08 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:58:17 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\abc.py', reloading
+2023-03-08 01:58:18 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:58:18 WARNING  * Debugger is active!
+2023-03-08 01:58:18 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:36 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:58:37 WARNING  * Debugger is active!
+2023-03-08 01:58:37 INFO  * Debugger PIN: 123-843-478
+2023-03-08 01:58:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\03.py', reloading
+2023-03-08 01:58:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 01:58:43 WARNING  * Debugger is active!
+2023-03-08 01:58:43 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:00:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:00:07 WARNING  * Debugger is active!
+2023-03-08 02:00:07 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:00:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PIL\\__init__.py', reloading
+2023-03-08 02:00:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PIL\\Image.py', reloading
+2023-03-08 02:00:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PIL\\ImageDraw.py', reloading
+2023-03-08 02:00:08 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:08 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:00:09 WARNING  * Debugger is active!
+2023-03-08 02:00:09 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:00:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:23 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:00:24 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:00:24 WARNING  * Debugger is active!
+2023-03-08 02:00:24 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\defusedxml\\__init__.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\defusedxml\\ElementTree.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\defusedxml\\common.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\importlib\\__init__.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\types.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\xml\\__init__.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\xml\\etree\\__init__.py', reloading
+2023-03-08 02:01:08 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\xml\\etree\\ElementTree.py', reloading
+2023-03-08 02:01:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:01:09 WARNING  * Debugger is active!
+2023-03-08 02:01:09 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:01:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:01:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:01:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:01:10 WARNING  * Debugger is active!
+2023-03-08 02:01:10 INFO  * Debugger PIN: 123-843-478
+2023-03-08 02:01:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:01:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\arrowsTest\\04.py', reloading
+2023-03-08 02:01:11 INFO  * Restarting with watchdog (windowsapi)
+2023-03-08 02:01:12 WARNING  * Debugger is active!
+2023-03-08 02:01:12 INFO  * Debugger PIN: 123-843-478
