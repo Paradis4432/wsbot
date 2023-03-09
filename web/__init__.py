@@ -159,9 +159,9 @@ def newGroup(neg=None):
     # file saved, add name in json
     data["negs"][neg]["images"].setdefault(t, {})[group] = {
         "images": images,
-        "medida0": request.form.get("medida0") or "not found",
-        "medida1": request.form.get("medida1") or "not found",
-        "medida2": request.form.get("medida2") or "not found",
+        "alto": request.form.get("alto") or "not found",
+        "largo": request.form.get("largo") or "not found",
+        "ancho": request.form.get("ancho") or "not found",
         "costo": request.form.get("costo") or "not found",
         "venta_menor": request.form.get("venta_menor") or "not found",
         "venta_mayor": request.form.get("venta_mayor") or "not found",
