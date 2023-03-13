@@ -25,7 +25,10 @@
     <p>current status: {{ data[4] }}</p>
     <p>stop next: {{ data[5] }}</p>
     <p>pedidos disponibles: </p>
-    <p id="avaliable">0</p>
+    <div id="keys">
+        <p id="avaliable">0</p>
+
+    </div>
 
     <script>
         async function getAllCallsLeftAsync(keys) {
@@ -39,6 +42,9 @@
                 });
                 const data = await response.json();
                 const callsLeft = data.data.attributes.api.free_calls;
+                let key = document.createElement('p');
+                key.innerText = keys[i] + " con " + callsLeft;
+                document.getElementById('keys').appendChild(key);
                 calls += callsLeft;
                 document.getElementById('avaliable').textContent = calls.toString();
 

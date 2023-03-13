@@ -8,8 +8,9 @@ from .tools import *
 # import tools
 
 # general values
-keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG',
-        '5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
+keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG','5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
+#keys = ['5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
+
 
 
 def getKeys():
@@ -19,9 +20,7 @@ def getKeys():
 currentKey = 0
 
 
-def has0left():
-    global currentKey
-
+def has0left(currentKey):
     response = requests.get(
         'https://api.remove.bg/v1.0/account', headers={
             'accept': '*/*',
@@ -29,10 +28,8 @@ def has0left():
         })
     callsLeft = json.loads(response.text)[
         "data"]["attributes"]["api"]["free_calls"]
-    # logging.debug(response.text, keys[currentKey])
     logging.debug(f"found {keys[currentKey]} with {callsLeft} left")
-
-    return callsLeft == 0
+    return callsLeft == 0 or callsLeft == -1 
 
 
 def removeBG(name):
@@ -49,6 +46,8 @@ def removeBG(name):
         )
 
         if response.status_code == requests.codes.ok:
+            addWhiteBackground(path)
+            
             with open(path, 'wb') as out:
                 logging.debug(f"image {path} successfully removed bg")
                 out.write(response.content)
@@ -59,7 +58,22 @@ def removeBG(name):
         elif response.status_code == 429:
             logging.debug(f"Rate limit exceeded, waiting for 1 minute")
             time.sleep(60)
-            removeBG(name)
+            return "timeout"
+        elif response.status_code == 402:
+            logging.debug(f"Invalid API key, returning")
+            
+            conts = 0
+            while has0left(currentKey):
+                currentKey = (currentKey + 1) % len(keys)
+                conts += 1
+                if conts < len(keys) + 1:
+                    continue
+                logging.debug("no calls left in keys")
+                saveValue("stopNext", True)
+                saveValue("currentStatus", "NoCallsLeftInKeys")
+                return
+            return "tryAgain"
+
         else:
             logging.debug(f"Error: {response.status_code} {response.text}")
             return "error1"
@@ -75,6 +89,12 @@ def removeBG(name):
 def processFiles(pendingFiles):
     for pending in pendingFiles:
         status = removeBG(pending)
+        while status == "timeout":
+            logging.debug(f"trying again for {pending} timeout")
+            status = removeBG(pending)
+        if status == "tryAgain":
+            logging.debug(f"trying again for {pending} tryAgain ")
+            status = removeBG(pending)
 
         if status == "success":
             logging.debug(f"successfully processed file {pending}")
@@ -156,7 +176,7 @@ async def startProcessing():
         return
 
     conts = 0
-    while has0left():
+    while has0left(currentKey):
         currentKey = (currentKey + 1) % len(keys)
         conts += 1
         if conts < len(keys) + 1:
@@ -164,7 +184,6 @@ async def startProcessing():
         logging.debug("no calls left in keys")
         saveValue("stopNext", True)
         saveValue("currentStatus", "NoCallsLeftInKeys")
-        continueLoop = False
         return
 
     logging.debug(f"using key {keys[currentKey]}")
@@ -186,12 +205,3 @@ def getAllCallsLeft():
         calls += callsLeft
     logging.debug(f"found a total of {calls} calls left")
     return calls
-
-
-def resizeImage():
-    # for filename in os.listdir(input_dir):
-    # if filename.endswith('.jpg') or filename.endswith('.png'):  # check if the file is an image
-    #    with Image.open(os.path.join(input_dir, filename)) as im:
-    #        im.thumbnail(max_size)  # resize the image to fit within the maximum size
-    #        im.save(os.path.join(output_dir, filename))  # save the resized image to the output folder
-    ...

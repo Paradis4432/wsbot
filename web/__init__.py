@@ -4,6 +4,7 @@ from flask import render_template
 from flask import request
 from flask import send_file
 
+from PIL import Image
 import logging
 import json
 import os
@@ -16,13 +17,15 @@ app.config['MAX_CONTENT_LENGTH'] = 50 * 1000 * 1000
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s", datefmt="%Y-%m-%d %H:%M:%S", filename="basic.log")
 
-# TODO: arrows for images, excel loading
-# fix max size done
-# TODO: change upload to button no
+# TODO: fix max size done
+# TODO: rezize image to 1200x800 pixels on upload done
+# TODO: fix autochange of key done
+
 # TODO: cambiar cargado de imagenes boton -> grupo info etc
+# TODO: arrows for images, excel loading
+# TODO: change upload to button no
 # TODO: add button on new type
 
-# TODO: rezize image to 1200x800 pixels
 
 
 # idea: add tags for each group of images no
@@ -155,7 +158,15 @@ def newGroup(neg=None):
         else:
             logging.debug(f"{filename} found to not have ARR")
 
-        file.save(os.path.join("static", filename))
+        #file.save(os.path.join("static", filename))
+        try:
+            image = Image.open(file)
+            image.thumbnail((1200,800))
+            image.save(os.path.join("static", filename))
+            logging.debug(f"changed image {filename} size")
+        except Exception as e:
+            logging.error(f"error changing {filename} size: {e}")
+
         images.append(filename)
         logging.debug(f"saved image id {i}")
 
@@ -183,10 +194,11 @@ def newGroup(neg=None):
 
 
 @app.route("/processPending")
-async def processImages():
+async def processImages(): 
     logging.debug("starting processing images")
-    asyncio.create_task(startProcessing())
-    return "empezando"
+    await startProcessing()
+    return "se termino de procesar las imagenes"
+
 
 
 @app.route("/reset")

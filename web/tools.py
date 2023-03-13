@@ -1,5 +1,5 @@
 import json
-
+from PIL import Image
 filename = "data.json"
 
 
@@ -30,16 +30,17 @@ def delValue(path, name):
 
 def addWhiteBackground(path):
     try:
+        logging.debug(f"Adding white background to {path}")
         img = Image.open(path).convert("RGBA")
         x, y = img.size
         card = Image.new("RGBA", (x, y), (255, 255, 255))
         card.paste(img, (0, 0, x, y), img)
         card.save(path, format="png")
-
-        return "success"
+        logging.debug("Added white background")
+        return "white background"
     except Exception as e:
         logging.debug(f"error pasting white bg {e}")
-        return "error"
+        return "error "
 
 
 

@@ -92,7 +92,8 @@
         let n = $("#nombre").val()
         console.log(n)
         $.post("/nuevoTipo/" + neg + "/" + n, function (data) { alert(data) })
-        // TODO agregar boton automaticamente 
+        // TODO agregar boton automaticamente
+        location.reload()
       }
     </script>
   </form>
