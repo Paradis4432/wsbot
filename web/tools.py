@@ -21,29 +21,20 @@ def saveValue(path, value):
     data[path] = value
     saveData(data)
 
+
 def delValue(path, name):
-    
+
     data = loadData()
     data[path].remove(name)
     saveData(data)
 
 
 def addWhiteBackground(path):
-    try:
-        logging.debug(f"Adding white background to {path}")
-        img = Image.open(path).convert("RGBA")
-        x, y = img.size
-        card = Image.new("RGBA", (x, y), (255, 255, 255))
-        card.paste(img, (0, 0, x, y), img)
-        card.save(path, format="png")
-        logging.debug("Added white background")
-        return "white background"
-    except Exception as e:
-        logging.debug(f"error pasting white bg {e}")
-        return "error "
-
-
-
+    img = Image.open(path).convert("RGBA")
+    x, y = img.size
+    card = Image.new("RGBA", (x, y), (255, 255, 255))
+    card.paste(img, (0, 0, x, y), img)
+    card.save(path, format="png")
 
 
 def getAnyCallLeftInKeys():

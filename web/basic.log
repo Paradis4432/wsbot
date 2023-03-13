@@ -3484,3 +3484,96 @@ RuntimeError: Install Flask with the 'async' extra in order to use async views.
 2023-03-12 23:02:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
 2023-03-12 23:02:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
 2023-03-12 23:02:21 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:02:21 WARNING  * Debugger is active!
+2023-03-12 23:02:21 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:03:27 INFO 127.0.0.1 - - [12/Mar/2023 23:03:27] "GET / HTTP/1.1" 200 -
+2023-03-12 23:03:27 INFO 127.0.0.1 - - [12/Mar/2023 23:03:27] "GET /getKeys HTTP/1.1" 200 -
+2023-03-12 23:03:27 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-12 23:03:27 INFO 127.0.0.1 - - [12/Mar/2023 23:03:27] "GET /negocios HTTP/1.1" 200 -
+2023-03-12 23:03:28 DEBUG rendering negocios
+2023-03-12 23:03:28 DEBUG rendering tempNeg for: cholo with types ['Mochilas', 'Cartera', 'billetera']
+2023-03-12 23:03:28 INFO 127.0.0.1 - - [12/Mar/2023 23:03:28] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-12 23:03:29 DEBUG rendering negocios
+2023-03-12 23:03:29 DEBUG rendering tempNeg for: cholo with types ['Mochilas', 'Cartera', 'billetera']
+2023-03-12 23:03:29 INFO 127.0.0.1 - - [12/Mar/2023 23:03:29] "GET /negocios/cholo HTTP/1.1" 200 -
+2023-03-12 23:03:31 DEBUG rendering negocios
+2023-03-12 23:03:31 DEBUG rendering tempNeg for: test with types ['test']
+2023-03-12 23:03:31 INFO 127.0.0.1 - - [12/Mar/2023 23:03:31] "GET /negocios/test HTTP/1.1" 200 -
+2023-03-12 23:03:34 DEBUG creating new type: asd
+2023-03-12 23:03:34 DEBUG new type added
+2023-03-12 23:03:34 INFO 127.0.0.1 - - [12/Mar/2023 23:03:34] "POST /nuevoTipo/test/asd HTTP/1.1" 200 -
+2023-03-12 23:03:34 DEBUG rendering negocios
+2023-03-12 23:03:34 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-12 23:03:34 INFO 127.0.0.1 - - [12/Mar/2023 23:03:34] "GET /negocios/test HTTP/1.1" 200 -
+2023-03-12 23:03:41 DEBUG rendering images for negocio: test in type: asd
+2023-03-12 23:03:41 DEBUG rendering images: {}
+2023-03-12 23:03:41 INFO 127.0.0.1 - - [12/Mar/2023 23:03:41] "GET /images/test/asd HTTP/1.1" 200 -
+2023-03-12 23:16:56 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:16:56 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:16:56 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:16:56 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:16:56 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:16:57 WARNING  * Debugger is active!
+2023-03-12 23:16:57 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:16:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:16:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:16:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:16:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:16:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:16:59 WARNING  * Debugger is active!
+2023-03-12 23:16:59 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:03 WARNING  * Debugger is active!
+2023-03-12 23:17:03 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:05 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:17 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:22 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:27 WARNING  * Debugger is active!
+2023-03-12 23:17:27 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:28 WARNING  * Debugger is active!
+2023-03-12 23:17:28 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:28 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:29 WARNING  * Debugger is active!
+2023-03-12 23:17:29 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:30 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-12 23:17:30 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:31 WARNING  * Debugger is active!
+2023-03-12 23:17:31 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:36 INFO  * Restarting with watchdog (windowsapi)
+2023-03-12 23:17:36 WARNING  * Debugger is active!
+2023-03-12 23:17:36 INFO  * Debugger PIN: 123-843-478
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-12 23:17:41 INFO  * Restarting with watchdog (windowsapi)

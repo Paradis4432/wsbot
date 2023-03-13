@@ -8,9 +8,9 @@ from .tools import *
 # import tools
 
 # general values
-keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG','5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
-#keys = ['5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
-
+keys = ['ShYSmkGi19ztn5G7oDBPLUbN', 'gcLYS11Z6jrL7MQP65mZ2y7C', 'ds4c2TkgKKNZwJ1qSJ4sCtAG',
+        '5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
+# keys = ['5awd6A82Jthc1jA383R9z3VP', 'zMPPPMiD2GCPVMDmfDdNDeLh', 'eoSRfgSTAN75o6AQ1YUQ87h4']
 
 
 def getKeys():
@@ -29,7 +29,7 @@ def has0left(currentKey):
     callsLeft = json.loads(response.text)[
         "data"]["attributes"]["api"]["free_calls"]
     logging.debug(f"found {keys[currentKey]} with {callsLeft} left")
-    return callsLeft == 0 or callsLeft == -1 
+    return callsLeft == 0 or callsLeft == -1
 
 
 def removeBG(name):
@@ -46,8 +46,14 @@ def removeBG(name):
         )
 
         if response.status_code == requests.codes.ok:
-            addWhiteBackground(path)
-            
+            logging.debug(f"Adding white background to {path}")
+            try:
+                addWhiteBackground(path)
+                logging.debug("Added white background")
+
+            except Exception as e:
+                logging.debug(f"error pasting white bg {e}")
+
             with open(path, 'wb') as out:
                 logging.debug(f"image {path} successfully removed bg")
                 out.write(response.content)
@@ -61,7 +67,7 @@ def removeBG(name):
             return "timeout"
         elif response.status_code == 402:
             logging.debug(f"Invalid API key, returning")
-            
+
             conts = 0
             while has0left(currentKey):
                 currentKey = (currentKey + 1) % len(keys)
