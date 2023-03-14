@@ -80,6 +80,7 @@ def renderImages(neg=None, t=None):
 @app.route("/downloadExcel")
 def download_excel():
     logging.debug("downloading excel")
+    create_excel_from_json()
     return send_file("data.xlsx", as_attachment=True, download_name="data.xlsx")
 
 @app.route("/test", methods=["POST"])

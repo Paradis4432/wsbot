@@ -4536,3 +4536,37 @@ RuntimeError: Install Flask with the 'async' extra in order to use async views.
 2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
 2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
 2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:17:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:17:14 WARNING  * Debugger is active!
+2023-03-14 00:17:14 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:17:17 INFO 127.0.0.1 - - [14/Mar/2023 00:17:17] "GET / HTTP/1.1" 200 -
+2023-03-14 00:17:17 INFO 127.0.0.1 - - [14/Mar/2023 00:17:17] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:17:18 DEBUG downloading excel
+2023-03-14 00:17:18 INFO 127.0.0.1 - - [14/Mar/2023 00:17:18] "GET /downloadExcel HTTP/1.1" 200 -
+2023-03-14 00:18:12 INFO 127.0.0.1 - - [14/Mar/2023 00:18:12] "GET / HTTP/1.1" 200 -
+2023-03-14 00:18:12 INFO 127.0.0.1 - - [14/Mar/2023 00:18:12] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:18:29 INFO 127.0.0.1 - - [14/Mar/2023 00:18:29] "GET / HTTP/1.1" 200 -
+2023-03-14 00:18:29 INFO 127.0.0.1 - - [14/Mar/2023 00:18:29] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:23:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:23:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:23:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:23:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:23:58 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:23:59 WARNING  * Debugger is active!
+2023-03-14 00:23:59 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:24:00 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\abc.py', reloading
+2023-03-14 00:24:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:24:01 WARNING  * Debugger is active!
+2023-03-14 00:24:01 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:24:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:07 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:24:07 WARNING  * Debugger is active!
+2023-03-14 00:24:07 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:24:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:24:09 INFO  * Restarting with watchdog (windowsapi)
