@@ -1,13 +1,64 @@
 import json
 from PIL import Image
 filename = "data.json"
-
+import pandas as pd
 
 def loadData():
     global filename
     with open(filename, "r") as f:
         data = json.load(f)
     return data
+
+
+def create_excel_from_json():
+    data = loadData()
+    # Load the JSON input into a Python object
+
+    # Create an empty list to hold all the rows of the Excel file
+    rows = []
+
+    # Loop through each item in the "negs" dictionary
+    for grupo, items in data["negs"].items():
+        for tipo, details in items["images"].items():
+            for index, item in details.items():
+                # Create a new row for each item in the Excel file
+                row = [
+                    tipo,
+                    index,
+                    ", ".join(item["images"]),
+                    item["alto"],
+                    item["largo"],
+                    item["ancho"],
+                    item["costo"],
+                    item["venta_menor"],
+                    item["venta_mayor"],
+                    item["stock"],
+                    item["descripcion"],
+                    item["uniqueID"]
+                ]
+                # Add the row to the list of rows
+                rows.append(row)
+
+    # Create a Pandas DataFrame from the list of rows
+    df = pd.DataFrame(rows, columns=[
+        "tipo",
+        "grupo",
+        "imágenes",
+        "alto",
+        "largo",
+        "ancho",
+        "costo",
+        "venta_menor",
+        "venta_mayor",
+        "stock",
+        "descripcion",
+        "uniqueID"
+    ])
+
+    # Write the DataFrame to an Excel file
+    writer = pd.ExcelWriter("data.xlsx", engine="xlsxwriter")
+    df.to_excel(writer, sheet_name="Sheet1", index=False)
+    writer.save()
 
 
 def saveData(data):

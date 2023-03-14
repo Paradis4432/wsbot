@@ -18,6 +18,8 @@
     <button
         onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert(err)).then(location.reload())'>reset</button>
 
+    <button><a href='/downloadExcel'>descargar excel</a></button>
+
     <p>imagenes pendientes a eliminar fondo: {{ data[0] }}</p>
     <p>eliminando fondo de: {{ data[1] }} imagenes</p>
     <p>imagenes pendientes a agregar flechas: {{ data[2] }}</p>

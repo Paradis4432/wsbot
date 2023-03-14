@@ -4,6 +4,7 @@ from flask import render_template
 from flask import request
 from flask import send_file
 
+
 from PIL import Image
 import logging
 import json
@@ -20,11 +21,11 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: fix max size done
 # TODO: rezize image to 1200x800 pixels on upload done
 # TODO: fix autochange of key done
+# TODO: fix white background not adding done
 
-# TODO: fix white background not adding 
-
+# TODO: excel loading
 # TODO: cambiar cargado de imagenes boton -> grupo info etc
-# TODO: arrows for images, excel loading
+# TODO: arrows for images
 # TODO: change upload to button no
 # TODO: add button on new type
 
@@ -76,9 +77,10 @@ def renderImages(neg=None, t=None):
     return render_template("tempImagesNegocio.html", neg=neg, t=t, srcs=imgsSrcs)
 
 
-@app.route("/excel/<negocio>")
-def getExcel(negocio=None):
-    return 0
+@app.route("/downloadExcel")
+def download_excel():
+    logging.debug("downloading excel")
+    return send_file("data.xlsx", as_attachment=True, download_name="data.xlsx")
 
 @app.route("/test", methods=["POST"])
 def test():

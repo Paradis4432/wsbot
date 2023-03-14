@@ -3712,3 +3712,827 @@ RuntimeError: Install Flask with the 'async' extra in order to use async views.
 2023-03-14 01:55:16 DEBUG rendering tempNeg for: cholo with types ['Mochilas', 'Cartera', 'billetera']
 2023-03-14 01:55:17 DEBUG rendering negocios
 2023-03-14 01:55:17 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-14 02:18:34 DEBUG rendering negocios
+2023-03-14 02:18:34 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-14 02:18:37 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-14 02:18:39 DEBUG rendering negocios
+2023-03-14 02:18:39 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-14 02:18:39 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:18:39 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-14 02:18:50 DEBUG adding new group for neg: test
+2023-03-14 02:18:50 DEBUG saving images with neg test type asd group 1
+2023-03-14 02:18:50 DEBUG added test.asd.1.1.png to pendingRmBg
+2023-03-14 02:18:50 DEBUG test.asd.1.1.png found to not have ARR
+2023-03-14 02:18:51 DEBUG changed image test.asd.1.1.png size
+2023-03-14 02:18:51 DEBUG saved image id 1
+2023-03-14 02:18:51 DEBUG added test.asd.1.2.png to pendingRmBg
+2023-03-14 02:18:51 DEBUG test.asd.1.2.png found to not have ARR
+2023-03-14 02:18:51 DEBUG changed image test.asd.1.2.png size
+2023-03-14 02:18:51 DEBUG saved image id 2
+2023-03-14 02:18:51 DEBUG added test.asd.1.3.png to pendingRmBg
+2023-03-14 02:18:51 DEBUG test.asd.1.3.png found to not have ARR
+2023-03-14 02:18:51 DEBUG changed image test.asd.1.3.png size
+2023-03-14 02:18:51 DEBUG saved image id 3
+2023-03-14 02:18:51 DEBUG saved image name in json as test.asd.1.3
+2023-03-14 02:18:51 DEBUG json saved
+2023-03-14 02:18:57 DEBUG Using selector: EpollSelector
+2023-03-14 02:18:57 DEBUG starting processing images
+2023-03-14 02:18:57 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:18:57 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-14 02:18:57 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with -1 left
+2023-03-14 02:18:57 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:18:57 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 125
+2023-03-14 02:18:57 DEBUG found gcLYS11Z6jrL7MQP65mZ2y7C with 0 left
+2023-03-14 02:18:57 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:18:58 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-14 02:18:58 DEBUG found ds4c2TkgKKNZwJ1qSJ4sCtAG with 22 left
+2023-03-14 02:18:58 DEBUG using key ds4c2TkgKKNZwJ1qSJ4sCtAG
+2023-03-14 02:18:58 DEBUG found 3 pendingRmBg
+2023-03-14 02:18:58 DEBUG processing is empty
+2023-03-14 02:18:58 DEBUG processingRmBg 3 ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'] files
+2023-03-14 02:18:58 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.1.1.png
+2023-03-14 02:18:58 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:18:59 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 118298
+2023-03-14 02:18:59 DEBUG Adding white background to ./static/test.asd.1.1.png
+2023-03-14 02:18:59 DEBUG STREAM b'IHDR' 16 13
+2023-03-14 02:18:59 DEBUG STREAM b'iCCP' 41 260
+2023-03-14 02:18:59 DEBUG iCCP profile name b'ICC Profile'
+2023-03-14 02:18:59 DEBUG Compression method 0
+2023-03-14 02:18:59 DEBUG STREAM b'IDAT' 313 65536
+2023-03-14 02:18:59 DEBUG Added white background
+2023-03-14 02:18:59 DEBUG image ./static/test.asd.1.1.png successfully removed bg
+2023-03-14 02:18:59 DEBUG and saved
+2023-03-14 02:18:59 DEBUG deleting image from processingRmBg
+2023-03-14 02:18:59 DEBUG successfully processed file test.asd.1.1.png
+2023-03-14 02:18:59 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.1.2.png
+2023-03-14 02:18:59 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:19:00 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 92489
+2023-03-14 02:19:00 DEBUG Adding white background to ./static/test.asd.1.2.png
+2023-03-14 02:19:00 DEBUG STREAM b'IHDR' 16 13
+2023-03-14 02:19:00 DEBUG STREAM b'iCCP' 41 260
+2023-03-14 02:19:00 DEBUG iCCP profile name b'ICC Profile'
+2023-03-14 02:19:00 DEBUG Compression method 0
+2023-03-14 02:19:00 DEBUG STREAM b'IDAT' 313 65536
+2023-03-14 02:19:00 DEBUG Added white background
+2023-03-14 02:19:00 DEBUG image ./static/test.asd.1.2.png successfully removed bg
+2023-03-14 02:19:00 DEBUG and saved
+2023-03-14 02:19:00 DEBUG deleting image from processingRmBg
+2023-03-14 02:19:00 DEBUG successfully processed file test.asd.1.2.png
+2023-03-14 02:19:00 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.1.3.png
+2023-03-14 02:19:00 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-14 02:19:01 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 134369
+2023-03-14 02:19:01 DEBUG Adding white background to ./static/test.asd.1.3.png
+2023-03-14 02:19:01 DEBUG STREAM b'IHDR' 16 13
+2023-03-14 02:19:01 DEBUG STREAM b'iCCP' 41 260
+2023-03-14 02:19:01 DEBUG iCCP profile name b'ICC Profile'
+2023-03-14 02:19:01 DEBUG Compression method 0
+2023-03-14 02:19:01 DEBUG STREAM b'IDAT' 313 65536
+2023-03-14 02:19:01 DEBUG Added white background
+2023-03-14 02:19:01 DEBUG image ./static/test.asd.1.3.png successfully removed bg
+2023-03-14 02:19:01 DEBUG and saved
+2023-03-14 02:19:01 DEBUG deleting image from processingRmBg
+2023-03-14 02:19:01 DEBUG successfully processed file test.asd.1.3.png
+2023-03-14 02:19:05 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-14 02:19:06 DEBUG rendering negocios
+2023-03-14 02:19:06 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-14 02:19:07 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:19:07 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-14 02:19:19 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:19:19 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-14 02:19:20 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:19:20 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-14 02:19:21 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:19:21 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-14 02:19:21 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 02:19:21 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-13 23:23:26 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2023-03-13 23:23:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:23:26 WARNING  * Debugger is active!
+2023-03-13 23:23:26 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:23:29 INFO 127.0.0.1 - - [13/Mar/2023 23:23:29] "GET / HTTP/1.1" 200 -
+2023-03-13 23:23:30 INFO 127.0.0.1 - - [13/Mar/2023 23:23:30] "GET /getKeys HTTP/1.1" 200 -
+2023-03-13 23:23:30 INFO 127.0.0.1 - - [13/Mar/2023 23:23:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-13 23:23:35 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 23:23:35 INFO 127.0.0.1 - - [13/Mar/2023 23:23:35] "GET /negocios HTTP/1.1" 200 -
+2023-03-13 23:23:37 DEBUG rendering negocios
+2023-03-13 23:23:37 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 23:23:37 INFO 127.0.0.1 - - [13/Mar/2023 23:23:37] "GET /negocios/test HTTP/1.1" 200 -
+2023-03-13 23:23:38 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 23:23:38 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}}
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /images/test/asd HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.0.1.png HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.0.3.png HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.0.2.png HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.1.1.png HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.1.2.png HTTP/1.1" 200 -
+2023-03-13 23:23:38 INFO 127.0.0.1 - - [13/Mar/2023 23:23:38] "GET /static/test.asd.1.3.png HTTP/1.1" 200 -
+2023-03-13 23:27:26 DEBUG adding new group for neg: test
+2023-03-13 23:27:26 DEBUG saving images with neg test type asd group 2
+2023-03-13 23:27:26 DEBUG added test.asd.2.1.png to pendingRmBg
+2023-03-13 23:27:26 DEBUG test.asd.2.1.png found to not have ARR
+2023-03-13 23:27:26 DEBUG changed image test.asd.2.1.png size
+2023-03-13 23:27:26 DEBUG saved image id 1
+2023-03-13 23:27:26 DEBUG got no images on upload of file 2
+2023-03-13 23:27:26 DEBUG got no images on upload of file 3
+2023-03-13 23:27:26 DEBUG saved image name in json as test.asd.2.3
+2023-03-13 23:27:26 DEBUG json saved
+2023-03-13 23:27:26 INFO 127.0.0.1 - - [13/Mar/2023 23:27:26] "POST /newImageGroup/test HTTP/1.1" 200 -
+2023-03-13 23:27:28 DEBUG rendering negocios
+2023-03-13 23:27:28 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 23:27:28 INFO 127.0.0.1 - - [13/Mar/2023 23:27:28] "GET /negocios/test HTTP/1.1" 200 -
+2023-03-13 23:27:29 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 23:27:29 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}, '2': {'images': ['test.asd.2.1.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '36'}}
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "GET /images/test/asd HTTP/1.1" 200 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "GET /static/test.asd.2.1.png HTTP/1.1" 200 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.0.1.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.0.2.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.0.3.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.1.1.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.1.2.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:29 INFO 127.0.0.1 - - [13/Mar/2023 23:27:29] "[36mGET /static/test.asd.1.3.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:32 INFO 127.0.0.1 - - [13/Mar/2023 23:27:32] "GET / HTTP/1.1" 200 -
+2023-03-13 23:27:32 INFO 127.0.0.1 - - [13/Mar/2023 23:27:32] "GET /getKeys HTTP/1.1" 200 -
+2023-03-13 23:27:34 DEBUG Using proactor: IocpProactor
+2023-03-13 23:27:34 DEBUG starting processing images
+2023-03-13 23:27:34 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 23:27:34 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-13 23:27:34 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with -1 left
+2023-03-13 23:27:34 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 23:27:34 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 125
+2023-03-13 23:27:34 DEBUG found gcLYS11Z6jrL7MQP65mZ2y7C with 0 left
+2023-03-13 23:27:34 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 23:27:35 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-13 23:27:35 DEBUG found ds4c2TkgKKNZwJ1qSJ4sCtAG with 19 left
+2023-03-13 23:27:35 DEBUG using key ds4c2TkgKKNZwJ1qSJ4sCtAG
+2023-03-13 23:27:35 DEBUG found 1 pendingRmBg
+2023-03-13 23:27:35 DEBUG processing is empty
+2023-03-13 23:27:35 DEBUG processingRmBg 1 ['test.asd.2.1.png'] files
+2023-03-13 23:27:35 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.2.1.png
+2023-03-13 23:27:35 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 23:27:36 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 134369
+2023-03-13 23:27:36 DEBUG image ./static/test.asd.2.1.png successfully removed bg
+2023-03-13 23:27:36 DEBUG and saved
+2023-03-13 23:27:36 DEBUG deleting image from processingRmBg
+2023-03-13 23:27:36 DEBUG Adding white background to ./static/test.asd.2.1.png
+2023-03-13 23:27:36 DEBUG STREAM b'IHDR' 16 13
+2023-03-13 23:27:36 DEBUG STREAM b'iCCP' 41 260
+2023-03-13 23:27:36 DEBUG iCCP profile name b'ICC Profile'
+2023-03-13 23:27:36 DEBUG Compression method 0
+2023-03-13 23:27:36 DEBUG STREAM b'IDAT' 313 65536
+2023-03-13 23:27:36 DEBUG Added white background
+2023-03-13 23:27:36 DEBUG successfully processed file test.asd.2.1.png
+2023-03-13 23:27:36 INFO 127.0.0.1 - - [13/Mar/2023 23:27:36] "GET /processPending HTTP/1.1" 200 -
+2023-03-13 23:27:39 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 23:27:39 INFO 127.0.0.1 - - [13/Mar/2023 23:27:39] "GET /negocios HTTP/1.1" 200 -
+2023-03-13 23:27:39 DEBUG rendering negocios
+2023-03-13 23:27:39 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 23:27:39 INFO 127.0.0.1 - - [13/Mar/2023 23:27:39] "GET /negocios/test HTTP/1.1" 200 -
+2023-03-13 23:27:40 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 23:27:40 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}, '1': {'images': ['test.asd.1.1.png', 'test.asd.1.2.png', 'test.asd.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '35'}, '2': {'images': ['test.asd.2.1.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '36'}}
+2023-03-13 23:27:40 INFO 127.0.0.1 - - [13/Mar/2023 23:27:40] "GET /images/test/asd HTTP/1.1" 200 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "GET /static/test.asd.2.1.png HTTP/1.1" 200 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.0.1.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.0.2.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.0.3.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.1.1.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.1.2.png HTTP/1.1[0m" 304 -
+2023-03-13 23:27:41 INFO 127.0.0.1 - - [13/Mar/2023 23:27:41] "[36mGET /static/test.asd.1.3.png HTTP/1.1[0m" 304 -
+2023-03-13 23:36:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:36:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:36:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:36:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:36:54 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:36:55 WARNING  * Debugger is active!
+2023-03-13 23:36:55 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:37:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:37:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:37:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:37:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
+2023-03-13 23:37:11 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:37:11 WARNING  * Debugger is active!
+2023-03-13 23:37:11 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:44:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:44:39 WARNING  * Debugger is active!
+2023-03-13 23:44:39 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:44:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:44:48 WARNING  * Debugger is active!
+2023-03-13 23:44:48 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:44:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-13 23:44:49 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:44:49 WARNING  * Debugger is active!
+2023-03-13 23:44:49 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:09 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\__init__.py', reloading
+2023-03-13 23:46:09 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\api.py', reloading
+2023-03-13 23:46:09 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+2023-03-13 23:46:09 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:09 WARNING  * Debugger is active!
+2023-03-13 23:46:09 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:10 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\base.py', reloading
+2023-03-13 23:46:10 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\accessor.py', reloading
+2023-03-13 23:46:10 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\indexing.py', reloading
+2023-03-13 23:46:10 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\core\\arraylike.py', reloading
+2023-03-13 23:46:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:11 WARNING  * Debugger is active!
+2023-03-13 23:46:11 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:14 WARNING  * Debugger is active!
+2023-03-13 23:46:14 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:18 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\json\\__init__.py', reloading
+2023-03-13 23:46:19 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:20 WARNING  * Debugger is active!
+2023-03-13 23:46:20 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:22 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:22 WARNING  * Debugger is active!
+2023-03-13 23:46:22 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:23 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:23 WARNING  * Debugger is active!
+2023-03-13 23:46:23 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:42 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:43 WARNING  * Debugger is active!
+2023-03-13 23:46:43 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:47 WARNING  * Debugger is active!
+2023-03-13 23:46:47 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:51 WARNING  * Debugger is active!
+2023-03-13 23:46:51 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:54 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:54 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:46:54 WARNING  * Debugger is active!
+2023-03-13 23:46:54 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:46:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:46:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:47:00 WARNING  * Debugger is active!
+2023-03-13 23:47:00 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:47:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:04 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:05 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:47:05 WARNING  * Debugger is active!
+2023-03-13 23:47:05 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:47:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:06 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:47:07 WARNING  * Debugger is active!
+2023-03-13 23:47:07 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:47:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:47:16 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:47:16 WARNING  * Debugger is active!
+2023-03-13 23:47:16 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:49:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:49:14 WARNING  * Debugger is active!
+2023-03-13 23:49:14 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:49:26 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\__init__.py', reloading
+2023-03-13 23:49:26 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\json\\__init__.py', reloading
+2023-03-13 23:49:26 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\json\\_normalize.py', reloading
+2023-03-13 23:49:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:49:26 WARNING  * Debugger is active!
+2023-03-13 23:49:26 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:49:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:43 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:49:43 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:49:44 WARNING  * Debugger is active!
+2023-03-13 23:49:44 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-13 23:58:27 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:27 WARNING  * Debugger is active!
+2023-03-13 23:58:27 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\__init__.py', reloading
+2023-03-13 23:58:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\app.py', reloading
+2023-03-13 23:58:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\templating.py', reloading
+2023-03-13 23:58:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:29 WARNING  * Debugger is active!
+2023-03-13 23:58:29 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:30 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:30 WARNING  * Debugger is active!
+2023-03-13 23:58:30 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:32 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2023-03-13 23:58:33 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:33 WARNING  * Debugger is active!
+2023-03-13 23:58:33 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:34 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:34 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:35 WARNING  * Debugger is active!
+2023-03-13 23:58:35 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:35 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:36 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:36 WARNING  * Debugger is active!
+2023-03-13 23:58:36 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:37 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\requests\\__init__.py', reloading
+2023-03-13 23:58:37 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\requests\\api.py', reloading
+2023-03-13 23:58:38 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:39 WARNING  * Debugger is active!
+2023-03-13 23:58:39 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:41 WARNING  * Debugger is active!
+2023-03-13 23:58:41 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:42 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:43 WARNING  * Debugger is active!
+2023-03-13 23:58:43 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:47 WARNING  * Debugger is active!
+2023-03-13 23:58:47 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:48 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:49 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:49 WARNING  * Debugger is active!
+2023-03-13 23:58:49 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:51 WARNING  * Debugger is active!
+2023-03-13 23:58:51 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:52 WARNING  * Debugger is active!
+2023-03-13 23:58:52 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:53 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\api.py', reloading
+2023-03-13 23:58:53 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\excel\\__init__.py', reloading
+2023-03-13 23:58:53 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\io\\excel\\_base.py', reloading
+2023-03-13 23:58:53 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pandas\\_typing.py', reloading
+2023-03-13 23:58:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:54 WARNING  * Debugger is active!
+2023-03-13 23:58:54 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:58:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:58:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:58:59 WARNING  * Debugger is active!
+2023-03-13 23:58:59 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:59:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:03 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:59:03 WARNING  * Debugger is active!
+2023-03-13 23:59:03 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:59:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:10 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:11 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:59:11 WARNING  * Debugger is active!
+2023-03-13 23:59:11 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:59:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:11 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:59:12 WARNING  * Debugger is active!
+2023-03-13 23:59:12 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:59:57 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\glob.py', reloading
+2023-03-13 23:59:58 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 23:59:58 WARNING  * Debugger is active!
+2023-03-13 23:59:58 INFO  * Debugger PIN: 123-843-478
+2023-03-13 23:59:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-13 23:59:59 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:00 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:00 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:00:00 WARNING  * Debugger is active!
+2023-03-14 00:00:00 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:00:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:16 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:00:16 WARNING  * Debugger is active!
+2023-03-14 00:00:16 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:00:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:19 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:00:19 WARNING  * Debugger is active!
+2023-03-14 00:00:19 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:00:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:52 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:00:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:00:53 WARNING  * Debugger is active!
+2023-03-14 00:00:53 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:01:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:20 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:20 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:01:21 WARNING  * Debugger is active!
+2023-03-14 00:01:21 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:01:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:22 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:01:22 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:01:22 WARNING  * Debugger is active!
+2023-03-14 00:01:22 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:01:29 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\functools.py', reloading
+2023-03-14 00:01:30 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:01:31 WARNING  * Debugger is active!
+2023-03-14 00:01:31 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:17 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:02:17 WARNING  * Debugger is active!
+2023-03-14 00:02:17 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:02:19 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:19 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:02:20 WARNING  * Debugger is active!
+2023-03-14 00:02:20 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:02:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:51 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:02:52 WARNING  * Debugger is active!
+2023-03-14 00:02:52 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:02:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:02:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:02:54 WARNING  * Debugger is active!
+2023-03-14 00:02:54 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:04:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:04:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:04:03 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:04:03 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:04:04 WARNING  * Debugger is active!
+2023-03-14 00:04:04 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:06:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\globals.py', reloading
+2023-03-14 00:06:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2023-03-14 00:06:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\__init__.py', reloading
+2023-03-14 00:06:28 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2023-03-14 00:06:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:06:28 WARNING  * Debugger is active!
+2023-03-14 00:06:28 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:06:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:06:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:06:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:06:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:06:30 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:06:30 WARNING  * Debugger is active!
+2023-03-14 00:06:30 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:08:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:08 WARNING  * Debugger is active!
+2023-03-14 00:08:08 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:08:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:09 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:10 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:10 WARNING  * Debugger is active!
+2023-03-14 00:08:10 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:08:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:08:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:14 WARNING  * Debugger is active!
+2023-03-14 00:08:14 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:08:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:08:47 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:08:59 WARNING  * Debugger is active!
+2023-03-14 00:09:00 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:09:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:09:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:09:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:09:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:09:08 WARNING  * Debugger is active!
+2023-03-14 00:09:08 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:09:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:38 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:39 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:09:40 WARNING  * Debugger is active!
+2023-03-14 00:09:40 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:09:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:09:42 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:09:42 WARNING  * Debugger is active!
+2023-03-14 00:09:42 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:09:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:47 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:09:48 WARNING  * Debugger is active!
+2023-03-14 00:09:48 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:09:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:09:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:09:50 WARNING  * Debugger is active!
+2023-03-14 00:09:50 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:01 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:03 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:04 WARNING  * Debugger is active!
+2023-03-14 00:10:04 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:13 WARNING  * Debugger is active!
+2023-03-14 00:10:13 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:10:16 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:16 WARNING  * Debugger is active!
+2023-03-14 00:10:16 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:28 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:28 WARNING  * Debugger is active!
+2023-03-14 00:10:28 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:31 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:31 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:31 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:31 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:33 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:34 WARNING  * Debugger is active!
+2023-03-14 00:10:34 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:10:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:40 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:10:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:10:41 WARNING  * Debugger is active!
+2023-03-14 00:10:41 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:11:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:11:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:11:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:11:26 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:11:26 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:11:27 WARNING  * Debugger is active!
+2023-03-14 00:11:27 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:11:40 INFO 127.0.0.1 - - [14/Mar/2023 00:11:40] "GET / HTTP/1.1" 200 -
+2023-03-14 00:11:40 INFO 127.0.0.1 - - [14/Mar/2023 00:11:40] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:11:41 INFO 127.0.0.1 - - [14/Mar/2023 00:11:41] "GET / HTTP/1.1" 200 -
+2023-03-14 00:11:42 INFO 127.0.0.1 - - [14/Mar/2023 00:11:42] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:11:43 INFO 127.0.0.1 - - [14/Mar/2023 00:11:43] "[35m[1mGET /downloadExcel HTTP/1.1[0m" 500 -
+2023-03-14 00:12:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:06 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:06 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:07 WARNING  * Debugger is active!
+2023-03-14 00:12:07 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:13 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:13 WARNING  * Debugger is active!
+2023-03-14 00:12:13 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:13 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:14 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:14 WARNING  * Debugger is active!
+2023-03-14 00:12:14 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:15 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:16 WARNING  * Debugger is active!
+2023-03-14 00:12:16 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:19 INFO 127.0.0.1 - - [14/Mar/2023 00:12:19] "GET / HTTP/1.1" 200 -
+2023-03-14 00:12:19 INFO 127.0.0.1 - - [14/Mar/2023 00:12:19] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:12:20 INFO 127.0.0.1 - - [14/Mar/2023 00:12:20] "[35m[1mGET /downloadExcel HTTP/1.1[0m" 500 -
+2023-03-14 00:12:24 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\packaging\\__init__.py', reloading
+2023-03-14 00:12:24 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\pdb.py', reloading
+2023-03-14 00:12:25 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:25 WARNING  * Debugger is active!
+2023-03-14 00:12:25 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:27 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:12:27 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:12:28 WARNING  * Debugger is active!
+2023-03-14 00:12:28 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:12:28 INFO 127.0.0.1 - - [14/Mar/2023 00:12:28] "GET / HTTP/1.1" 200 -
+2023-03-14 00:12:28 INFO 127.0.0.1 - - [14/Mar/2023 00:12:28] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:12:29 INFO 127.0.0.1 - - [14/Mar/2023 00:12:29] "[35m[1mGET /downloadExcel HTTP/1.1[0m" 500 -
+2023-03-14 00:13:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:13:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:13:25 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tempTest.py', reloading
+2023-03-14 00:13:25 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:13:26 WARNING  * Debugger is active!
+2023-03-14 00:13:26 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:13:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:13:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:13:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:13:29 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\tools.py', reloading
+2023-03-14 00:13:29 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:13:30 WARNING  * Debugger is active!
+2023-03-14 00:13:30 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:13:53 INFO 127.0.0.1 - - [14/Mar/2023 00:13:53] "GET / HTTP/1.1" 200 -
+2023-03-14 00:13:53 INFO 127.0.0.1 - - [14/Mar/2023 00:13:53] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:13:54 INFO 127.0.0.1 - - [14/Mar/2023 00:13:54] "[33mGET /download_excel HTTP/1.1[0m" 404 -
+2023-03-14 00:14:01 INFO 127.0.0.1 - - [14/Mar/2023 00:14:01] "GET / HTTP/1.1" 200 -
+2023-03-14 00:14:01 INFO 127.0.0.1 - - [14/Mar/2023 00:14:01] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:14:02 INFO 127.0.0.1 - - [14/Mar/2023 00:14:02] "[35m[1mGET /downloadExcel HTTP/1.1[0m" 500 -
+2023-03-14 00:14:02 INFO 127.0.0.1 - - [14/Mar/2023 00:14:02] "GET /downloadExcel?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-03-14 00:14:02 INFO 127.0.0.1 - - [14/Mar/2023 00:14:02] "GET /downloadExcel?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-03-14 00:14:02 INFO 127.0.0.1 - - [14/Mar/2023 00:14:02] "GET /downloadExcel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-14 00:14:03 INFO 127.0.0.1 - - [14/Mar/2023 00:14:03] "[36mGET /downloadExcel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-14 00:14:06 INFO 127.0.0.1 - - [14/Mar/2023 00:14:06] "GET /downloadExcel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-14 00:14:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:46 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:46 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:14:47 WARNING  * Debugger is active!
+2023-03-14 00:14:47 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:14:47 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\logging\\__init__.py', reloading
+2023-03-14 00:14:48 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:14:49 WARNING  * Debugger is active!
+2023-03-14 00:14:49 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:14:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:50 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:51 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:14:51 WARNING  * Debugger is active!
+2023-03-14 00:14:51 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:14:52 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\os.py', reloading
+2023-03-14 00:14:52 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\posixpath.py', reloading
+2023-03-14 00:14:52 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\ntpath.py', reloading
+2023-03-14 00:14:52 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:14:53 WARNING  * Debugger is active!
+2023-03-14 00:14:53 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:14:56 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\types.py', reloading
+2023-03-14 00:14:57 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:14:57 WARNING  * Debugger is active!
+2023-03-14 00:14:57 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:14:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:58 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:14:59 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:00 WARNING  * Debugger is active!
+2023-03-14 00:15:00 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:02 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:02 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:03 WARNING  * Debugger is active!
+2023-03-14 00:15:03 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:07 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:08 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:08 WARNING  * Debugger is active!
+2023-03-14 00:15:08 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:12 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\logging\\config.py', reloading
+2023-03-14 00:15:12 INFO  * Detected change in 'C:\\Users\\Lucas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\logging\\handlers.py', reloading
+2023-03-14 00:15:12 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:13 WARNING  * Debugger is active!
+2023-03-14 00:15:13 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:15 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:15 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:15 WARNING  * Debugger is active!
+2023-03-14 00:15:15 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:18 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:18 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:19 WARNING  * Debugger is active!
+2023-03-14 00:15:19 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:21 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:21 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:22 WARNING  * Debugger is active!
+2023-03-14 00:15:22 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:29 INFO 127.0.0.1 - - [14/Mar/2023 00:15:29] "GET / HTTP/1.1" 200 -
+2023-03-14 00:15:29 INFO 127.0.0.1 - - [14/Mar/2023 00:15:29] "GET /getKeys HTTP/1.1" 200 -
+2023-03-14 00:15:31 DEBUG downloading excel
+2023-03-14 00:15:31 INFO 127.0.0.1 - - [14/Mar/2023 00:15:31] "[35m[1mGET /downloadExcel HTTP/1.1[0m" 500 -
+2023-03-14 00:15:31 INFO 127.0.0.1 - - [14/Mar/2023 00:15:31] "[36mGET /downloadExcel?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-14 00:15:31 INFO 127.0.0.1 - - [14/Mar/2023 00:15:31] "[36mGET /downloadExcel?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-14 00:15:31 INFO 127.0.0.1 - - [14/Mar/2023 00:15:31] "[36mGET /downloadExcel?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-14 00:15:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:49 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:50 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:51 WARNING  * Debugger is active!
+2023-03-14 00:15:51 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:15:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:53 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:15:53 INFO  * Restarting with watchdog (windowsapi)
+2023-03-14 00:15:53 WARNING  * Debugger is active!
+2023-03-14 00:15:53 INFO  * Debugger PIN: 123-843-478
+2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
+2023-03-14 00:17:12 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\__init__.py', reloading
