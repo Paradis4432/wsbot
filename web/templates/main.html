@@ -13,10 +13,10 @@
     <button><a href="negocios">negocios</a></button>
 
     <button
-        onclick='fetch("/processPending").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>procesar
+        onclick='fetch("/processPending").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert(error))'>procesar
         imagenes pendientes</button>
     <button
-        onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert("error"))'>reset</button>
+        onclick='fetch("/reset").then(response=>response.text()).then(data=>alert(data)).catch(err=>alert(err)).then(location.reload())'>reset</button>
 
     <p>imagenes pendientes a eliminar fondo: {{ data[0] }}</p>
     <p>eliminando fondo de: {{ data[1] }} imagenes</p>

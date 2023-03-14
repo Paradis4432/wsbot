@@ -46,6 +46,13 @@ def removeBG(name):
         )
 
         if response.status_code == requests.codes.ok:
+            with open(path, 'wb') as out:
+                logging.debug(f"image {path} successfully removed bg")
+                out.write(response.content)
+                logging.debug("and saved")
+                logging.debug("deleting image from processingRmBg")
+                delValue("processingRmBg", name)
+
             logging.debug(f"Adding white background to {path}")
             try:
                 addWhiteBackground(path)
@@ -53,13 +60,6 @@ def removeBG(name):
 
             except Exception as e:
                 logging.debug(f"error pasting white bg {e}")
-
-            with open(path, 'wb') as out:
-                logging.debug(f"image {path} successfully removed bg")
-                out.write(response.content)
-                logging.debug("and saved")
-                logging.debug("deleting image from processingRmBg")
-                delValue("processingRmBg", name)
 
         elif response.status_code == 429:
             logging.debug(f"Rate limit exceeded, waiting for 1 minute")

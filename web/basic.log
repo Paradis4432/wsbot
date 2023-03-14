@@ -3577,3 +3577,138 @@ RuntimeError: Install Flask with the 'async' extra in order to use async views.
 2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
 2023-03-12 23:17:41 INFO  * Detected change in 'C:\\Users\\Lucas\\Escritorio\\e\\wsbot\\web\\imageEditManager.py', reloading
 2023-03-12 23:17:41 INFO  * Restarting with watchdog (windowsapi)
+2023-03-13 02:20:33 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 02:20:34 DEBUG rendering negocios
+2023-03-13 02:20:34 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 02:20:36 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 02:20:36 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 02:20:39 DEBUG reseting
+2023-03-13 02:21:58 DEBUG Using selector: EpollSelector
+2023-03-13 02:21:58 DEBUG starting processing images
+2023-03-13 02:21:58 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:21:59 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-13 02:21:59 DEBUG found ShYSmkGi19ztn5G7oDBPLUbN with -1 left
+2023-03-13 02:21:59 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:21:59 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 125
+2023-03-13 02:21:59 DEBUG found gcLYS11Z6jrL7MQP65mZ2y7C with 0 left
+2023-03-13 02:21:59 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:21:59 DEBUG https://api.remove.bg:443 "GET /v1.0/account HTTP/1.1" 200 126
+2023-03-13 02:21:59 DEBUG found ds4c2TkgKKNZwJ1qSJ4sCtAG with 28 left
+2023-03-13 02:21:59 DEBUG using key ds4c2TkgKKNZwJ1qSJ4sCtAG
+2023-03-13 02:21:59 DEBUG found 0 pendingRmBg
+2023-03-13 02:21:59 DEBUG processing is not empty
+2023-03-13 02:21:59 DEBUG processingRmBg 3 ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'] files
+2023-03-13 02:21:59 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.0.1.png
+2023-03-13 02:21:59 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:22:00 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 149728
+2023-03-13 02:22:00 DEBUG Adding white background to ./static/test.asd.0.1.png
+2023-03-13 02:22:00 DEBUG STREAM b'IHDR' 16 13
+2023-03-13 02:22:00 DEBUG STREAM b'iCCP' 41 260
+2023-03-13 02:22:00 DEBUG iCCP profile name b'ICC Profile'
+2023-03-13 02:22:00 DEBUG Compression method 0
+2023-03-13 02:22:00 DEBUG STREAM b'IDAT' 313 65536
+2023-03-13 02:22:00 DEBUG Added white background
+2023-03-13 02:22:00 DEBUG image ./static/test.asd.0.1.png successfully removed bg
+2023-03-13 02:22:00 DEBUG and saved
+2023-03-13 02:22:00 DEBUG deleting image from processingRmBg
+2023-03-13 02:22:00 DEBUG successfully processed file test.asd.0.1.png
+2023-03-13 02:22:00 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.0.2.png
+2023-03-13 02:22:00 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:22:01 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 133882
+2023-03-13 02:22:01 DEBUG Adding white background to ./static/test.asd.0.2.png
+2023-03-13 02:22:01 DEBUG STREAM b'IHDR' 16 13
+2023-03-13 02:22:01 DEBUG STREAM b'IDAT' 41 65536
+2023-03-13 02:22:02 DEBUG Added white background
+2023-03-13 02:22:02 DEBUG image ./static/test.asd.0.2.png successfully removed bg
+2023-03-13 02:22:02 DEBUG and saved
+2023-03-13 02:22:02 DEBUG deleting image from processingRmBg
+2023-03-13 02:22:02 DEBUG successfully processed file test.asd.0.2.png
+2023-03-13 02:22:02 DEBUG using key: ds4c2TkgKKNZwJ1qSJ4sCtAG for image ./static/test.asd.0.3.png
+2023-03-13 02:22:02 DEBUG Starting new HTTPS connection (1): api.remove.bg:443
+2023-03-13 02:22:03 DEBUG https://api.remove.bg:443 "POST /v1.0/removebg HTTP/1.1" 200 118298
+2023-03-13 02:22:03 DEBUG Adding white background to ./static/test.asd.0.3.png
+2023-03-13 02:22:03 DEBUG STREAM b'IHDR' 16 13
+2023-03-13 02:22:03 DEBUG STREAM b'iCCP' 41 260
+2023-03-13 02:22:03 DEBUG iCCP profile name b'ICC Profile'
+2023-03-13 02:22:03 DEBUG Compression method 0
+2023-03-13 02:22:03 DEBUG STREAM b'IDAT' 313 65536
+2023-03-13 02:22:03 DEBUG Added white background
+2023-03-13 02:22:03 DEBUG image ./static/test.asd.0.3.png successfully removed bg
+2023-03-13 02:22:03 DEBUG and saved
+2023-03-13 02:22:03 DEBUG deleting image from processingRmBg
+2023-03-13 02:22:03 DEBUG successfully processed file test.asd.0.3.png
+2023-03-13 02:22:08 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 02:22:09 DEBUG rendering negocios
+2023-03-13 02:22:09 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 02:22:10 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 02:22:10 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 02:22:53 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 02:22:53 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 02:34:28 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 02:34:30 DEBUG rendering negocios
+2023-03-13 02:34:30 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 02:34:31 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 02:34:31 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 02:34:46 DEBUG rendering negocios
+2023-03-13 02:34:46 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 02:35:07 DEBUG rendering images for negocio: test in type: test
+2023-03-13 02:35:07 DEBUG rendering images: {'0': {'images': ['test.test.0.1.png', 'test.test.0.2.png', 'test.test.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '31'}, '1': {'images': ['test.test.1.1.png', 'test.test.1.2.png', 'test.test.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '32'}, '2': {'images': ['test.test.2.1.png', 'test.test.2.2.png', 'test.test.2.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '33'}}
+2023-03-13 02:35:49 DEBUG downloading image test.test.2.2.png
+2023-03-13 02:35:49 DEBUG downloading image test.test.2.1.png
+2023-03-13 02:35:49 DEBUG downloading image test.test.2.3.png
+2023-03-13 02:42:14 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 02:42:16 DEBUG rendering negocios
+2023-03-13 02:42:16 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky', 'Gorras_Vintage']
+2023-03-13 02:42:18 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-13 02:42:18 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-13 02:43:21 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-13 02:43:21 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-13 02:44:56 DEBUG downloading image marian.Nick_Adidas_etc.0.1.png
+2023-03-13 02:44:56 DEBUG downloading image ARR.marian.Nick_Adidas_etc.0.2.png
+2023-03-13 02:44:57 DEBUG downloading image ARR.marian.Nick_Adidas_etc.1.2.png
+2023-03-13 02:44:57 DEBUG downloading image marian.Nick_Adidas_etc.1.1.png
+2023-03-13 02:44:58 DEBUG downloading image ARR.marian.Nick_Adidas_etc.2.2.png
+2023-03-13 02:44:58 DEBUG downloading image marian.Nick_Adidas_etc.2.1.png
+2023-03-13 02:44:59 DEBUG downloading image marian.Nick_Adidas_etc.3.1.png
+2023-03-13 02:44:59 DEBUG downloading image marian.Nick_Adidas_etc.3.2.png
+2023-03-13 03:32:32 DEBUG rendering images for negocio: marian in type: Nick_Adidas_etc
+2023-03-13 03:32:32 DEBUG rendering images: {'0': {'images': ['marian.Nick_Adidas_etc.0.1.png', 'ARR.marian.Nick_Adidas_etc.0.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de jordan roja ', 'uniqueID': '5'}, '1': {'images': ['marian.Nick_Adidas_etc.1.1.png', 'ARR.marian.Nick_Adidas_etc.1.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1300', 'venta_menor': '2900', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Jordan negra ', 'uniqueID': '6'}, '2': {'images': ['marian.Nick_Adidas_etc.2.1.png', 'ARR.marian.Nick_Adidas_etc.2.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '2', 'descripcion': 'Gorra de Adidas ', 'uniqueID': '7'}, '3': {'images': ['marian.Nick_Adidas_etc.3.1.png', 'marian.Nick_Adidas_etc.3.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas blanca ', 'uniqueID': '8'}, '4': {'images': ['marian.Nick_Adidas_etc.4.1.png', 'ARR.marian.Nick_Adidas_etc.4.2.png'], 'alto': '17', 'largo': '26', 'ancho': 'M-L', 'costo': '1200', 'venta_menor': '2800', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorra Adidas azul ', 'uniqueID': '9'}}
+2023-03-13 03:32:34 DEBUG rendering negocios
+2023-03-13 03:32:34 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky', 'Gorras_Vintage']
+2023-03-13 03:32:38 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 03:32:39 DEBUG rendering negocios
+2023-03-13 03:32:39 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 03:32:41 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 03:32:41 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 04:09:42 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 04:09:42 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 04:10:48 DEBUG rendering images for negocio: marian in type: Gorros_lana_rocky
+2023-03-13 04:10:48 DEBUG rendering images: {'0': {'images': ['marian.Gorros_lana_rocky.0.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'E'}, '1': {'images': ['marian.Gorros_lana_rocky.1.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': 'F'}, '2': {'images': ['marian.Gorros_lana_rocky.2.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '10'}, '3': {'images': ['marian.Gorros_lana_rocky.3.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '11'}, '4': {'images': ['marian.Gorros_lana_rocky.4.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '12'}, '5': {'images': ['marian.Gorros_lana_rocky.5.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '13'}, '6': {'images': ['marian.Gorros_lana_rocky.6.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '14'}, '7': {'images': ['marian.Gorros_lana_rocky.7.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '15'}, '8': {'images': ['marian.Gorros_lana_rocky.8.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '1', 'descripcion': 'Gorro de lana tipo Rocky ', 'uniqueID': '16'}, '9': {'images': ['marian.Gorros_lana_rocky.9.1.png'], 'alto': '_', 'largo': '_', 'ancho': '_', 'costo': '800', 'venta_menor': '2000', 'venta_mayor': '-', 'stock': '9', 'descripcion': 'Gorro de lana tipo Rocky  foto conjunto ', 'uniqueID': '17'}}
+2023-03-13 19:34:41 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 19:34:43 DEBUG rendering negocios
+2023-03-13 19:34:43 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky', 'Gorras_Vintage']
+2023-03-13 19:34:45 DEBUG rendering images for negocio: marian in type: Gorras_Vintage
+2023-03-13 19:34:45 DEBUG rendering images: {'0': {'images': ['marian.Gorras_Vintage.0.1.png', 'ARR.marian.Gorras_Vintage.0.2.png', 'ARR.marian.Gorras_Vintage.0.3.png'], 'alto': '17cm', 'largo': '26cm', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3200', 'venta_mayor': '-', 'stock': '2', 'descripcion': '..', 'uniqueID': '25'}, '1': {'images': ['marian.Gorras_Vintage.1.1.png', 'ARR.marian.Gorras_Vintage.1.2.png', 'ARR.marian.Gorras_Vintage.1.3.png'], 'alto': '17cm', 'largo': '26cm', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3000', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': '29'}, '2': {'images': ['marian.Gorras_Vintage.2.1.png', 'ARR.marian.Gorras_Vintage.2.2.png', 'ARR.marian.Gorras_Vintage.2.3.png'], 'alto': '17cm', 'largo': '26cm', 'ancho': 'M-L', 'costo': '1400', 'venta_menor': '3200', 'venta_mayor': '-', 'stock': '1', 'descripcion': '..', 'uniqueID': '2D'}}
+2023-03-13 23:01:19 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-13 23:01:20 DEBUG rendering negocios
+2023-03-13 23:01:20 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-13 23:01:22 DEBUG rendering images for negocio: test in type: asd
+2023-03-13 23:01:22 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-13 23:01:25 DEBUG rendering images for negocio: test in type: test
+2023-03-13 23:01:25 DEBUG rendering images: {'0': {'images': ['test.test.0.1.png', 'test.test.0.2.png', 'test.test.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '31'}, '1': {'images': ['test.test.1.1.png', 'test.test.1.2.png', 'test.test.1.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '32'}, '2': {'images': ['test.test.2.1.png', 'test.test.2.2.png', 'test.test.2.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '33'}}
+2023-03-13 23:18:25 DEBUG downloading image test.test.0.1.png
+2023-03-13 23:18:27 DEBUG downloading image test.test.0.2.png
+2023-03-13 23:18:27 DEBUG downloading image test.test.0.3.png
+2023-03-14 01:55:00 DEBUG rendering negocios with negs: ['cholo', 'marian', 'test']
+2023-03-14 01:55:01 DEBUG rendering negocios
+2023-03-14 01:55:01 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky', 'Gorras_Vintage']
+2023-03-14 01:55:03 DEBUG rendering negocios
+2023-03-14 01:55:03 DEBUG rendering tempNeg for: test with types ['test', 'asd']
+2023-03-14 01:55:05 DEBUG rendering images for negocio: test in type: asd
+2023-03-14 01:55:05 DEBUG rendering images: {'0': {'images': ['test.asd.0.1.png', 'test.asd.0.2.png', 'test.asd.0.3.png'], 'alto': 'not found', 'largo': 'not found', 'ancho': 'not found', 'costo': 'not found', 'venta_menor': 'not found', 'venta_mayor': 'not found', 'stock': 'not found', 'descripcion': 'not found', 'uniqueID': '34'}}
+2023-03-14 01:55:15 DEBUG rendering negocios
+2023-03-14 01:55:15 DEBUG rendering tempNeg for: marian with types ['Gorras_rotas', 'Gorras_street', 'Nick_Adidas_etc', 'Gorras_Animales', 'Gorros_lana_rocky', 'Gorras_Vintage']
+2023-03-14 01:55:16 DEBUG rendering negocios
+2023-03-14 01:55:16 DEBUG rendering tempNeg for: cholo with types ['Mochilas', 'Cartera', 'billetera']
+2023-03-14 01:55:17 DEBUG rendering negocios
+2023-03-14 01:55:17 DEBUG rendering tempNeg for: test with types ['test', 'asd']

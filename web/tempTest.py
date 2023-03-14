@@ -18,9 +18,18 @@ firsts = [data["negs"][neg]["images"][t][x]["images"][0]
           for x in data["negs"][neg]["images"][t].keys()]
 # print(firsts)
 
-for x in os.listdir("./static"):
-    n = f"./static/{x}"
-    image = Image.open(n)
-    image.thumbnail((1200, 800))
-    image.save(n)
-    print("changed: " + n)
+names = ["test.asd.0.1.png", "test.asd.0.2.png", "test.asd.0.3.png"]
+
+path="./static/"
+
+for name in names:
+    
+    p = path + name
+    img = Image.open(p).convert("RGBA")
+    print(img)
+    x, y = img.size
+    print(x,y)
+    card = Image.new("RGBA", (x, y), (255, 255, 255))
+    card.paste(img, (0, 0, x, y), img)
+    card.save(p, format="png")
+    print("saved")
