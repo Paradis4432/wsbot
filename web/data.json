@@ -1,0 +1,816 @@
+{
+    "negs": {
+        "cholo": {
+            "types": [
+                "Mochilas",
+                "Cartera",
+                "billetera"
+            ],
+            "images": {
+                "Mochilas": {
+                    "0": {
+                        "images": [
+                            "cholo.Mochilas.0.1.png",
+                            "ARR.cholo.Mochilas.0.2.png"
+                        ],
+                        "alto": "32 cm ",
+                        "largo": "30cm",
+                        "ancho": "10 cm ",
+                        "costo": "1600",
+                        "venta_menor": "3100",
+                        "venta_mayor": "2900",
+                        "stock": "1",
+                        "descripcion": "Mochila de cuero marron ",
+                        "uniqueID": "18"
+                    }
+                },
+                "Cartera": {
+                    "0": {
+                        "images": [
+                            "cholo.Cartera.0.1.png",
+                            "cholo.Cartera.0.2.png",
+                            "ARR.cholo.Cartera.0.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "2900",
+                        "venta_menor": "4900",
+                        "venta_mayor": "4700",
+                        "stock": "1",
+                        "descripcion": "Bandolera de cuero con cintas cambiables ",
+                        "uniqueID": "19"
+                    },
+                    "1": {
+                        "images": [
+                            "cholo.Cartera.1.1.png"
+                        ],
+                        "alto": "38 cm",
+                        "largo": "27 cm ",
+                        "ancho": "12 cm",
+                        "costo": "5500",
+                        "venta_menor": "8500",
+                        "venta_mayor": "8300",
+                        "stock": "1",
+                        "descripcion": "Cartera dama grande cuero",
+                        "uniqueID": "1A"
+                    },
+                    "2": {
+                        "images": [
+                            "cholo.Cartera.2.1.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "2000",
+                        "venta_menor": "4000",
+                        "venta_mayor": "3800",
+                        "stock": "1",
+                        "descripcion": "Cartera dama hojal cuero",
+                        "uniqueID": "1B"
+                    },
+                    "3": {
+                        "images": [
+                            "cholo.Cartera.3.1.png"
+                        ],
+                        "alto": "21 cm",
+                        "largo": "25 cm",
+                        "ancho": "7 cm",
+                        "costo": "2000",
+                        "venta_menor": "3500",
+                        "venta_mayor": "3300",
+                        "stock": "1",
+                        "descripcion": "C artera dama petalos cuero ",
+                        "uniqueID": "1C"
+                    },
+                    "4": {
+                        "images": [
+                            "cholo.Cartera.4.1.png",
+                            "ARR.cholo.Cartera.4.2.png",
+                            "ARR.cholo.Cartera.4.3.png"
+                        ],
+                        "alto": "21 cm ",
+                        "largo": "25 cm",
+                        "ancho": " 7 cm",
+                        "costo": "2000",
+                        "venta_menor": "3500",
+                        "venta_mayor": "3200",
+                        "stock": "1",
+                        "descripcion": "certera dama tachas cuero",
+                        "uniqueID": "1D"
+                    }
+                },
+                "billetera": {
+                    "0": {
+                        "images": [
+                            "cholo.billetera.0.1.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "600",
+                        "venta_menor": "1200",
+                        "venta_mayor": "1000",
+                        "stock": "1",
+                        "descripcion": "Billetera cortes hombre",
+                        "uniqueID": "1E"
+                    }
+                }
+            }
+        },
+        "marian": {
+            "types": [
+                "Gorras_rotas",
+                "Gorras_street",
+                "Nick_Adidas_etc",
+                "Gorras_Animales",
+                "Gorros_lana_rocky",
+                "Gorras_Vintage"
+            ],
+            "images": {
+                "Gorras_rotas": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_rotas.0.1.png",
+                            "ARR.marian.Gorras_rotas.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Hdhhdh",
+                        "uniqueID": "3"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorras_rotas.1.1.png",
+                            "ARR.marian.Gorras_rotas.1.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "A"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Gorras_rotas.2.1.png",
+                            "ARR.marian.Gorras_rotas.2.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "C"
+                    },
+                    "3": {
+                        "images": [
+                            "marian.Gorras_rotas.3.1.png",
+                            "marian.Gorras_rotas.3.2.png",
+                            "marian.Gorras_rotas.3.3.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "1F"
+                    },
+                    "4": {
+                        "images": [
+                            "marian.Gorras_rotas.4.1.png",
+                            "ARR.marian.Gorras_rotas.4.2.png",
+                            "ARR.marian.Gorras_rotas.4.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "20"
+                    },
+                    "5": {
+                        "images": [
+                            "marian.Gorras_rotas.5.1.png",
+                            "marian.Gorras_rotas.5.2.png",
+                            "marian.Gorras_rotas.5.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26 cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "..",
+                        "uniqueID": "21"
+                    },
+                    "6": {
+                        "images": [
+                            "marian.Gorras_rotas.6.1.png",
+                            "ARR.marian.Gorras_rotas.6.2.png",
+                            "marian.Gorras_rotas.6.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "22"
+                    },
+                    "7": {
+                        "images": [
+                            "marian.Gorras_rotas.7.1.png",
+                            "ARR.marian.Gorras_rotas.7.2.png",
+                            "marian.Gorras_rotas.7.3.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "not found",
+                        "uniqueID": "23"
+                    },
+                    "8": {
+                        "images": [
+                            "marian.Gorras_rotas.8.1.png",
+                            "marian.Gorras_rotas.8.2.png",
+                            "marian.Gorras_rotas.8.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "..",
+                        "uniqueID": "24"
+                    },
+                    "9": {
+                        "images": [
+                            "marian.Gorras_rotas.9.1.png",
+                            "marian.Gorras_rotas.9.2.png",
+                            "marian.Gorras_rotas.9.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "26"
+                    },
+                    "10": {
+                        "images": [
+                            "marian.Gorras_rotas.10.1.png",
+                            "ARR.marian.Gorras_rotas.10.2.png",
+                            "marian.Gorras_rotas.10.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "27"
+                    },
+                    "11": {
+                        "images": [
+                            "marian.Gorras_rotas.11.1.png",
+                            "marian.Gorras_rotas.11.2.png",
+                            "marian.Gorras_rotas.11.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "2E"
+                    },
+                    "12": {
+                        "images": [
+                            "marian.Gorras_rotas.12.1.png",
+                            "marian.Gorras_rotas.12.2.png",
+                            "marian.Gorras_rotas.12.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Completar",
+                        "uniqueID": "2F"
+                    },
+                    "13": {
+                        "images": [
+                            "marian.Gorras_rotas.13.1.png",
+                            "marian.Gorras_rotas.13.2.png",
+                            "marian.Gorras_rotas.13.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Completar",
+                        "uniqueID": "30"
+                    }
+                },
+                "Gorras_street": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_street.0.1.png",
+                            "ARR.marian.Gorras_street.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de los Yankees negra ",
+                        "uniqueID": "4"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorras_street.1.1.png",
+                            "marian.Gorras_street.1.2.png",
+                            "marian.Gorras_street.1.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "28"
+                    }
+                },
+                "Nick_Adidas_etc": {
+                    "0": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.0.1.png",
+                            "ARR.marian.Nick_Adidas_etc.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de jordan roja ",
+                        "uniqueID": "5"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.1.1.png",
+                            "ARR.marian.Nick_Adidas_etc.1.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Jordan negra ",
+                        "uniqueID": "6"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.2.1.png",
+                            "ARR.marian.Nick_Adidas_etc.2.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra de Adidas ",
+                        "uniqueID": "7"
+                    },
+                    "3": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.3.1.png",
+                            "marian.Nick_Adidas_etc.3.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorra Adidas blanca ",
+                        "uniqueID": "8"
+                    },
+                    "4": {
+                        "images": [
+                            "marian.Nick_Adidas_etc.4.1.png",
+                            "ARR.marian.Nick_Adidas_etc.4.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1200",
+                        "venta_menor": "2800",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorra Adidas azul ",
+                        "uniqueID": "9"
+                    }
+                },
+                "Gorras_Animales": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_Animales.0.1.png",
+                            "ARR.marian.Gorras_Animales.0.2.png"
+                        ],
+                        "alto": "17",
+                        "largo": "26",
+                        "ancho": "M-L",
+                        "costo": "1300",
+                        "venta_menor": "2900",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "Gorra animal pantera ",
+                        "uniqueID": "D"
+                    }
+                },
+                "Gorros_lana_rocky": {
+                    "0": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.0.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "E"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.1.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "F"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.2.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "10"
+                    },
+                    "3": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.3.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "11"
+                    },
+                    "4": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.4.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "12"
+                    },
+                    "5": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.5.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "13"
+                    },
+                    "6": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.6.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "14"
+                    },
+                    "7": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.7.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "15"
+                    },
+                    "8": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.8.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "Gorro de lana tipo Rocky ",
+                        "uniqueID": "16"
+                    },
+                    "9": {
+                        "images": [
+                            "marian.Gorros_lana_rocky.9.1.png"
+                        ],
+                        "alto": "_",
+                        "largo": "_",
+                        "ancho": "_",
+                        "costo": "800",
+                        "venta_menor": "2000",
+                        "venta_mayor": "-",
+                        "stock": "9",
+                        "descripcion": "Gorro de lana tipo Rocky  foto conjunto ",
+                        "uniqueID": "17"
+                    }
+                },
+                "Gorras_Vintage": {
+                    "0": {
+                        "images": [
+                            "marian.Gorras_Vintage.0.1.png",
+                            "ARR.marian.Gorras_Vintage.0.2.png",
+                            "ARR.marian.Gorras_Vintage.0.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "2",
+                        "descripcion": "..",
+                        "uniqueID": "25"
+                    },
+                    "1": {
+                        "images": [
+                            "marian.Gorras_Vintage.1.1.png",
+                            "ARR.marian.Gorras_Vintage.1.2.png",
+                            "ARR.marian.Gorras_Vintage.1.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3000",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "29"
+                    },
+                    "2": {
+                        "images": [
+                            "marian.Gorras_Vintage.2.1.png",
+                            "ARR.marian.Gorras_Vintage.2.2.png",
+                            "ARR.marian.Gorras_Vintage.2.3.png"
+                        ],
+                        "alto": "17cm",
+                        "largo": "26cm",
+                        "ancho": "M-L",
+                        "costo": "1400",
+                        "venta_menor": "3200",
+                        "venta_mayor": "-",
+                        "stock": "1",
+                        "descripcion": "..",
+                        "uniqueID": "2D"
+                    }
+                }
+            }
+        },
+        "test": {
+            "types": [
+                "test",
+                "asd"
+            ],
+            "images": {
+                "test": {
+                    "0": {
+                        "images": [
+                            "test.test.0.1.png",
+                            "test.test.0.2.png",
+                            "test.test.0.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "31"
+                    },
+                    "1": {
+                        "images": [
+                            "test.test.1.1.png",
+                            "test.test.1.2.png",
+                            "test.test.1.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "32"
+                    },
+                    "2": {
+                        "images": [
+                            "test.test.2.1.png",
+                            "test.test.2.2.png",
+                            "test.test.2.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "33"
+                    }
+                },
+                "asd": {
+                    "0": {
+                        "images": [
+                            "test.asd.0.1.png",
+                            "test.asd.0.2.png",
+                            "test.asd.0.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "34"
+                    },
+                    "1": {
+                        "images": [
+                            "test.asd.1.1.png",
+                            "test.asd.1.2.png",
+                            "test.asd.1.3.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "35"
+                    },
+                    "2": {
+                        "images": [
+                            "test.asd.2.1.png"
+                        ],
+                        "alto": "not found",
+                        "largo": "not found",
+                        "ancho": "not found",
+                        "costo": "not found",
+                        "venta_menor": "not found",
+                        "venta_mayor": "not found",
+                        "stock": "not found",
+                        "descripcion": "not found",
+                        "uniqueID": "36"
+                    }
+                }
+            }
+        }
+    },
+    "pendingAddArr": [
+        "ARR.marian.Gorras_rotas.0.2.png",
+        "ARR.marian.Gorras_street.0.2.png",
+        "ARR.marian.Nick_Adidas_etc.0.2.png",
+        "ARR.marian.Nick_Adidas_etc.1.2.png",
+        "ARR.marian.Nick_Adidas_etc.2.2.png",
+        "ARR.marian.Nick_Adidas_etc.4.2.png",
+        "ARR.marian.Gorras_rotas.1.2.png",
+        "ARR.marian.Gorras_rotas.2.2.png",
+        "ARR.marian.Gorras_Animales.0.2.png",
+        "ARR.cholo.Mochilas.0.2.png",
+        "ARR.cholo.Cartera.0.3.png",
+        "ARR.cholo.Cartera.4.2.png",
+        "ARR.cholo.Cartera.4.3.png",
+        "ARR.marian.Gorras_rotas.4.2.png",
+        "ARR.marian.Gorras_rotas.4.3.png",
+        "ARR.marian.Gorras_rotas.6.2.png",
+        "ARR.marian.Gorras_rotas.7.2.png",
+        "ARR.marian.Gorras_Vintage.0.2.png",
+        "ARR.marian.Gorras_Vintage.0.3.png",
+        "ARR.marian.Gorras_rotas.10.2.png",
+        "ARR.marian.Gorras_Vintage.1.2.png",
+        "ARR.marian.Gorras_Vintage.1.3.png",
+        "ARR.marian.Gorras_Vintage.2.2.png",
+        "ARR.marian.Gorras_Vintage.2.3.png"
+    ],
+    "pendingRmBg": [],
+    "processingAddArr": [],
+    "processingRmBg": [],
+    "processedRmBg": [],
+    "processedAddArr": [],
+    "stopNext": false,
+    "currentStatus": "OK",
+    "lastID": "36"
+}
