@@ -4,4 +4,3 @@ imagesFail/
 *.xlsx
 web/data.json
 web/basic.log
-web/static/
