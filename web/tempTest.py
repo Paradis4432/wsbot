@@ -24,17 +24,15 @@ names = ["test.asd.0.1.png", "test.asd.0.2.png", "test.asd.0.3.png"]
 path = "./static/"
 
 
-import json
-import pandas as pd
-
 # old
+
 def create_excel_from_json():
     data = loadData()
     # Load the JSON input into a Python object
-    
+
     # Create an empty list to hold all the rows of the Excel file
     rows = []
-    
+
     # Loop through each item in the "negs" dictionary
     for grupo, items in data["negs"].items():
         for tipo, details in items["images"].items():
@@ -56,7 +54,7 @@ def create_excel_from_json():
                 ]
                 # Add the row to the list of rows
                 rows.append(row)
-    
+
     # Create a Pandas DataFrame from the list of rows
     df = pd.DataFrame(rows, columns=[
         "tipo",
@@ -72,7 +70,7 @@ def create_excel_from_json():
         "descripcion",
         "uniqueID"
     ])
-    
+
     # Write the DataFrame to an Excel file
     writer = pd.ExcelWriter("data.xlsx", engine="xlsxwriter")
     df.to_excel(writer, sheet_name="Sheet1", index=False)
@@ -80,3 +78,8 @@ def create_excel_from_json():
 
 
 create_excel_from_json(data)
+
+neg = "marian"
+t = "Gorras_rotas"
+firsts = [data["negs"][neg]["images"][t][x]["images"][0]
+          for x in data["negs"][neg]["images"][t].keys()]

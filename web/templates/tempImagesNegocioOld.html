@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body style="background-color: grey;">
+
+    <meta id="data" neg="{{neg}}" srcs="{{srcs}}" type="{{t}}">
+
+    <button><a href="/">home</a></button>
+    <button><a href="/negocios/{{neg}}">atras</a></button>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="container-fluid">
+
+        {% for src in srcs %}
+        <div class="row">
+            <div class="col">
+                <button id="{{src}}" imgsNames="{{srcs[src]['images']}}" onclick="download(this)">des {{src}}</button>
+                <button id="{{src}}" data="{{srcs[src]}}" onclick="showInfo(this)">info</button>
+            </div>
+            <div class="col">
+                <p>codigo: {{srcs[src]["uniqueID"]}}</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for i in srcs[src]["images"] %}
+            <div class="col">
+                <img data-enlargable src="../../static/{{i}}" alt="img" height="80px" width="80px"
+                    onclick="changeImgSize(this)">
+            </div>
+            {% endfor %}
+        </div>
+        <p id="dataInfo{{src}}" style="color: white"></p>
+
+        {% endfor %}
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        first = true
+
+        function changeImgSize(el) {
+            if (!first) return 
+
+            var src = $(el).attr('src');
+            $('<div>').css({
+                background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+                backgroundSize: 'contain',
+                width: '100%', height: '100%',
+                position: 'fixed',
+                zIndex: '10000',
+                top: '0', left: '0',
+                cursor: 'zoom-out'
+            }).click(function () {
+                $(this).remove();
+            }).appendTo('body');
+            first = false;
+        }
+
+        // bind click event listener to all img[data-enlargable] elements
+        $('img[data-enlargable]').addClass('img-enlargable').click(function () {
+            changeImgSize(this);
+            first = true;
+        });
+
+
+        function showInfo(el) {
+            let id = el.getAttribute("id")
+            let data = el.getAttribute("data")
+
+
+            if (document.getElementById("dataInfo" + id).innerText == "") {
+                document.getElementById("dataInfo" + id).innerText = data
+            } else {
+                document.getElementById("dataInfo" + id).innerText = ""
+            }
+
+        }
+
+        function download(el) {
+            const srcs = JSON.parse(el.getAttribute("imgsNames").replace(/'/g, '"'));
+
+            for (let i = 0; i < srcs.length; i++) {
+                const link = document.createElement('a');
+                link.href = "/download/" + srcs[i];
+                link.target = "_blank";
+                link.download = srcs[i];
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+    </script>
+</body>
+
+</html>

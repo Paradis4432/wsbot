@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body style="background-color: grey;">
+    <h2>negocio {{ neg }}</h2>
+    <button><a href="/">home</a></button>
+    <button><a href="/images/{{neg}}/{{t}}">atras</a></button>
+    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">anterior</a></button>
+    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">siguiente</a></button>
+
+    <div class="container-fluid">
+        <div class="image-container">
+            {% for src in srcs["images"] %}
+            <img data-enlargable src="../../../static/{{src}}" alt="img" onclick="changeImgSize(this)">
+            {% endfor %}
+        </div>
+
+        <div class="text-container">
+            {% for data in srcs %}
+            {% if data == 'images' or data == 'uniqueID' %}
+            <div class="row">
+                <div class="col">
+                    <p style="color: white">{{data}} : {{srcs[data]}}</p>
+                </div>
+
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="col-4">
+                    <p style="color: white">{{data}}</p>
+                </div>
+                <div class="col">
+                    <input type="text" id="{{data}}" placeholder="{{srcs[data]}}">
+                </div>
+                {% if data == 'descripcion' %}
+                <p style="color: white;">{{srcs[data]}}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% endfor %}
+            <button neg={{neg}} t={{t}} group={{group}} onclick="updateValues(this)">actualizar</button>
+        </div>
+    </div>
+
+
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 180px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 33.33%;
+            object-fit: contain;
+        }
+
+        .text-container {
+            clear: both;
+        }
+    </style>
+
+    <script>
+        first = true
+
+        function changeImgSize(el) {
+            if (!first) return;
+
+            var src = el.getAttribute('src');
+            var div = document.createElement('div');
+            div.style.background = 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center';
+            div.style.backgroundSize = 'contain';
+            div.style.width = '100%';
+            div.style.height = '100%';
+            div.style.position = 'fixed';
+            div.style.zIndex = '10000';
+            div.style.top = '0';
+            div.style.left = '0';
+            div.style.cursor = 'zoom-out';
+
+            div.onclick = function () {
+                this.remove();
+            };
+
+            document.body.appendChild(div);
+            first = false;
+        }
+
+        var imgList = document.querySelectorAll('img[data-enlargable]');
+        for (var i = 0; i < imgList.length; i++) {
+            imgList[i].classList.add('img-enlargable');
+            imgList[i].addEventListener('click', function () {
+                changeImgSize(this);
+                first = true;
+            });
+        }
+
+        function updateValues(el) {
+            const inputs = document.getElementsByTagName("input");
+            const updateData = {};
+
+
+            for (let i = 0; i < inputs.length; i++) {
+                const input = inputs[i];
+                const { id, value, placeholder } = input;
+
+                if (value && value !== placeholder) {
+                    updateData[id] = value;
+                }
+            }
+
+            updateData["neg"] = el.getAttribute("neg")
+            updateData["t"] = el.getAttribute("t")
+            updateData["group"] = el.getAttribute("group")
+
+            if (Object.keys(updateData).length > 3) {
+                fetch("/updateValues", {
+                    method: "POST",
+                    body: JSON.stringify(updateData),
+                    headers: { "Content-Type": "application/json" },
+                })
+                    .then(response => response.json())
+                    .then(response => alert(response["info"]))
+                    .catch(error => console.error(error));
+            }else{
+                alert("no se encontraron valores para actualizar ")
+            }
+        }
+        
+        function goNext(){
+            // get request to check if next exists, if true add 1 to this.group, else alert "no existe"
+        }
+    </script>
+</body>
+
+</html>

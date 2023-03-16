@@ -26,11 +26,10 @@ logging.basicConfig(level=logging.DEBUG,
 
 # TODO: img edit
 # TODO: make excel loader None proof
-# TODO: excel to json load 
+# TODO: excel to json load
 # TODO: cambiar cargado de imagenes boton -> grupo info etc
 # TODO: arrows for images
 # TODO: change upload to button no molesta esperar
-
 
 
 # idea: add tags for each group of images no
@@ -74,7 +73,9 @@ def renderImages(neg=None, t=None):
     data = loadData()
     imgsSrcs = data["negs"][neg]["images"][t]
 
-    logging.debug("rendering images: " + str(imgsSrcs))
+    # firsts = [data["negs"][neg]["images"][t][x]["images"][0] for x in data["negs"][neg]["images"][t].keys()]
+
+    logging.debug(f"rendering images: {imgsSrcs}")
 
     return render_template("tempImagesNegocio.html", neg=neg, t=t, srcs=imgsSrcs)
 
@@ -85,10 +86,12 @@ def download_excel():
     create_excel_from_json()
     return send_file("data.xlsx", as_attachment=True, download_name="data.xlsx")
 
+
 @app.route("/test", methods=["POST"])
 def test():
     x = request.form
     return "test"
+
 
 @app.route("/nuevoTipo/<neg>/<name>", methods=['POST'])
 def newType(neg=None, name=None):
@@ -158,17 +161,17 @@ def newGroup(neg=None):
         else:
             data["pendingRmBg"].append(filename)
             logging.debug(f"added {filename} to pendingRmBg")
-            
+
         if request.form.get(f"image{i}ARR") == "on":
             logging.debug(f"adding image {i} to pending arrows")
             data["pendingAddArr"].append(filename)
         else:
             logging.debug(f"{filename} found to not have ARR")
 
-        #file.save(os.path.join("static", filename))
+        # file.save(os.path.join("static", filename))
         try:
             image = Image.open(file)
-            image.thumbnail((1200,800))
+            image.thumbnail((1200, 800))
             image.save(os.path.join("static", filename))
             logging.debug(f"changed image {filename} size")
         except Exception as e:
@@ -201,11 +204,10 @@ def newGroup(neg=None):
 
 
 @app.route("/processPending")
-async def processImages(): 
+async def processImages():
     logging.debug("starting processing images")
     await startProcessing()
     return "se termino de procesar las imagenes"
-
 
 
 @app.route("/reset")
@@ -223,6 +225,35 @@ def reset():
 def download(img=None):
     logging.debug(f"downloading image {img}")
     return send_file(os.path.join("static", img), mimetype='image/jpeg', as_attachment=True)
+
+
+@app.route("/groupInfo/<neg>/<t>/<group>")
+def showGroupInfo(neg=None, t=None, group=None):
+    data = loadData()
+    data = data["negs"][neg]["images"][t][group]
+    return render_template("groupInfo.html",srcs=data, neg=neg, t=t, group=group)
+
+@app.route("/updateValues", methods=["POST"])
+def updateValues(neg=None, t=None, group=None):
+    data = loadData()
+    newData = request.get_json()
+    neg = newData["neg"]
+    t = newData["t"]
+    group = newData["group"]
+
+    for i in newData:
+        if i not in ["neg", "group", "t"]:
+            #data["negs"][]
+            print(i)
+            try:
+                data["negs"][neg]["images"][t][group][i] = newData[i]
+            except Exception as e:
+                return {"info": "error actualizando grupo"}
+
+    saveData(data)
+    
+    #return {"data": request.get_json()}
+    return {"info": "actualizado"}
 
 
 '''
