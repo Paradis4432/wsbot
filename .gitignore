@@ -1,8 +1,7 @@
-
 .env
 images/
 imagesFail/
 *.xlsx
-web/static
 web/data.json
 web/basic.log
+web/static/

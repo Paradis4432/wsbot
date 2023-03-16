@@ -22,12 +22,11 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: rezize image to 1200x800 pixels on upload done
 # TODO: fix autochange of key done
 # TODO: fix white background not adding done
+# TODO: excel loading done
 
-# TODO: excel loading
 # TODO: cambiar cargado de imagenes boton -> grupo info etc
 # TODO: arrows for images
-# TODO: change upload to button no
-# TODO: add button on new type
+# TODO: change upload to button no molesta esperar
 
 
 
