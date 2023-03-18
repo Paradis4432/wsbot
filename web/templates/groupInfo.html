@@ -50,7 +50,7 @@
             {% for data in srcs %}
             {% if data == 'images' %}
             <button onclick="$('#imgControl').toggle()">imagen control</button>
-            <div class="row" id="imgControl">
+            <div class="row" id="imgControl" style="display: none">
                 <div class="col">
                     {% for img in srcs[data] %}
                     <div style="display: flex; align-items: center;">
