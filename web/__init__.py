@@ -27,6 +27,7 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: img edit done
 # TODO: add another value for group done
 
+# TODO: img replace or remove
 # TODO: del value for group
 # TODO: del group
 # TODO: make excel loader None proof
@@ -89,6 +90,7 @@ def download_excel():
     logging.debug("downloading excel")
     create_excel_from_json()
     return send_file("data.xlsx", as_attachment=True, download_name="data.xlsx")
+
 
 @app.route("/nuevoTipo/<neg>/<name>", methods=['POST'])
 def newType(neg=None, name=None):
@@ -228,7 +230,8 @@ def download(img=None):
 def showGroupInfo(neg=None, t=None, group=None):
     data = loadData()
     data = data["negs"][neg]["images"][t][group]
-    return render_template("groupInfo.html",srcs=data, neg=neg, t=t, group=group)
+    return render_template("groupInfo.html", srcs=data, neg=neg, t=t, group=group)
+
 
 @app.route("/updateValues", methods=["POST"])
 def updateValues(neg=None, t=None, group=None):
@@ -240,18 +243,20 @@ def updateValues(neg=None, t=None, group=None):
 
     for i in newData:
         if i not in ["neg", "group", "t"]:
-            #data["negs"][]
+            # data["negs"][]
             print(i)
             try:
-                logging.debug(f"actualizando valor {data['negs'][neg]['images'][t][group][i]} a {newData[i]}")
+                logging.debug(
+                    f"actualizando valor {data['negs'][neg]['images'][t][group][i]} a {newData[i]}")
                 data["negs"][neg]["images"][t][group][i] = newData[i]
             except Exception as e:
                 return {"info": "error actualizando grupo"}
 
     saveData(data)
-    
-    #return {"data": request.get_json()}
+
+    # return {"data": request.get_json()}
     return {"info": "actualizado"}
+
 
 @app.route("/addValue", methods=["POST"])
 def addValue():
@@ -270,10 +275,39 @@ def addValue():
 
     data = loadData()
     data["negs"][neg]["images"][t][group][key] = value
-    logging.debug(f"agregando {value} a {data['negs'][neg]['images'][t][group][key]}")
+    logging.debug(
+        f"agregando {value} a {data['negs'][neg]['images'][t][group][key]}")
     saveData(data)
 
     return {"info": "se agrego nuevo key value"}
+
+
+@app.route("/delImg", methods=["POST"])
+def delImg():
+    try:
+        newData = request.get_json()
+        neg = newData["neg"]
+        t = newData["t"]
+        group = newData["group"]
+        imgName = newData["imgName"]
+
+        logging.debug(f"deleting img {neg} {t} {group} {imgName}")
+
+        os.remove(f"./static/{imgName}")
+
+        data = loadData()
+        data["negs"][neg]["images"][t][group]["images"].remove(imgName)
+        for key in ["pendingAddArr", "pendingRmBg", "processingAddArr", "processingRmBg", "processedRmBg", "processedAddArr"]:
+            if imgName in data[key]:
+                data[key].remove(imgName)
+
+        saveData(data)
+        return {"info": "eliminado correctamente" }
+
+    except Exception as e:
+        logging.error(f"error deleting {imgName}: {e}")
+        return {"error": str(e)}
+
 
 '''
 test for static folder

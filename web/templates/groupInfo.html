@@ -8,58 +8,6 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-
-<body style="background-color: grey;">
-    <h2>negocio {{ neg }}</h2>
-    <button><a href="/">home</a></button>
-    <button><a href="/images/{{neg}}/{{t}}">atras</a></button>
-    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">anterior</a></button>
-    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">siguiente</a></button>
-
-    <div class="container-fluid">
-        <div class="image-container">
-            {% for src in srcs["images"] %}
-            <img data-enlargable src="../../../static/{{src}}" alt="img" onclick="changeImgSize(this)">
-            <!-- idea use bootstrap viewports to auto change size  -->
-            {% endfor %}
-        </div>
-
-        <div class="text-container">
-            {% for data in srcs %}
-            {% if data == 'images' or data == 'uniqueID' %}
-            <div class="row">
-                <div class="col">
-                    <p style="color: white">{{data}} : {{srcs[data]}}</p>
-                </div>
-
-            </div>
-            {% else %}
-            <div class="row">
-                <div class="col-4">
-                    <p style="color: white">{{data}}</p>
-                </div>
-                <div class="col">
-                    <input type="text" id="{{data}}" placeholder="{{srcs[data]}}">
-                </div>
-                {% if data == 'descripcion' %}
-                <p style="color: white;">{{srcs[data]}}</p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {% endfor %}
-            <button neg={{neg}} t={{t}} group={{group}} onclick="updateValues(this)">actualizar</button>
-        </div>
-
-        <p>key - value: key va a ser la palabra que se usa para representar el value, por ejemplo dado "altura: 10 cm"
-            altura es el key y 10cm es el value</p>
-        <p>al agregar un nuevo valor se refresca la pagina</p>
-        <input type="text" id="key" placeholder="key">
-        <input type="text" id="value" placeholder="value">
-        <button neg={{neg}} t={{t}} group={{group}} onclick="addValue(this)">agregar</button>
-    </div>
-
 
     <style>
         .image-container {
@@ -78,54 +26,139 @@
             clear: both;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+
+<body style="background-color: grey;">
+    <h2>negocio {{ neg }}</h2>
+    <button><a href="/">home</a></button>
+    <button><a href="/images/{{neg}}/{{t}}">atras</a></button>
+    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">anterior</a></button>
+    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">siguiente</a></button>
+
+
+    <div class="container-fluid">
+        <div class="image-container">
+            {% for src in srcs["images"] %}
+            <img data-enlargable src="../../../static/{{src}}" alt="img" onclick="changeImgSize(this)">
+            <!-- idea use bootstrap viewports to auto change size  -->
+            {% endfor %}
+        </div>
+
+        <div class="text-container">
+            {% for data in srcs %}
+            {% if data == 'images' %}
+            <button onclick="$('#imgControl').toggle()">imagen control</button>
+            <div class="row" id="imgControl" style="display: none;">
+                <div class="col">
+                    {% for img in srcs[data] %}
+                    <p style="color: white">{{img}}</p>
+                    <button neg={{neg}} t={{t}} group={{group}} imgName={{img}} onclick="delImg(this)">eliminar</button>
+                    {% endfor %}
+                </div>
+
+            </div>
+            {% else %}
+            {% if data == 'uniqueID' %}
+            <div class="row">
+                <div class="col">
+                    <p style="color: white">{{data}} : {{srcs[data]}}</p>
+                </div>
+
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="col-4">
+                    <p style="color: white">{{data}}</p>
+                </div>
+                <div class="col">
+                    <input type="text" id="{{data}}" placeholder="{{srcs[data]}}" class="dataInput">
+                </div>
+                {% if data == 'descripcion' %}
+                <p style="color: white;">{{srcs[data]}}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endif %}
+
+            {% endfor %}
+            <button neg={{neg}} t={{t}} group={{group}} onclick="updateValues(this)">actualizar</button>
+        </div>
+
+        <p>key - value: key va a ser la palabra que se usa para representar el value, por ejemplo dado "altura: 10 cm"
+            altura es el key y 10cm es el value</p>
+        <p>al agregar un nuevo valor se refresca la pagina</p>
+        <input type="text" id="key" placeholder="key">
+        <input type="text" id="value" placeholder="value">
+        <button neg={{neg}} t={{t}} group={{group}} onclick="addValue(this)">agregar</button>
+    </div>
+
+
+
 
     <script>
+        
+        function delImg(el) {
+            const updateData = {
+                neg: el.getAttribute("neg"),
+                t: el.getAttribute("t"),
+                group: el.getAttribute("group"),
+                imgName: el.getAttribute("imgName")
+            };
+
+            fetch("/delImg", {
+                method: "POST",
+                body: JSON.stringify(updateData),
+                headers: { "Content-Type": "application/json" },
+            })
+                .then(response => response.json())
+                .then(response => alert(response["info"]))
+                .catch(error => console.error(error));
+        }
+
+
         first = true
 
         function changeImgSize(el) {
             if (!first) return;
 
-            var src = el.getAttribute('src');
-            var div = document.createElement('div');
-            div.style.background = 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center';
-            div.style.backgroundSize = 'contain';
-            div.style.width = '100%';
-            div.style.height = '100%';
-            div.style.position = 'fixed';
-            div.style.zIndex = '10000';
-            div.style.top = '0';
-            div.style.left = '0';
-            div.style.cursor = 'zoom-out';
+            var src = $(el).attr('src');
+            var div = $('<div>').css({
+                background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+                backgroundSize: 'contain',
+                width: '100%',
+                height: '100%',
+                position: 'fixed',
+                zIndex: '10000',
+                top: '0',
+                left: '0',
+                cursor: 'zoom-out'
+            }).click(function () {
+                $(this).remove();
+            });
 
-            div.onclick = function () {
-                this.remove();
-            };
-
-            document.body.appendChild(div);
+            $('body').append(div);
             first = false;
         }
 
-        var imgList = document.querySelectorAll('img[data-enlargable]');
-        for (var i = 0; i < imgList.length; i++) {
-            imgList[i].classList.add('img-enlargable');
-            imgList[i].addEventListener('click', function () {
-                changeImgSize(this);
-                first = true;
-            });
-        }
+        $('img[data-enlargable]').addClass('img-enlargable').click(function () {
+            changeImgSize(this);
+            first = true;
+        });
 
         function addValue(el) {
-            const updateData = {};
-            updateData["key"] = document.getElementById("key").value;
-            updateData["value"] = document.getElementById("value").value;
-            if (updateData["key"].trim() === "" || updateData["value"].trim() === "") {
+            const updateData = {
+                key: $("#key").val(),
+                value: $("#value").val(),
+                neg: el.getAttribute("neg"),
+                t: el.getAttribute("t"),
+                group: el.getAttribute("group")
+            };
+            if (updateData.key.trim() === "" || updateData.value.trim() === "") {
                 alert("es necesario escribrir algo tanto el key como el value");
-                return
+                return;
             }
-
-            updateData["neg"] = el.getAttribute("neg")
-            updateData["t"] = el.getAttribute("t")
-            updateData["group"] = el.getAttribute("group")
 
             fetch("/addValue", {
                 method: "POST",
@@ -133,26 +166,25 @@
                 headers: { "Content-Type": "application/json" },
             })
                 .then(response => response.json())
-                .then(response => {alert(response["info"]); location.reload()})
+                .then(response => { alert(response["info"]); location.reload() })
                 .catch(error => console.error(error));
         }
 
         function updateValues(el) {
-            const inputs = document.getElementsByTagName("input");
-            const updateData = {};
-
-            for (let i = 0; i < inputs.length; i++) {
-                const input = inputs[i];
-                const { id, value, placeholder } = input;
+            const updateData = {
+                neg: el.getAttribute("neg"),
+                t: el.getAttribute("t"),
+                group: el.getAttribute("group")
+            };
+            $('input.dataInput').each(function () {
+                const id = $(this).prop('id');
+                const value = $(this).prop('value');
+                const placeholder = $(this).prop('placeholder');
 
                 if (value && value !== placeholder) {
                     updateData[id] = value;
                 }
-            }
-
-            updateData["neg"] = el.getAttribute("neg")
-            updateData["t"] = el.getAttribute("t")
-            updateData["group"] = el.getAttribute("group")
+            });
 
             if (Object.keys(updateData).length > 3) {
                 fetch("/updateValues", {
@@ -172,6 +204,7 @@
             // get request to check if next exists, if true add 1 to this.group, else alert "no existe"
         }
     </script>
+
 </body>
 
 </html>
