@@ -24,6 +24,9 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: fix white background not adding done
 # TODO: excel loading done
 
+# TODO: add another value for group
+# TODO: fix img size in group edit 
+# TODO: del group
 # TODO: img edit
 # TODO: make excel loader None proof
 # TODO: excel to json load
