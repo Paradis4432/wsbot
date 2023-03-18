@@ -51,6 +51,13 @@
             {% endfor %}
             <button neg={{neg}} t={{t}} group={{group}} onclick="updateValues(this)">actualizar</button>
         </div>
+
+        <p>key - value: key va a ser la palabra que se usa para representar el value, por ejemplo dado "altura: 10 cm"
+            altura es el key y 10cm es el value</p>
+        <p>al agregar un nuevo valor se refresca la pagina</p>
+        <input type="text" id="key" placeholder="key">
+        <input type="text" id="value" placeholder="value">
+        <button neg={{neg}} t={{t}} group={{group}} onclick="addValue(this)">agregar</button>
     </div>
 
 
@@ -60,7 +67,7 @@
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
-        
+
         .image-container img {
             width: 33.33%;
             max-height: 180px;
@@ -107,10 +114,32 @@
             });
         }
 
+        function addValue(el) {
+            const updateData = {};
+            updateData["key"] = document.getElementById("key").value;
+            updateData["value"] = document.getElementById("value").value;
+            if (updateData["key"].trim() === "" || updateData["value"].trim() === "") {
+                alert("es necesario escribrir algo tanto el key como el value");
+                return
+            }
+
+            updateData["neg"] = el.getAttribute("neg")
+            updateData["t"] = el.getAttribute("t")
+            updateData["group"] = el.getAttribute("group")
+
+            fetch("/addValue", {
+                method: "POST",
+                body: JSON.stringify(updateData),
+                headers: { "Content-Type": "application/json" },
+            })
+                .then(response => response.json())
+                .then(response => {alert(response["info"]); location.reload()})
+                .catch(error => console.error(error));
+        }
+
         function updateValues(el) {
             const inputs = document.getElementsByTagName("input");
             const updateData = {};
-
 
             for (let i = 0; i < inputs.length; i++) {
                 const input = inputs[i];
@@ -134,12 +163,12 @@
                     .then(response => response.json())
                     .then(response => alert(response["info"]))
                     .catch(error => console.error(error));
-            }else{
+            } else {
                 alert("no se encontraron valores para actualizar ")
             }
         }
-        
-        function goNext(){
+
+        function goNext() {
             // get request to check if next exists, if true add 1 to this.group, else alert "no existe"
         }
     </script>
