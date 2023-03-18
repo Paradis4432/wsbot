@@ -121,6 +121,39 @@ def getUniqueId():
     return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
 
 
+def getImgName(request, data, i):
+    filename = ""
+
+    if request.form.get(f"image{i}KO") == "on":
+        filename += "KO."
+    if request.form.get(f"image{i}ARR") == "on":
+        filename += "ARR."
+    filename += f"{neg}.{t}.{group}.{i}.png"
+    # if image{i}ARR add to data.pendingAddArr else dont add arrows
+    if request.form.get(f"image{i}KO") == "on":
+        logging.debug(f"found image id {i} to have KO")
+    else:
+        data["pendingRmBg"].append(filename)
+        logging.debug(f"added {filename} to pendingRmBg")
+    if request.form.get(f"image{i}ARR") == "on":
+        logging.debug(f"adding image {i} to pending arrows")
+        data["pendingAddArr"].append(filename)
+    else:
+        logging.debug(f"{filename} found to not have ARR")
+
+    return filename, data
+
+
+def changeImageSize(file, filename):
+    try:
+        image = Image.open(file)
+        image.thumbnail((1200, 800))
+        image.save(os.path.join("static", filename))
+        logging.debug(f"changed image {filename} size")
+    except Exception as e:
+        logging.error(f"error changing {filename} size: {e}")
+
+
 @app.route("/newImageGroup/<neg>", methods=["POST"])
 def newGroup(neg=None):
     logging.debug(f"adding new group for neg: {neg}")
@@ -146,35 +179,10 @@ def newGroup(neg=None):
             continue
         # if keep original true in view dont add to data.pending .json else add
         # if keep original true in view add "KO" at start of file name
-        filename = ""
-        if request.form.get(f"image{i}KO") == "on":
-            filename += "KO."
-        if request.form.get(f"image{i}ARR") == "on":
-            filename += "ARR."
-        filename += f"{neg}.{t}.{group}.{i}.png"
-
-        # if image{i}ARR add to data.pendingAddArr else dont add arrows
-
-        if request.form.get(f"image{i}KO") == "on":
-            logging.debug(f"found image id {i} to have KO")
-        else:
-            data["pendingRmBg"].append(filename)
-            logging.debug(f"added {filename} to pendingRmBg")
-
-        if request.form.get(f"image{i}ARR") == "on":
-            logging.debug(f"adding image {i} to pending arrows")
-            data["pendingAddArr"].append(filename)
-        else:
-            logging.debug(f"{filename} found to not have ARR")
+        filename, data = getImgName(request, data, i)
 
         # file.save(os.path.join("static", filename))
-        try:
-            image = Image.open(file)
-            image.thumbnail((1200, 800))
-            image.save(os.path.join("static", filename))
-            logging.debug(f"changed image {filename} size")
-        except Exception as e:
-            logging.error(f"error changing {filename} size: {e}")
+        changeImageSize(file, filename)
 
         images.append(filename)
         logging.debug(f"saved image id {i}")
@@ -197,7 +205,6 @@ def newGroup(neg=None):
 
     saveData(data)
 
-    logging.debug("json saved")
     # TODO save data in excel send status to front process images once saved
     return render_template("nuevoGrupoAgregado.html", neg=neg)
 
@@ -302,11 +309,79 @@ def delImg():
                 data[key].remove(imgName)
 
         saveData(data)
-        return {"info": "eliminado correctamente" }
+        return {"info": "eliminado correctamente"}
 
     except Exception as e:
         logging.error(f"error deleting {imgName}: {e}")
         return {"error": str(e)}
+
+
+@app.route("/saveImg", methods=["POST"])
+def saveImg():
+    neg = request.form["neg"]
+    t = request.form["t"]
+    group = request.form["group"]
+    KO = request.form["KO"]
+    ARR = request.form["ARR"]
+
+    data = loadData()
+
+    file = request.files["image"]
+
+    logging.debug(
+        f"save img called for neg {neg} t {t} group {group} KO {KO} ARR {ARR}")
+
+    if not file:
+        logging.debug(f"got no image")
+        return {"info": "es necesario subir una imagen"}
+
+    filename = ""
+
+    try:
+        i = 1
+        keepAdding = True
+        imgNames = data["negs"][neg]["images"][t][group]["images"]
+        while keepAdding:
+            imgExists = False
+            for imgName in imgNames:
+                if imgName.endswith(f"{i}.png"):
+                    imgExists = True
+                    i += 1
+                    break
+            if not imgExists:
+                break
+
+        if KO == "on":
+            filename += "KO."
+        if ARR == "on":
+            filename += "ARR."
+        filename += f"{neg}.{t}.{group}.{i}.png"
+
+        if KO == "on":
+            logging.debug(f"found image id {i} to have KO")
+        else:
+            data["pendingRmBg"].append(filename)
+            logging.debug(f"added {filename} to pendingRmBg")
+        if ARR == "on":
+            logging.debug(f"adding image {i} to pending arrows")
+            data["pendingAddArr"].append(filename)
+        else:
+            logging.debug(f"{filename} found to not have ARR")
+    except Exception as e:
+        logging.debug(f"error processing {filename} {e}")
+        return {"info": "error procesando imagen"}
+
+    try:
+        changeImageSize(file, filename)
+    except Exception as e:
+        logging.debug(f"error processing {filename} {e}")
+        return {"info": "error procesando cambiado de tamanio de imagen"}
+
+    data["negs"][neg]["images"][t][group]["images"].append(filename)
+    logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
+
+    saveData(data)
+    return {"info": "imagen guardada"}
 
 
 '''

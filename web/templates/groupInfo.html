@@ -50,12 +50,23 @@
             {% for data in srcs %}
             {% if data == 'images' %}
             <button onclick="$('#imgControl').toggle()">imagen control</button>
-            <div class="row" id="imgControl" style="display: none;">
+            <div class="row" id="imgControl">
                 <div class="col">
                     {% for img in srcs[data] %}
-                    <p style="color: white">{{img}}</p>
-                    <button neg={{neg}} t={{t}} group={{group}} imgName={{img}} onclick="delImg(this)">eliminar</button>
+                    <div style="display: flex; align-items: center;">
+                        <p style="color: white">{{img}}</p>
+                        <button neg={{neg}} t={{t}} group={{group}} imgName={{img}}
+                            onclick="delImg(this)">eliminar</button>
+                    </div>
+
                     {% endfor %}
+
+                    <input type="file" name="newImage" id="newImage">
+                    <input type="checkbox" name="newImageKO"> mantener original
+                    <input type="checkbox" name="newImageARR"> agregar flechas
+                    <br>
+                    <br>
+                    <button neg={{neg}} t={{t}} group={{group}} onclick="saveImg(this)">guardar imagen</button>
                 </div>
 
             </div>
@@ -98,7 +109,27 @@
 
 
     <script>
-        
+        function saveImg(el) {
+
+            console.log($("#newImage")[0].files[0]);
+            const formData = new FormData();
+            formData.append("neg", el.getAttribute("neg"));
+            formData.append("t", el.getAttribute("t"));
+            formData.append("group", el.getAttribute("group"));
+            formData.append("KO", $("input[name=newImageKO]").is(":checked"));
+            formData.append("ARR", $("input[name=newImageARR]").is(":checked"));
+            formData.append("image", $("#newImage")[0].files[0]);
+
+            fetch("/saveImg", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.json())
+                .then(response => alert(response["info"]))
+                .catch(error => console.error(error));
+
+        }
+
         function delImg(el) {
             const updateData = {
                 neg: el.getAttribute("neg"),
