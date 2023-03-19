@@ -64,6 +64,13 @@
                     <input type="file" name="newImage" id="newImage">
                     <input type="checkbox" name="newImageKO"> mantener original
                     <input type="checkbox" name="newImageARR"> agregar flechas
+                    <label for="pos">posicion</label>
+                    <select name="posSel" id="posSel">
+                        <option value="last">ultima</option>
+                        {% for x in range(srcs[data]|length) %}
+                        <option value="{{x}}">posicion {{x}}</option>
+                        {% endfor %}
+                    </select>
                     <br>
                     <br>
                     <button neg={{neg}} t={{t}} group={{group}} onclick="saveImg(this)">guardar imagen</button>
@@ -103,12 +110,37 @@
         <input type="text" id="key" placeholder="key">
         <input type="text" id="value" placeholder="value">
         <button neg={{neg}} t={{t}} group={{group}} onclick="addValue(this)">agregar</button>
+        <br>
+        <br>
+        <br>
+
+        <button neg={{neg}} t={{t}} group={{group}} onclick="delGroup(this)">eliminar este grupo</button>
+
     </div>
 
 
 
 
     <script>
+        function delGroup(el){
+            const updateData = {
+                neg: el.getAttribute("neg"),
+                t: el.getAttribute("t"),
+                group: el.getAttribute("group"),
+            }
+
+            // make a fetch request to /delGroup with given data
+            fetch("/delGroup", {
+                method: "POST",
+                body: JSON.stringify(updateData),
+                headers: { "Content-Type": "application/json" },
+            })
+                .then(response => response.json())
+                .then(response => alert(response["info"]))
+                .catch(error => console.error(error));
+
+        }
+        
         function saveImg(el) {
 
             console.log($("#newImage")[0].files[0]);
@@ -119,6 +151,8 @@
             formData.append("KO", $("input[name=newImageKO]").is(":checked"));
             formData.append("ARR", $("input[name=newImageARR]").is(":checked"));
             formData.append("image", $("#newImage")[0].files[0]);
+            formData.append("posSel", $("#posSel").val());
+
 
             fetch("/saveImg", {
                 method: "POST",
@@ -147,7 +181,6 @@
                 .then(response => alert(response["info"]))
                 .catch(error => console.error(error));
         }
-
 
         first = true
 

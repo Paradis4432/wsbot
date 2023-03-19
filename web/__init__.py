@@ -26,16 +26,19 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: fix img size in group edit done
 # TODO: img edit done
 # TODO: add another value for group done
+# TODO: img remove done
+# TODO: del group done
+# TODO: make excel loader None proof done
+# TODO: add image in certain pos done
+# TODO: cambiar cargado de imagenes boton -> grupo info etc done
 
-# TODO: img replace or remove
 # TODO: del value for group
-# TODO: del group
-# TODO: make excel loader None proof
-# TODO: excel to json load
-# TODO: cambiar cargado de imagenes boton -> grupo info etc
-# TODO: arrows for images
-# TODO: change upload to button no molesta esperar
 
+# TODO: img replace grande
+# TODO: excel to json load grande 
+
+# TODO: arrows for images no
+# TODO: change upload to button no molesta esperar
 
 # idea: add tags for each group of images no
 @app.route("/")
@@ -323,6 +326,7 @@ def saveImg():
     group = request.form["group"]
     KO = request.form["KO"]
     ARR = request.form["ARR"]
+    posSel = request.form['posSel']
 
     data = loadData()
 
@@ -377,11 +381,43 @@ def saveImg():
         logging.debug(f"error processing {filename} {e}")
         return {"info": "error procesando cambiado de tamanio de imagen"}
 
-    data["negs"][neg]["images"][t][group]["images"].append(filename)
+    #data["negs"][neg]["images"][t][group]["images"].append(filename)
+    # instead of appending check if posSel is not "last" and insert at that position
+    if posSel == "last":
+        data["negs"][neg]["images"][t][group]["images"].append(filename)
+    else:
+        data["negs"][neg]["images"][t][group]["images"].insert(int(posSel), filename)
+
     logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
 
     saveData(data)
     return {"info": "imagen guardada"}
+
+
+@app.route("/delGroup", methods=["POST"])
+def delGroup():
+    newData = request.get_json()
+    neg = newData["neg"]
+    t = newData["t"]
+    group = newData["group"]
+    logging.debug(f"deleting group {group} for negocio {neg} in type {t}")
+
+    data = loadData()
+    try:
+        del data["negs"][neg]["images"][t][group]
+        saveData(data)
+    except Exception as e:
+        logging.error("error deleting group: " + group)
+        return {"info": "error eliminando grupo"}
+
+    logging.debug("group deleted")
+
+    return {"info": "grupo eliminado"}
+
+
+@app.route("/replaceImg", methods=["POST"])
+def replaceImg():
+    ...
 
 
 '''
