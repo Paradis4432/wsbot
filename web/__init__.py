@@ -235,12 +235,24 @@ def download(img=None):
     logging.debug(f"downloading image {img}")
     return send_file(os.path.join("static", img), mimetype='image/jpeg', as_attachment=True)
 
-
 @app.route("/groupInfo/<neg>/<t>/<group>")
 def showGroupInfo(neg=None, t=None, group=None):
     data = loadData()
-    data = data["negs"][neg]["images"][t][group]
-    return render_template("groupInfo.html", srcs=data, neg=neg, t=t, group=group)
+    keys = list(data["negs"][neg]["images"][t].keys())
+    print(keys)
+    index = keys.index(group)
+    prev_key = keys[index-1] if index > 0 else None
+    next_key = keys[index+1] if index < len(keys)-1 else None
+    
+    print(group, prev_key, next_key)
+    try:
+        data = data["negs"][neg]["images"][t][group]
+    except KeyError:
+        logging.debug(f"no se encontro el grupo {neg}.{t}.{group}")
+        return f"no se encontro el grupo <a href='/images/{neg}/{t}'>volver</a>"
+    
+    
+    return render_template("groupInfo.html", srcs=data, neg=neg, t=t, group=group, prevG=prev_key, nextG=next_key)
 
 
 @app.route("/updateValues", methods=["POST"])

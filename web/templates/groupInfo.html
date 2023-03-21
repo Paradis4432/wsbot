@@ -34,8 +34,12 @@
     <h2>negocio {{ neg }}</h2>
     <button><a href="/">home</a></button>
     <button><a href="/images/{{neg}}/{{t}}">atras</a></button>
-    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">anterior</a></button>
-    <button><a href="/images/{{neg}}/{{t}}/" group={{group}} onclick="goNext()">siguiente</a></button>
+    {% if prevG is not none %}
+    <button><a href="/groupInfo/{{neg}}/{{t}}/{{prevG}}">anterior</a></button>
+    {% endif %}
+    {% if nextG is not none %}
+    <button><a href="/groupInfo/{{neg}}/{{t}}/{{nextG}}">siguiente</a></button>
+    {% endif %}
 
 
     <div class="container-fluid">
@@ -50,6 +54,7 @@
             {% for data in srcs %}
             {% if data == 'images' %}
             <button onclick="$('#imgControl').toggle()">imagen control</button>
+            <button imgsNames="{{srcs[data]}}" onclick="download(this)">des {{srcs['uniqueID']}}</button>
             <div class="row" id="imgControl" style="display: none">
                 <div class="col">
                     {% for img in srcs[data] %}
@@ -122,6 +127,20 @@
 
 
     <script>
+        function download(el) {
+            const srcs = JSON.parse(el.getAttribute("imgsNames").replace(/'/g, '"'));
+
+            for (let i = 0; i < srcs.length; i++) {
+                const link = document.createElement('a');
+                link.href = "/download/" + srcs[i];
+                link.target = "_blank";
+                link.download = srcs[i];
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+
         function delGroup(el){
             const updateData = {
                 neg: el.getAttribute("neg"),

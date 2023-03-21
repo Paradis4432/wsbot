@@ -23,6 +23,7 @@
         <div class="row">
             <div class="col">
                 <button><a href="/groupInfo/{{neg}}/{{t}}/{{src}}">grupo: {{srcs[src]["uniqueID"]}}</a></button>
+                <button imgsNames="{{srcs[src]['images']}}" onclick="download(this)">des {{src}}</button>
             </div>
             <div class="col">
                 <img data-enlargable src="../../static/{{srcs[src]['images'][0]}}" alt="img" height="80px" width="80px"
@@ -35,6 +36,19 @@
 
 
     <script>
+        function download(el) {
+            const srcs = JSON.parse(el.getAttribute("imgsNames").replace(/'/g, '"'));
+
+            for (let i = 0; i < srcs.length; i++) {
+                const link = document.createElement('a');
+                link.href = "/download/" + srcs[i];
+                link.target = "_blank";
+                link.download = srcs[i];
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
 
         first = true
 
