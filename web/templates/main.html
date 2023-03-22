@@ -45,7 +45,7 @@
                 const data = await response.json();
                 const callsLeft = data.data.attributes.api.free_calls;
                 let key = document.createElement('p');
-                key.innerText = keys[i] + " con " + callsLeft;
+                key.innerText = "cuenta" + i + " con " + callsLeft;
                 document.getElementById('keys').appendChild(key);
                 calls += callsLeft;
                 document.getElementById('avaliable').textContent = calls.toString();
