@@ -126,10 +126,6 @@ def getUniqueId():
     return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
 
 
-def getImgName(request, data, i, neg, t, group):
-
-    return filename, data
-
 
 def changeImageSize(file, filename):
     try:
