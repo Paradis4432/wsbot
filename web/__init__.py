@@ -126,7 +126,6 @@ def getUniqueId():
     return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
 
 
-
 def changeImageSize(file, filename):
     try:
         image = Image.open(file)
