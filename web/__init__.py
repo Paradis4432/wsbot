@@ -35,12 +35,14 @@ logging.basicConfig(level=logging.DEBUG,
 # TODO: del value for group
 
 # TODO: img replace grande
-# TODO: excel to json load grande 
+# TODO: excel to json load grande
 
 # TODO: arrows for images no
 # TODO: change upload to button no molesta esperar
 
 # idea: add tags for each group of images no
+
+
 @app.route("/")
 def index():
     data = loadData()
@@ -124,25 +126,7 @@ def getUniqueId():
     return hex(new_id)[2:].upper()  # convert new_id to a hexadecimal string
 
 
-def getImgName(request, data, i):
-    filename = ""
-
-    if request.form.get(f"image{i}KO") == "on":
-        filename += "KO."
-    if request.form.get(f"image{i}ARR") == "on":
-        filename += "ARR."
-    filename += f"{neg}.{t}.{group}.{i}.png"
-    # if image{i}ARR add to data.pendingAddArr else dont add arrows
-    if request.form.get(f"image{i}KO") == "on":
-        logging.debug(f"found image id {i} to have KO")
-    else:
-        data["pendingRmBg"].append(filename)
-        logging.debug(f"added {filename} to pendingRmBg")
-    if request.form.get(f"image{i}ARR") == "on":
-        logging.debug(f"adding image {i} to pending arrows")
-        data["pendingAddArr"].append(filename)
-    else:
-        logging.debug(f"{filename} found to not have ARR")
+def getImgName(request, data, i, neg, t, group):
 
     return filename, data
 
@@ -182,7 +166,24 @@ def newGroup(neg=None):
             continue
         # if keep original true in view dont add to data.pending .json else add
         # if keep original true in view add "KO" at start of file name
-        filename, data = getImgName(request, data, i)
+        filename = ""
+
+        if request.form.get(f"image{i}KO") == "on":
+            filename += "KO."
+        if request.form.get(f"image{i}ARR") == "on":
+            filename += "ARR."
+        filename += f"{neg}.{t}.{group}.{i}.png"
+        # if image{i}ARR add to data.pendingAddArr else dont add arrows
+        if request.form.get(f"image{i}KO") == "on":
+            logging.debug(f"found image id {i} to have KO")
+        else:
+            data["pendingRmBg"].append(filename)
+            logging.debug(f"added {filename} to pendingRmBg")
+        if request.form.get(f"image{i}ARR") == "on":
+            logging.debug(f"adding image {i} to pending arrows")
+            data["pendingAddArr"].append(filename)
+        else:
+            logging.debug(f"{filename} found to not have ARR")
 
         # file.save(os.path.join("static", filename))
         changeImageSize(file, filename)
@@ -235,6 +236,7 @@ def download(img=None):
     logging.debug(f"downloading image {img}")
     return send_file(os.path.join("static", img), mimetype='image/jpeg', as_attachment=True)
 
+
 @app.route("/groupInfo/<neg>/<t>/<group>")
 def showGroupInfo(neg=None, t=None, group=None):
     data = loadData()
@@ -242,14 +244,13 @@ def showGroupInfo(neg=None, t=None, group=None):
     index = keys.index(group)
     prev_key = keys[index-1] if index > 0 else None
     next_key = keys[index+1] if index < len(keys)-1 else None
-    
+
     try:
         data = data["negs"][neg]["images"][t][group]
     except KeyError:
         logging.debug(f"no se encontro el grupo {neg}.{t}.{group}")
         return f"no se encontro el grupo <a href='/images/{neg}/{t}'>volver</a>"
-    
-    
+
     return render_template("groupInfo.html", srcs=data, neg=neg, t=t, group=group, prevG=prev_key, nextG=next_key)
 
 
@@ -391,12 +392,13 @@ def saveImg():
         logging.debug(f"error processing {filename} {e}")
         return {"info": "error procesando cambiado de tamanio de imagen"}
 
-    #data["negs"][neg]["images"][t][group]["images"].append(filename)
+    # data["negs"][neg]["images"][t][group]["images"].append(filename)
     # instead of appending check if posSel is not "last" and insert at that position
     if posSel == "last":
         data["negs"][neg]["images"][t][group]["images"].append(filename)
     else:
-        data["negs"][neg]["images"][t][group]["images"].insert(int(posSel), filename)
+        data["negs"][neg]["images"][t][group]["images"].insert(
+            int(posSel), filename)
 
     logging.debug(f"saved image name in json as {neg}.{t}.{group}.{i}")
 
