@@ -239,12 +239,10 @@ def download(img=None):
 def showGroupInfo(neg=None, t=None, group=None):
     data = loadData()
     keys = list(data["negs"][neg]["images"][t].keys())
-    print(keys)
     index = keys.index(group)
     prev_key = keys[index-1] if index > 0 else None
     next_key = keys[index+1] if index < len(keys)-1 else None
     
-    print(group, prev_key, next_key)
     try:
         data = data["negs"][neg]["images"][t][group]
     except KeyError:
