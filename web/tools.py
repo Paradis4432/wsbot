@@ -50,7 +50,7 @@ def create_excel_from_json():
     # Write the DataFrame to an Excel file
     writer = pd.ExcelWriter("data.xlsx", engine="xlsxwriter")
     df.to_excel(writer, sheet_name="Sheet1", index=False)
-    writer.save()
+    writer._save()
 
 create_excel_from_json()
 

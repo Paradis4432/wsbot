@@ -1,0 +1,4 @@
+
+flask --app __init__.py run
+
+go to localhost:5000
